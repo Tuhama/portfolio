@@ -1,155 +1,136 @@
 {
-    "Hero": {
-        "badge": "Verfügbar für neue Möglichkeiten",
-        "title": "Senior Frontend Architekt",
-        "description": "Entwicklung leistungsstarker Unternehmensanwendungen.",
-        "subtitle": "Strategischer Architekt. Sicherheitsspezialist.",
-        "actions": {
-            "consultation": "Beratung anfordern",
-            "cv": "Lebenslauf herunterladen"
-        }
-    },
-    "Navigation": {
-        "about": "Über mich",
-        "projects": "Projekte",
-        "skills": "Kenntnisse",
-        "security": "Sicherheit"
-    },
-    "Projects": {
-        "title": "Ausgewählte Projekte",
-        "description": "Eine Sammlung von Architekturlösungen und sicherheitsorientierten Anwendungen.",
-        "items": {
-            "saas": {
-                "title": "Quantum Nexus Dashboard",
-                "description": "Hochleistungsfähige SaaS-Plattform für Unternehmen mit Echtzeit-Analysen und prädiktiver Skalierung.",
-                "tags": [
-                    "Next.js",
-                    "TypeScript",
-                    "Tailwind CSS",
-                    "React Query"
-                ]
-            },
-            "security": {
-                "title": "Sentinel Security Audit",
-                "description": "Automatisiertes Sicherheits-Orchestrierungstool mit KI-gestützter Schwachstellenerkennung und -behebung.",
-                "tags": [
-                    "Node.js",
-                    "Python",
-                    "Security",
-                    "AI"
-                ]
-            },
-            "ecommerce": {
-                "title": "Aurora Luxury Commerce",
-                "description": "Premium E-Commerce-Erlebnis mit Headless-CMS-Integration und globaler Edge-Bereitstellung.",
-                "tags": [
-                    "React",
-                    "Shopify",
-                    "GraphQL",
-                    "Framer Motion"
-                ]
-            }
-        },
-        "view_project": "Projekt ansehen",
-        "live_demo": "Live-Demo"
-    },
-    "Skills": {
-        "title": "Technische Kompetenz",
-        "description": "Spezialisiert auf die Bereitstellung robuster, skalierbarer und sicherer Webarchitekturen.",
-        "groups": {
-            "frontend": {
-                "title": "Frontend Engineering",
-                "items": [
-                    "React",
-                    "Next.js",
-                    "TypeScript",
-                    "Tailwind CSS",
-                    "Framer Motion"
-                ]
-            },
-            "backend": {
-                "title": "Backend & DevOps",
-                "items": [
-                    "Node.js",
-                    "PostgreSQL",
-                    "Docker",
-                    "AWS",
-                    "CI/CD"
-                ]
-            },
-            "security": {
-                "title": "Sicherheit & Architektur",
-                "items": [
-                    "CSP",
-                    "OAuth 2.0",
-                    "OWASP Mastery",
-                    "RSC Architecture"
-                ]
-            }
-        }
-    },
-    "Security": {
-        "title": "Sicherheit durch Design",
-        "description": "Aus meiner Masterarbeit: \"Sicherheit von clientseitigen Webanwendungen\"",
-        "strategies": {
-            "csp": {
-                "title": "Striktes CSP",
-                "description": "Nonce-basierte Content Security Policy zur Neutralisierung von XSS-Angriffen"
-            },
-            "auth": {
-                "title": "Sichere Authentifizierung",
-                "description": "HttpOnly, SameSite=Strict Cookies für Token-Handling"
-            },
-            "rendering": {
-                "title": "Sicheres Rendering",
-                "description": "Erzwingen der DOMPurify-Bereinigung für dynamische Inhalte"
-            },
-            "rsc": {
-                "title": "RSC-Architektur",
-                "description": "React Server Components, um Geheimnisse vom Client-Bundle fernzuhalten"
-            }
-        }
-    },
-    "Command": {
-        "hint": "Drücken Sie <shortcut>⌘K</shortcut> zum Suchen",
-        "placeholder": "Geben Sie einen Befehl ein oder suchen Sie...",
-        "empty": "Keine Ergebnisse gefunden.",
-        "groups": {
-            "suggestions": "Vorschläge",
-            "theme": "Thema"
-        },
-        "items": {
-            "home": "Startseite",
-            "skills": "Kenntnisse",
-            "projects": "Projekte",
-            "security": "Sicherheits-Hub",
-            "toggle_theme": "Dunkelmodus umschalten",
-            "light": "Hellmodus",
-            "dark": "Dunkelmodus",
-            "system": "Systemmodus"
-        },
-        "title": "Befehlsmenü"
-    },
-    "Build": {
-        "latest": "Letzter Build: Bestanden"
-    },
-    "ADR": {
-        "title": "Architektur-Entscheidungsunterlagen (ADR)",
-        "description": "Dokumentation des \"Warum\" hinter der Architektur.",
-        "decision": "Entscheidung: Akzeptiert",
-        "records": {
-            "001": {
-                "title": "001. Einführung des Next.js 16 App Routers"
-            },
-            "002": {
-                "title": "002. Tailwind CSS v4 CSS-First Ansatz"
-            }
-        }
-    },
-    "ThemeSwitcher": {
-        "light": "Hell",
-        "dark": "Dunkel",
-        "system": "System",
-        "ariaLabel": "Design umschalten"
+  "Hero": {
+    "badge": "Verfügbar für neue Möglichkeiten",
+    "title": "Senior Frontend Architekt",
+    "description": "Entwicklung leistungsstarker Unternehmensanwendungen.",
+    "subtitle": "Strategischer Architekt. Sicherheitsspezialist.",
+    "actions": {
+      "consultation": "Beratung anfordern",
+      "cv": "Lebenslauf herunterladen"
     }
+  },
+  "Navigation": {
+    "about": "Über mich",
+    "projects": "Projekte",
+    "skills": "Kenntnisse",
+    "security": "Sicherheit"
+  },
+  "Projects": {
+    "title": "Ausgewählte Projekte",
+    "description": "Eine Sammlung von Architekturlösungen und sicherheitsorientierten Anwendungen.",
+    "items": {
+      "bpro": {
+        "title": "BPro ERP Dashboard",
+        "description": "Hochleistungsfähige ERP-Plattform.",
+        "tags": ["React", "Ant Design", "RTK", "TypeScript"]
+      },
+      "mercato": {
+        "title": "Sentinel Security Audit",
+        "description": "Een B2B-marktplaats die kopers en leveranciers in de Iraakse farmaceutische markt ondersteunt.",
+        "tags": [
+          "Next.js",
+          "MUI",
+          "Zustand",
+          "React Query",
+          "Dexie.js",
+          "TypeScript"
+        ]
+      },
+      "glc": {
+        "title": "Aurora Luxury Commerce",
+        "description": "Premium E-Commerce-Erlebnis mit Headless-CMS-Integration und globaler Edge-Bereitstellung.",
+        "tags": ["React", "Shopify", "GraphQL", "Framer Motion"]
+      }
+    },
+    "view_project": "Projekt ansehen",
+    "live_demo": "Live-Demo"
+  },
+  "Skills": {
+    "title": "Technische Kompetenz",
+    "description": "Spezialisiert auf die Bereitstellung robuster, skalierbarer und sicherer Webarchitekturen.",
+    "groups": {
+      "frontend": {
+        "title": "Frontend Engineering",
+        "items": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Framer Motion"
+        ]
+      },
+      "backend": {
+        "title": "Backend & DevOps",
+        "items": ["Node.js", "PostgreSQL", "Docker", "AWS", "CI/CD"]
+      },
+      "security": {
+        "title": "Sicherheit & Architektur",
+        "items": ["CSP", "OAuth 2.0", "OWASP Mastery", "RSC Architecture"]
+      }
+    }
+  },
+  "Security": {
+    "title": "Sicherheit durch Design",
+    "description": "Aus meiner Masterarbeit: \"Sicherheit von clientseitigen Webanwendungen\"",
+    "strategies": {
+      "csp": {
+        "title": "Striktes CSP",
+        "description": "Nonce-basierte Content Security Policy zur Neutralisierung von XSS-Angriffen"
+      },
+      "auth": {
+        "title": "Sichere Authentifizierung",
+        "description": "HttpOnly, SameSite=Strict Cookies für Token-Handling"
+      },
+      "rendering": {
+        "title": "Sicheres Rendering",
+        "description": "Erzwingen der DOMPurify-Bereinigung für dynamische Inhalte"
+      },
+      "rsc": {
+        "title": "RSC-Architektur",
+        "description": "React Server Components, um Geheimnisse vom Client-Bundle fernzuhalten"
+      }
+    }
+  },
+  "Command": {
+    "hint": "Drücken Sie <shortcut>⌘K</shortcut> zum Suchen",
+    "placeholder": "Geben Sie einen Befehl ein oder suchen Sie...",
+    "empty": "Keine Ergebnisse gefunden.",
+    "groups": {
+      "suggestions": "Vorschläge",
+      "theme": "Thema"
+    },
+    "items": {
+      "home": "Startseite",
+      "skills": "Kenntnisse",
+      "projects": "Projekte",
+      "security": "Sicherheits-Hub",
+      "toggle_theme": "Dunkelmodus umschalten",
+      "light": "Hellmodus",
+      "dark": "Dunkelmodus",
+      "system": "Systemmodus"
+    },
+    "title": "Befehlsmenü"
+  },
+  "Build": {
+    "latest": "Letzter Build: Bestanden"
+  },
+  "ADR": {
+    "title": "Architektur-Entscheidungsunterlagen (ADR)",
+    "description": "Dokumentation des \"Warum\" hinter der Architektur.",
+    "decision": "Entscheidung: Akzeptiert",
+    "records": {
+      "001": {
+        "title": "001. Einführung des Next.js 16 App Routers"
+      },
+      "002": {
+        "title": "002. Tailwind CSS v4 CSS-First Ansatz"
+      }
+    }
+  },
+  "ThemeSwitcher": {
+    "light": "Hell",
+    "dark": "Dunkel",
+    "system": "System",
+    "ariaLabel": "Design umschalten"
+  }
 }

@@ -1,155 +1,136 @@
 {
-    "Hero": {
-        "badge": "متاح لفرص جديدة",
-        "title": "كبير مهندسي الواجهات الأمامية",
-        "description": "بناء تطبيقات مؤسسية عالية الأداء.",
-        "subtitle": "مهندس استراتيجي. متخصص في الأمن.",
-        "actions": {
-            "consultation": "طلب استشارة",
-            "cv": "تحميل السيرة الذاتية"
-        }
-    },
-    "Navigation": {
-        "about": "عني",
-        "projects": "المشاريع",
-        "skills": "المهارات",
-        "security": "الأمان"
-    },
-    "Projects": {
-        "title": "مشاريع مميزة",
-        "description": "مجموعة من الحلول المعمارية والتطبيقات التي تركز على الأمان.",
-        "items": {
-            "saas": {
-                "title": "لوحة تحكم Quantum Nexus",
-                "description": "منصة SaaS للمؤسسات عالية الأداء مع تحليلات في الوقت الفعلي وتوسع تنبؤي.",
-                "tags": [
-                    "Next.js",
-                    "TypeScript",
-                    "Tailwind CSS",
-                    "React Query"
-                ]
-            },
-            "security": {
-                "title": "Sentinel Security Audit",
-                "description": "أداة تنسيق أمنية مؤتمتة مع نظام كشف وإصلاح الثغرات المدعوم بالذكاء الاصطناعي.",
-                "tags": [
-                    "Node.js",
-                    "Python",
-                    "Security",
-                    "AI"
-                ]
-            },
-            "ecommerce": {
-                "title": "Aurora Luxury Commerce",
-                "description": "تجربة تجارة إلكترونية فاخرة مع تكامل CMS بدون رأس وتوصيل عالمي.",
-                "tags": [
-                    "React",
-                    "Shopify",
-                    "GraphQL",
-                    "Framer Motion"
-                ]
-            }
-        },
-        "view_project": "عرض المشروع",
-        "live_demo": "عرض حي"
-    },
-    "Skills": {
-        "title": "البراعة التقنية",
-        "description": "متخصص في تقديم معماريات ويب قوية وقابلة للتوسع وآمنة.",
-        "groups": {
-            "frontend": {
-                "title": "هندسة الواجهة الأمامية",
-                "items": [
-                    "React",
-                    "Next.js",
-                    "TypeScript",
-                    "Tailwind CSS",
-                    "Framer Motion"
-                ]
-            },
-            "backend": {
-                "title": "الخلفية و DevOps",
-                "items": [
-                    "Node.js",
-                    "PostgreSQL",
-                    "Docker",
-                    "AWS",
-                    "CI/CD"
-                ]
-            },
-            "security": {
-                "title": "الأمن والمعمارية",
-                "items": [
-                    "CSP",
-                    "OAuth 2.0",
-                    "OWASP Mastery",
-                    "RSC Architecture"
-                ]
-            }
-        }
-    },
-    "Security": {
-        "title": "الأمن حسب التصميم",
-        "description": "من رسالة الماجستير الخاصة بي: \"أمن تطبيقات الويب من جهة العميل\"",
-        "strategies": {
-            "csp": {
-                "title": "سياسة أمن محتوى صارمة",
-                "description": "سياسة أمن محتوى قائمة على النونس لتحييد هجمات XSS"
-            },
-            "auth": {
-                "title": "توثيق آمن",
-                "description": "ملفات تعريف الارتباط HttpOnly و SameSite=Strict لمعالجة الرموز"
-            },
-            "rendering": {
-                "title": "عرض آمن",
-                "description": "فرض تطهير DOMPurify للمحتوى الديناميكي"
-            },
-            "rsc": {
-                "title": "معمارية RSC",
-                "description": "مكونات خادم React لإبقاء الأسرار بعيدة عن حزمة العميل"
-            }
-        }
-    },
-    "Command": {
-        "hint": "اضغط على <shortcut>⌘K</shortcut> للبحث",
-        "placeholder": "اكتب أمراً أو ابحث...",
-        "empty": "لم يتم العثور على نتائج.",
-        "groups": {
-            "suggestions": "اقتراحات",
-            "theme": "المظهر"
-        },
-        "items": {
-            "home": "الرئيسية",
-            "skills": "المهارات",
-            "projects": "المشاريع",
-            "security": "مركز الأمان",
-            "toggle_theme": "تبديل الوضع الداكن",
-            "light": "الوضع الفاتح",
-            "dark": "الوضع الداكن",
-            "system": "وضع النظام"
-        },
-        "title": "قائمة الأوامر"
-    },
-    "Build": {
-        "latest": "آخر بناء: ناجح"
-    },
-    "ADR": {
-        "title": "سجلات القرارات المعمارية",
-        "description": "توثيق \"لماذا\" وراء المعمارية.",
-        "decision": "القرار: مقبول",
-        "records": {
-            "001": {
-                "title": "001. اعتماد موجه تطبيقات Next.js 16"
-            },
-            "002": {
-                "title": "002. نهج CSS أولاً في Tailwind CSS v4"
-            }
-        }
-    },
-    "ThemeSwitcher": {
-        "light": "فاتح",
-        "dark": "داكن",
-        "system": "النظام",
-        "ariaLabel": "تبديل المظهر"
+  "Hero": {
+    "badge": "متاح لفرص جديدة",
+    "title": "كبير مهندسي الواجهات الأمامية",
+    "description": "بناء تطبيقات مؤسسية عالية الأداء.",
+    "subtitle": "مهندس استراتيجي. متخصص في الأمن.",
+    "actions": {
+      "consultation": "طلب استشارة",
+      "cv": "تحميل السيرة الذاتية"
     }
+  },
+  "Navigation": {
+    "about": "عني",
+    "projects": "المشاريع",
+    "skills": "المهارات",
+    "security": "الأمان"
+  },
+  "Projects": {
+    "title": "مشاريع مميزة",
+    "description": "مجموعة من الحلول المعمارية والتطبيقات التي تركز على الأمان.",
+    "items": {
+      "bpro": {
+        "title": "لوحة تحكم BPro ERP",
+        "description": "منصة ERP للمؤسسات عالية الأداء .",
+        "tags": ["React", "Ant Design", "RTK", "TypeScript"]
+      },
+      "mercato": {
+        "title": "Mercato",
+        "description": "سوق B2B الذي يمكّن المشترين والموردين في سوق الأدوية العراقي.",
+        "tags": [
+          "Next.js",
+          "MUI",
+          "Zustand",
+          "React Query",
+          "Dexie.js",
+          "TypeScript"
+        ]
+      },
+      "glc": {
+        "title": "Aurora Luxury Commerce",
+        "description": "تجربة تجارة إلكترونية فاخرة مع تكامل CMS بدون رأس وتوصيل عالمي.",
+        "tags": ["React", "Shopify", "GraphQL", "Framer Motion"]
+      }
+    },
+    "view_project": "عرض المشروع",
+    "live_demo": "عرض حي"
+  },
+  "Skills": {
+    "title": "البراعة التقنية",
+    "description": "متخصص في تقديم معماريات ويب قوية وقابلة للتوسع وآمنة.",
+    "groups": {
+      "frontend": {
+        "title": "هندسة الواجهة الأمامية",
+        "items": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Framer Motion"
+        ]
+      },
+      "backend": {
+        "title": "الخلفية و DevOps",
+        "items": ["Node.js", "PostgreSQL", "Docker", "AWS", "CI/CD"]
+      },
+      "security": {
+        "title": "الأمن والمعمارية",
+        "items": ["CSP", "OAuth 2.0", "OWASP Mastery", "RSC Architecture"]
+      }
+    }
+  },
+  "Security": {
+    "title": "الأمن حسب التصميم",
+    "description": "من رسالة الماجستير الخاصة بي: \"أمن تطبيقات الويب من جهة العميل\"",
+    "strategies": {
+      "csp": {
+        "title": "سياسة أمن محتوى صارمة",
+        "description": "سياسة أمن محتوى قائمة على النونس لتحييد هجمات XSS"
+      },
+      "auth": {
+        "title": "توثيق آمن",
+        "description": "ملفات تعريف الارتباط HttpOnly و SameSite=Strict لمعالجة الرموز"
+      },
+      "rendering": {
+        "title": "عرض آمن",
+        "description": "فرض تطهير DOMPurify للمحتوى الديناميكي"
+      },
+      "rsc": {
+        "title": "معمارية RSC",
+        "description": "مكونات خادم React لإبقاء الأسرار بعيدة عن حزمة العميل"
+      }
+    }
+  },
+  "Command": {
+    "hint": "اضغط على <shortcut>⌘K</shortcut> للبحث",
+    "placeholder": "اكتب أمراً أو ابحث...",
+    "empty": "لم يتم العثور على نتائج.",
+    "groups": {
+      "suggestions": "اقتراحات",
+      "theme": "المظهر"
+    },
+    "items": {
+      "home": "الرئيسية",
+      "skills": "المهارات",
+      "projects": "المشاريع",
+      "security": "مركز الأمان",
+      "toggle_theme": "تبديل الوضع الداكن",
+      "light": "الوضع الفاتح",
+      "dark": "الوضع الداكن",
+      "system": "وضع النظام"
+    },
+    "title": "قائمة الأوامر"
+  },
+  "Build": {
+    "latest": "آخر بناء: ناجح"
+  },
+  "ADR": {
+    "title": "سجلات القرارات المعمارية",
+    "description": "توثيق \"لماذا\" وراء المعمارية.",
+    "decision": "القرار: مقبول",
+    "records": {
+      "001": {
+        "title": "001. اعتماد موجه تطبيقات Next.js 16"
+      },
+      "002": {
+        "title": "002. نهج CSS أولاً في Tailwind CSS v4"
+      }
+    }
+  },
+  "ThemeSwitcher": {
+    "light": "فاتح",
+    "dark": "داكن",
+    "system": "النظام",
+    "ariaLabel": "تبديل المظهر"
+  }
 }
