@@ -9,13 +9,19 @@ on:
 jobs:
   audit-and-lint:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 10
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 24
           cache: 'pnpm'
 
       - name: Install Dependencies
@@ -24,20 +30,28 @@ jobs:
       - name: 🛡️ Security Audit
         run: pnpm audit --audit-level=high
 
-      - name: ✨ Linting (ESLint v10)
+      - name: ✨ Linting
         run: pnpm run lint
 
   unit-tests:
     needs: audit-and-lint
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 10
+
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 24
           cache: 'pnpm'
+
       - run: pnpm install --frozen-lockfile
-      - name: 🧪 Vitest Integration Tests
+
+      - name: 🧪 Unit Tests
         run: pnpm run test:unit
 
   deploy:
@@ -45,10 +59,23 @@ jobs:
     needs: [unit-tests]
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: 'pnpm'
+
+      - run: pnpm install --frozen-lockfile
+
       - name: Install Vercel CLI
-        run: pnpm add --global vercel@latest
+        run: pnpm add -g vercel@latest
 
       - name: Vercel Pull & Build
         run: |
