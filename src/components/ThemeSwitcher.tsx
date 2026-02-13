@@ -1,59 +1,74 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
-import { Moon, Sun, Monitor } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+import { Monitor, Moon, Sun } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-export function ThemeSwitcher() {
-  const { setTheme } = useTheme();
+const ThemeSwitcher = () => {
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
   const t = useTranslations("ThemeSwitcher");
 
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setMounted(true);
+  }, []);
+
+  // Return a structural "shell" during SSR to prevent the warning/flicker
+  if (!mounted) {
+    return (
+      <div className="flex p-1 rounded-lg border h-8 w-[92] items-center bg-gray-100 dark:bg-gray-800/50 border-gray-200 dark:border-gray-700">
+        <div className="w-4 h-4 flex-1" />
+        <div className="w-4 h-4 flex-1" />
+        <div className="w-4 h-4 flex-1" />
+      </div>
+    );
+  }
+
+  const options = [
+    { name: "light", icon: <Sun size={16} />, tooltip: t("light") },
+    {
+      name: "system",
+      icon: <Monitor size={16} />,
+      tooltip: t("system"),
+    },
+    { name: "dark", icon: <Moon size={16} />, tooltip: t("dark") },
+  ];
+
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button
-          variant="ghost"
-          size="icon"
-          className="group relative w-9 px-0 hover:bg-primary/10"
+    <div className={`
+      flex p-1 rounded-lg border h-8 w-[92] items-center
+      ${theme === 'system'
+        ? 'bg-gray-100 dark:bg-gray-800/50 border-gray-200 dark:border-gray-700'
+        : theme === 'dark'
+          ? 'bg-gray-800/50 border-gray-700'
+          : 'bg-gray-100 border-gray-200'}
+    `}>
+      {options.map((opt) => (
+        <button
+          key={opt.name}
+          onClick={() => setTheme(opt.name)}
+          title={opt.tooltip} // Simple native tooltip
+          aria-label={opt.tooltip}
+          className={`
+            relative p-1.5 rounded-md transition-all group
+            ${
+              theme === opt.name
+                ? theme === 'dark'
+                  ? "bg-gray-600 shadow-sm text-blue-300"
+                  : theme === 'system'
+                    ? "bg-white dark:bg-gray-600 shadow-sm text-blue-600 dark:text-blue-300"
+                    : "bg-white shadow-sm text-blue-600"
+                : "text-gray-500 hover:text-gray-900 dark:hover:text-gray-100"
+            }
+          `}
         >
-          <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 group-hover:text-primary" />
-          <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 group-hover:text-primary" />
-          <span className="sr-only">{t("ariaLabel")}</span>
-        </Button>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent
-        align="end"
-        className="glass-morphism border-primary/20"
-      >
-        <DropdownMenuItem
-          onClick={() => setTheme("light")}
-          className="gap-2 focus:bg-primary/20 focus:text-primary"
-        >
-          <Sun className="h-4 w-4" />
-          <span>{t("light")}</span>
-        </DropdownMenuItem>
-        <DropdownMenuItem
-          onClick={() => setTheme("dark")}
-          className="gap-2 focus:bg-primary/20 focus:text-primary"
-        >
-          <Moon className="h-4 w-4" />
-          <span>{t("dark")}</span>
-        </DropdownMenuItem>
-        <DropdownMenuItem
-          onClick={() => setTheme("system")}
-          className="gap-2 focus:bg-primary/20 focus:text-primary"
-        >
-          <Monitor className="h-4 w-4" />
-          <span>{t("system")}</span>
-        </DropdownMenuItem>
-      </DropdownMenuContent>
-    </DropdownMenu>
+          {opt.icon}
+        </button>
+      ))}
+    </div>
   );
-}
+};
+
+export default ThemeSwitcher;
