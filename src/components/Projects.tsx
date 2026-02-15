@@ -2,7 +2,6 @@
 
 import { useTranslations } from "next-intl";
 import { ProjectCard } from "./ProjectCard";
-import { motion } from "framer-motion";
 
 export function Projects() {
   const t = useTranslations("Projects");
@@ -30,36 +29,26 @@ export function Projects() {
   ];
 
   return (
-    <section id="projects" className="w-full py-24 space-y-12">
-      <div className="space-y-4 text-center max-w-3xl mx-auto">
-        <motion.h2
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-vibrant"
-        >
+    <section id="projects" className="w-full py-32 space-y-16">
+      <div className="space-y-6 text-center max-w-4xl mx-auto reveal-up">
+        <h2 className="text-4xl font-black tracking-tighter sm:text-5xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/50">
           {t("title")}
-        </motion.h2>
-        <motion.p
-          initial={{ opacity: 0, y: -10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.1 }}
-          className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
-        >
+        </h2>
+        <p className="text-xl text-muted-foreground leading-relaxed font-medium">
           {t("description")}
-        </motion.p>
+        </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {items.map((item) => (
-          <ProjectCard
-            key={item.key}
-            title={t(`items.${item.key}.title`)}
-            description={t(`items.${item.key}.description`)}
-            image={item.image}
-            tags={t.raw(`items.${item.key}.tags`)}
-            links={item.links}
-          />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        {items.map((item, index) => (
+          <div key={item.key} className={`reveal-up stagger-${index + 1}`}>
+            <ProjectCard
+              title={t(`items.${item.key}.title`)}
+              description={t(`items.${item.key}.description`)}
+              image={item.image}
+              tags={t.raw(`items.${item.key}.tags`)}
+              links={item.links}
+            />
+          </div>
         ))}
       </div>
     </section>
