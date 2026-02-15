@@ -15,52 +15,36 @@ const ThemeSwitcher = () => {
     setMounted(true);
   }, []);
 
-  // Return a structural "shell" during SSR to prevent the warning/flicker
+  // Return a structural "shell" during SSR
   if (!mounted) {
     return (
-      <div className="flex p-1 rounded-lg border h-8 w-[92] items-center bg-gray-100 dark:bg-gray-800/50 border-gray-200 dark:border-gray-700">
-        <div className="w-4 h-4 flex-1" />
-        <div className="w-4 h-4 flex-1" />
-        <div className="w-4 h-4 flex-1" />
+      <div className="flex p-1.5 rounded-2xl border h-10 w-[104px] items-center bg-surface-2/50 border-white/5 backdrop-blur-md">
+        <div className="w-8 h-8 flex-1" />
+        <div className="w-8 h-8 flex-1" />
+        <div className="w-8 h-8 flex-1" />
       </div>
     );
   }
 
   const options = [
     { name: "light", icon: <Sun size={16} />, tooltip: t("light") },
-    {
-      name: "system",
-      icon: <Monitor size={16} />,
-      tooltip: t("system"),
-    },
+    { name: "system", icon: <Monitor size={16} />, tooltip: t("system") },
     { name: "dark", icon: <Moon size={16} />, tooltip: t("dark") },
   ];
 
   return (
-    <div className={`
-      flex p-1 rounded-lg border h-8 w-[92] items-center
-      ${theme === 'system'
-        ? 'bg-gray-100 dark:bg-gray-800/50 border-gray-200 dark:border-gray-700'
-        : theme === 'dark'
-          ? 'bg-gray-800/50 border-gray-700'
-          : 'bg-gray-100 border-gray-200'}
-    `}>
+    <div className="flex p-1.5 rounded-2xl border h-10 w-[104px] items-center bg-surface-2/50 border-white/5 backdrop-blur-md relative shadow-inner overflow-hidden">
       {options.map((opt) => (
         <button
           key={opt.name}
           onClick={() => setTheme(opt.name)}
-          title={opt.tooltip} // Simple native tooltip
+          title={opt.tooltip}
           aria-label={opt.tooltip}
           className={`
-            relative p-1.5 rounded-md transition-all group
-            ${
-              theme === opt.name
-                ? theme === 'dark'
-                  ? "bg-gray-600 shadow-sm text-blue-300"
-                  : theme === 'system'
-                    ? "bg-white dark:bg-gray-600 shadow-sm text-blue-600 dark:text-blue-300"
-                    : "bg-white shadow-sm text-blue-600"
-                : "text-gray-500 hover:text-gray-900 dark:hover:text-gray-100"
+            relative z-10 p-2 rounded-xl transition-all duration-500 flex-1 flex items-center justify-center
+            ${theme === opt.name
+              ? "text-primary shadow-premium bg-surface-1"
+              : "text-muted-foreground hover:text-foreground hover:bg-white/5"
             }
           `}
         >

@@ -47,43 +47,46 @@ export function ProjectCard({
   }, [resolvedTheme]);
 
   return (
-    <div className="reveal-up">
-      <Card className="group glass-morphism overflow-hidden border-white/5 transition-all duration-500 hover:border-primary/30 hover:shadow-2xl hover:shadow-primary/20 flex flex-col h-full bg-white/5 relative">
+    <div className="scroll-reveal h-full">
+      <Card className="group glass-morphism overflow-hidden border-white/5 transition-all duration-700 hover:border-primary/40 hover:shadow-premium flex flex-col h-full bg-white/5 relative active:scale-[0.98]">
         <div className="relative aspect-[16/10] overflow-hidden">
           <Image
             src={image}
             alt={title}
             fill
-            className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+            className="object-cover transition-transform duration-1000 cubic-bezier(0.2, 1, 0.3, 1) group-hover:scale-110"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-700" />
+
+          {/* Subtle inner border on hover */}
+          <div className="absolute inset-0 border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
         </div>
-        <CardHeader className="space-y-2">
-          <CardTitle className="text-2xl font-bold tracking-tight group-hover:text-primary transition-colors duration-300">
+        <CardHeader className="space-y-3 pb-4">
+          <CardTitle className="text-2xl font-black tracking-tight group-hover:text-primary transition-colors duration-500">
             {title}
           </CardTitle>
-          <CardDescription className="line-clamp-2 text-muted-foreground/90 text-base leading-relaxed">
+          <CardDescription className="line-clamp-2 text-muted-foreground/80 text-base leading-relaxed font-medium">
             {description}
           </CardDescription>
         </CardHeader>
-        <CardContent className="flex-grow">
-          <div className="flex flex-wrap gap-2">
+        <CardContent className="flex-grow pb-6">
+          <div className="flex flex-wrap gap-2.5">
             {tags.map((tag) => (
               <span
                 key={tag}
-                className="inline-flex items-center rounded-md bg-primary/5 px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-primary/80 border border-primary/10 group-hover:border-primary/30 transition-colors"
+                className="inline-flex items-center rounded-full bg-primary/5 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-primary/70 border border-primary/10 group-hover:border-primary/30 group-hover:bg-primary/10 transition-all duration-500"
               >
                 {tag}
               </span>
             ))}
           </div>
         </CardContent>
-        <CardFooter className="gap-3 pt-4 pb-6">
+        <CardFooter className="gap-4 pt-4 pb-8 px-6">
           {links?.live && (
             <Button
               variant="premium"
               size="sm"
-              className="w-full gap-2 shadow-lg shadow-primary/10"
+              className="w-full gap-2.5 shadow-lg shadow-primary/10 font-bold tracking-tight h-11"
               asChild
             >
               <a href={links.live} target="_blank" rel="noopener noreferrer">
@@ -96,14 +99,14 @@ export function ProjectCard({
             <Button
               variant="outline"
               size="sm"
-              className="px-4 border-primary/20 hover:bg-primary/10 transition-colors"
+              className="px-5 border-primary/10 hover:bg-primary/5 transition-all h-11 glass-morphism"
               asChild
             >
               <a href={links.github} target="_blank" rel="noopener noreferrer">
                 <Image
                   alt=""
                   src={githubIcon}
-                  className="h-5 w-5"
+                  className="h-5 w-5 transition-transform group-hover:scale-110"
                   width={20}
                   height={20}
                 />
