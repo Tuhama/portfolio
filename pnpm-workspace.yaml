@@ -1,0 +1,17 @@
+onlyBuiltDependencies:
+  - /
+  - '@'
+  - '@parcel/watcher'
+  - '@swc/core'
+  - a
+  - c
+  - e
+  - esbuild
+  - h
+  - l
+  - p
+  - r
+  - sharp
+  - t
+  - unrs-resolver
+  - w
