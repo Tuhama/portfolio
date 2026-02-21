@@ -22,9 +22,7 @@ export function Projects() {
     {
       key: "glc",
       image: "/assets/projects/ecommerce-platform.png",
-      links: {
-        live: "#",
-      },
+      links: {},
     },
   ];
 

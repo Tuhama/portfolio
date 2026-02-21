@@ -40,15 +40,8 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-6 sm:flex-row pt-12 reveal-up stagger-4">
-          <Button
-            variant="premium"
-            size="lg"
-            className="h-16 w-full gap-3 px-12 sm:w-auto text-lg font-bold group shadow-premium hover:scale-[1.02] active:scale-95"
-          >
-            {t("actions.consultation")}
-            <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" />
-          </Button>
+        <div className="flex flex-col items-center justify-center sm:flex-row pt-12 reveal-up stagger-4">
+
           <a
             href="/assets/docs/TuhamaQlyshi-CV.pdf"
             download="TuhamaQlyshi-CV.pdf"

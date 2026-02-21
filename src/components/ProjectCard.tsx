@@ -91,7 +91,7 @@ export function ProjectCard({
             >
               <a href={links.live} target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="h-4 w-4" />
-                {t("live_demo")}
+                <span>{t("live_demo")}</span>
               </a>
             </Button>
           )}
