@@ -49,14 +49,20 @@ export function Hero() {
             {t("actions.consultation")}
             <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" />
           </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="h-16 w-full gap-3 px-12 sm:w-auto text-lg font-bold hover:bg-primary/5 border-primary/20 transition-all duration-300 active:scale-95 glass-morphism"
+          <a
+            href="/assets/docs/TuhamaQlyshi-CV.pdf"
+            download="TuhamaQlyshi-CV.pdf"
+            className="w-full sm:w-auto"
           >
-            <Download className="h-5 w-5" />
-            {t("actions.cv")}
-          </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="h-16 w-full gap-3 px-12 sm:w-auto text-lg font-bold hover:bg-primary/5 border-primary/20 transition-all duration-300 active:scale-95 glass-morphism"
+            >
+              <Download className="h-5 w-5" />
+              {t("actions.cv")}
+            </Button>
+          </a>
         </div>
       </div>
     </section>
