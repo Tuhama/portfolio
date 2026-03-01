@@ -37,8 +37,8 @@
         ]
       },
       "glc": {
-        "title": "Aurora Luxury Commerce",
-        "description": "تجربة تجارة إلكترونية فاخرة مع تكامل CMS بدون رأس وتوصيل عالمي.",
+        "title": "الخليج للاستشارات القانونية",
+        "description": "نظام إدارة مكتب محاماة",
         "tags": ["React", "Shopify", "GraphQL", "Framer Motion"]
       }
     },

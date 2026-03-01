@@ -21,8 +21,8 @@ export function Projects() {
     },
     {
       key: "glc",
-      image: "/assets/projects/ecommerce-platform.png",
-      links: {},
+      image: "/assets/projects/GLC.png",
+      links: { live: "https://glc-v2-web.web.app/" },
     },
   ];
 

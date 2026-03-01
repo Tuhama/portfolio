@@ -14,6 +14,13 @@ import {
 import { useTranslations } from "next-intl";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 interface ProjectCardProps {
   title: string;
@@ -36,6 +43,7 @@ export function ProjectCard({
   const t = useTranslations("Projects");
   const { resolvedTheme } = useTheme();
   const [githubIcon, setGithubIcon] = useState("/GitHub_Invertocat_Black.svg");
+  const [isPreviewOpen, setIsPreviewOpen] = useState(false);
 
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect
@@ -49,18 +57,37 @@ export function ProjectCard({
   return (
     <div className="scroll-reveal h-full">
       <Card className="group glass-morphism overflow-hidden border-white/5 transition-all duration-700 hover:border-primary/40 hover:shadow-premium flex flex-col h-full bg-white/5 relative active:scale-[0.98]">
-        <div className="relative aspect-[16/10] overflow-hidden">
-          <Image
-            src={image}
-            alt={title}
-            fill
-            className="object-cover transition-transform duration-1000 cubic-bezier(0.2, 1, 0.3, 1) group-hover:scale-110"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-700" />
+        <Dialog open={isPreviewOpen} onOpenChange={setIsPreviewOpen}>
+          <DialogTrigger asChild>
+            <div className="relative aspect-[16/10] overflow-hidden cursor-zoom-in">
+              <Image
+                src={image}
+                alt={title}
+                fill
+                className="object-cover transition-transform duration-1000 cubic-bezier(0.2, 1, 0.3, 1) group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-700" />
 
-          {/* Subtle inner border on hover */}
-          <div className="absolute inset-0 border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
-        </div>
+              {/* Subtle inner border on hover */}
+              <div className="absolute inset-0 border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+            </div>
+          </DialogTrigger>
+          <DialogContent className="max-w-5xl border-none bg-transparent p-0 shadow-none">
+            <DialogHeader className="sr-only">
+              <DialogTitle>{title} - Image Preview</DialogTitle>
+            </DialogHeader>
+            <div className="relative aspect-video w-full overflow-hidden rounded-lg">
+              <Image
+                src={image}
+                alt={title}
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+          </DialogContent>
+        </Dialog>
+
         <CardHeader className="space-y-3 pb-4">
           <CardTitle className="text-2xl font-black tracking-tight group-hover:text-primary transition-colors duration-500">
             {title}

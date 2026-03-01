@@ -31,8 +31,8 @@
       },
       "glc": {
         "title": "Gulf Legal Consultants",
-        "description": "Premium e-commerce experience with headless CMS integration and global edge delivery.",
-        "tags": ["React", "Ant Design", "RTK", "TypeScript"]
+        "description": "Law Office Management System",
+        "tags": ["React", "MSAL", "Ant Design", "RTK", "TypeScript"]
       }
     },
     "view_project": "View Project",
