@@ -3,7 +3,7 @@
     "badge": "Verfügbar für neue Möglichkeiten",
     "title": "Senior Frontend Architekt",
     "description": "Entwicklung leistungsstarker Unternehmensanwendungen.",
-    "subtitle": "Strategischer Architekt. Sicherheitsspezialist.",
+    "subtitle": "Strategischer Architekt.",
     "actions": {
       "consultation": "Beratung anfordern",
       "cv": "Lebenslauf herunterladen"
@@ -17,12 +17,12 @@
   },
   "Projects": {
     "title": "Ausgewählte Projekte",
-    "description": "Eine Sammlung von Architekturlösungen und sicherheitsorientierten Anwendungen.",
+    "description": "Eine kuratierte Auswahl hochwirksamer Arbeiten, basierend auf der Philosophie, dass architektonische Integrität und sorgfältige Ausführung Vorrang vor reiner Quantität haben.",
     "items": {
       "bpro": {
         "title": "BPro ERP Dashboard",
-        "description": "Hochleistungsfähige ERP-Plattform.",
-        "tags": ["React", "Ant Design", "RTK", "TypeScript"]
+        "description": "Ein leistungsstarkes Enterprise-ERP-Ökosystem, das eine integrierte modulare Architektur nutzt, um komplexe Geschäftsprozesse zu orchestrieren.",
+        "tags": ["React", "TypeScript", "Ant Design", "RTK", "Enterprise", "Berichtswesen"]
       },
       "mercato": {
         "title": "Sentinel Security Audit",

@@ -92,7 +92,7 @@ export function ProjectCard({
           <CardTitle className="text-2xl font-black tracking-tight group-hover:text-primary transition-colors duration-500">
             {title}
           </CardTitle>
-          <CardDescription className="line-clamp-2 text-muted-foreground/80 text-base leading-relaxed font-medium">
+          <CardDescription className="line-clamp-4 text-muted-foreground/80 text-base leading-relaxed font-medium">
             {description}
           </CardDescription>
         </CardHeader>

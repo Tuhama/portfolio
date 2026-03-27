@@ -3,7 +3,7 @@
     "badge": "Available for New Opportunities",
     "title": "Senior Frontend Architect",
     "description": "Building high-performance enterprise applications.",
-    "subtitle": "Strategic Architect. Security Specialist.",
+    "subtitle": "Strategic Architect",
     "actions": {
       "consultation": "Request Consultation",
       "cv": "Download CV"
@@ -17,12 +17,12 @@
   },
   "Projects": {
     "title": "Featured Projects",
-    "description": "A collection of architectural solutions and security-first applications.",
+    "description": "A curated selection of high-impact works, built on the philosophy that architectural integrity and meticulous execution take precedence over sheer volume.",
     "items": {
       "bpro": {
         "title": "BPro ERP Dashboard",
-        "description": "High-performance enterprise ERP platform.",
-        "tags": ["React", "TypeScript", "Ant Design", "RTK"]
+        "description": "A high-performance enterprise ERP ecosystem leveraging an integrated modular architecture to orchestrate complex business workflows.",
+        "tags": ["React", "TypeScript", "Ant Design", "RTK", "Enterprise", "Modular Architecture", "BI Reporting"]
       },
       "mercato": {
         "title": "Mercato-B2B",
