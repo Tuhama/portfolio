@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { vi, describe, it, expect } from "vitest";
 import { ProjectCard } from "../ProjectCard";
 import { ReactNode } from "react";
@@ -53,6 +53,7 @@ vi.mock("next-themes", () => ({
 // Mock next/image
 vi.mock("next/image", () => ({
   default: ({ src, alt }: { src: string; alt: string }) => (
+    // eslint-disable-next-line @next/next/no-img-element
     <img src={src} alt={alt} />
   ),
 }));
@@ -69,12 +70,12 @@ describe("ProjectCard", () => {
     render(<ProjectCard {...props} />);
     expect(screen.getByText("Test Project")).toBeDefined();
     expect(screen.getByText("Test Description")).toBeDefined();
-    expect(screen.getByAltText("Test Project")).toBeDefined();
+    expect(screen.getAllByAltText("Test Project")[0]).toBeDefined();
   });
 
   it("contains clickable image trigger", () => {
     render(<ProjectCard {...props} />);
-    const imageContainer = screen.getByAltText("Test Project").parentElement;
+    const imageContainer = screen.getAllByAltText("Test Project")[0].parentElement;
     expect(imageContainer).toBeDefined();
   });
 });

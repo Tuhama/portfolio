@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Download } from "lucide-react";
+import { Download } from "lucide-react";
 
 export function Hero() {
   const t = useTranslations("Hero");
