@@ -27,7 +27,7 @@ export function Header() {
               { name: t("about"), href: "/" },
               { name: t("skills"), href: "/#skills" },
               { name: t("projects"), href: "/#projects" },
-              { name: t("security"), href: "/security" },
+              { name: t("security"), href: "/#security" },
             ].map((link) => (
               <Link
                 key={link.name}
