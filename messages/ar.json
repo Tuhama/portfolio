@@ -1,123 +1,7 @@
 {
-  "Hero": {
-    "badge": "متاح لفرص جديدة",
-    "title": "كبير مهندسي الواجهات الأمامية",
-    "description": "بناء تطبيقات مؤسسية عالية الأداء.",
-    "subtitle": "مهندس استراتيجي.",
-    "actions": {
-      "consultation": "طلب استشارة",
-      "cv": "تحميل السيرة الذاتية"
-    }
-  },
-  "Navigation": {
-    "about": "عني",
-    "projects": "المشاريع",
-    "skills": "المهارات",
-    "security": "الأمان"
-  },
-  "Projects": {
-    "title": "مشاريع مميزة",
-    "description": "مجموعة مختارة من الأعمال عالية التأثير، مبنية على فلسفة أن السلامة المعمارية والتنفيذ الدقيق لهما الأسبقية على مجرد الكمية.",
-    "items": {
-      "bpro": {
-        "title": "لوحة تحكم BPro ERP",
-        "description": "نظام بيئي متطور لـ ERP للمؤسسات، يعتمد على معمارية برمجية متكاملة لتنسيق سير العمل المعقد .",
-        "tags": ["React", "TypeScript", "Ant Design", "RTK", "مؤسسي", "تقارير مخصصة"]
-      },
-      "mercato": {
-        "title": "Mercato",
-        "description": "سوق B2B الذي يمكّن المشترين والموردين في سوق الأدوية العراقي.",
-        "tags": [
-          "Next.js",
-          "MUI",
-          "Zustand",
-          "React Query",
-          "Dexie.js",
-          "TypeScript"
-        ]
-      },
-      "glc": {
-        "title": "الخليج للاستشارات القانونية",
-        "description": "نظام إدارة مكتب محاماة",
-        "tags": ["React", "Shopify", "GraphQL", "Framer Motion"]
-      }
-    },
-    "view_project": "عرض المشروع",
-    "live_demo": "عرض حي"
-  },
-  "Skills": {
-    "title": "البراعة التقنية",
-    "description": "متخصص في تقديم معماريات ويب قوية وقابلة للتوسع وآمنة.",
-    "groups": {
-      "frontend": {
-        "title": "هندسة الواجهة الأمامية",
-        "items": [
-          "React",
-          "Next.js",
-          "TypeScript",
-          "Tailwind CSS",
-          "Framer Motion"
-        ]
-      },
-      "backend": {
-        "title": "الخلفية و DevOps",
-        "items": ["Node.js", "PostgreSQL", "Docker", "AWS", "CI/CD"]
-      },
-      "security": {
-        "title": "الأمن والمعمارية",
-        "items": ["CSP", "OAuth 2.0", "OWASP Mastery", "RSC Architecture"]
-      }
-    }
-  },
-  "Security": {
-    "title": "الأمن حسب التصميم",
-    "description": "من رسالة الماجستير الخاصة بي: \"أمن تطبيقات الويب من جهة العميل\"",
-    "strategies": {
-      "csp": {
-        "title": "سياسة أمن محتوى صارمة",
-        "description": "سياسة أمن محتوى قائمة على النونس لتحييد هجمات XSS"
-      },
-      "auth": {
-        "title": "توثيق آمن",
-        "description": "ملفات تعريف الارتباط HttpOnly و SameSite=Strict لمعالجة الرموز"
-      },
-      "rendering": {
-        "title": "عرض آمن",
-        "description": "فرض تطهير DOMPurify للمحتوى الديناميكي"
-      },
-      "rsc": {
-        "title": "معمارية RSC",
-        "description": "مكونات خادم React لإبقاء الأسرار بعيدة عن حزمة العميل"
-      }
-    }
-  },
-  "Command": {
-    "hint": "اضغط على <shortcut>⌘K</shortcut> للبحث",
-    "placeholder": "اكتب أمراً أو ابحث...",
-    "empty": "لم يتم العثور على نتائج.",
-    "groups": {
-      "suggestions": "اقتراحات",
-      "theme": "المظهر"
-    },
-    "items": {
-      "home": "الرئيسية",
-      "skills": "المهارات",
-      "projects": "المشاريع",
-      "security": "مركز الأمان",
-      "toggle_theme": "تبديل الوضع الداكن",
-      "light": "الوضع الفاتح",
-      "dark": "الوضع الداكن",
-      "system": "وضع النظام"
-    },
-    "title": "قائمة الأوامر"
-  },
-  "Build": {
-    "latest": "آخر بناء: ناجح"
-  },
   "ADR": {
-    "title": "سجلات القرارات المعمارية",
-    "description": "توثيق \"لماذا\" وراء المعمارية.",
     "decision": "القرار: مقبول",
+    "description": "توثيق \"لماذا\" وراء المعمارية.",
     "records": {
       "001": {
         "title": "001. اعتماد موجه تطبيقات Next.js 16"
@@ -125,12 +9,176 @@
       "002": {
         "title": "002. نهج CSS أولاً في Tailwind CSS v4"
       }
-    }
+    },
+    "title": "سجلات القرارات المعمارية"
+  },
+  "A11y": {
+    "close": "إغلاق",
+    "closeMenu": "إغلاق القائمة",
+    "github": "GitHub",
+    "imagePreview": "معاينة الصورة",
+    "openMenu": "فتح القائمة",
+    "skip": "تخطي إلى المحتوى",
+    "switchLanguage": "تبديل اللغة"
+  },
+  "Build": {
+    "alt": "حالة البناء"
+  },
+  "Command": {
+    "empty": "لم يتم العثور على نتائج.",
+    "groups": {
+      "suggestions": "اقتراحات",
+      "theme": "المظهر"
+    },
+    "hint": "اضغط على <shortcut></shortcut> للبحث",
+    "items": {
+      "contact": "تواصل",
+      "dark": "الوضع الداكن",
+      "home": "الرئيسية",
+      "light": "الوضع الفاتح",
+      "projects": "المشاريع",
+      "security": "مركز الأمان",
+      "skills": "المهارات",
+      "system": "وضع النظام",
+      "toggle_theme": "تبديل الوضع الداكن"
+    },
+    "placeholder": "اكتب أمراً أو ابحث...",
+    "title": "قائمة الأوامر"
+  },
+  "Contact": {
+    "description": "تبحث عن مهندس واجهات أمامية كبير أو مهندس معماري يركز على الأمن؟ راسلني أو تواصل على LinkedIn أو حمّل سيرتي الذاتية.",
+    "email": "البريد الإلكتروني",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "title": "لنتحدث"
+  },
+  "Footer": {
+    "copyright": "© 2026 Tuhama Qlyshi"
+  },
+  "Hero": {
+    "actions": {
+      "consultation": "طلب استشارة",
+      "cv": "تحميل السيرة الذاتية"
+    },
+    "badge": "متاح لفرص جديدة",
+    "description": "أصمم وأبني أنظمة مؤسسية بـ React و Next.js لـ ERP والمكاتب القانونية وأسواق B2B للأدوية—مع أمن جهة العميل منذ اليوم الأول.",
+    "subtitle": "كبير مهندسي الواجهات الأمامية",
+    "title": "Tuhama Qlyshi"
+  },
+  "Metadata": {
+    "description": "كبير مهندسي الواجهات الأمامية متخصص في أنظمة React و Next.js المؤسسية وأمن جهة العميل. عمل في ERP والمكاتب القانونية وأسواق B2B.",
+    "title": "Tuhama Qlyshi — كبير مهندسي الواجهات الأمامية"
+  },
+  "Navigation": {
+    "about": "عني",
+    "contact": "تواصل",
+    "projects": "المشاريع",
+    "security": "الأمان",
+    "skills": "المهارات"
+  },
+  "Projects": {
+    "title": "مشاريع مميزة",
+    "description": "ثلاثة أنظمة في الإنتاج: ERP مؤسسي، وإدارة مكاتب قانونية، وسوق أدوية B2B في العراق. كل مشروع أعطى الأولوية لمعمارية قابلة للصيانة على تراكم الميزات.",
+    "items": {
+      "bpro": {
+        "description": "لوحة تحكم ERP معيارية للمخزون وسير العمل وتقارير ذكاء الأعمال عبر وحدات الأعمال المتكاملة. مبنية بـ React و TypeScript و Ant Design، مع RTK لإدارة الحالة على نطاق المؤسسات.",
+        "tags": [
+          "React",
+          "TypeScript",
+          "Ant Design",
+          "RTK",
+          "مؤسسي",
+          "معمارية معيارية",
+          "تقارير ذكاء الأعمال"
+        ],
+        "title": "لوحة تحكم BPro ERP"
+      },
+      "glc": {
+        "description": "بوابة لإدارة القضايا والعملاء لمكتب الخليج للاستشارات القانونية. تسجيل الدخول عبر Azure AD (MSAL)، وصلاحيات حسب الدور، وواجهة Ant Design للمحامين والإدارة.",
+        "tags": [
+          "React",
+          "MSAL",
+          "Ant Design",
+          "RTK",
+          "TypeScript"
+        ],
+        "title": "الخليج للاستشارات القانونية"
+      },
+      "mercato": {
+        "description": "سوق B2B يربط المشترين والموردين في سوق الأدوية العراقي—بحث في الكتالوج والطلبات وتدفقات تعمل دون اتصال عبر Dexie.js عند ضعف الاتصال.",
+        "tags": [
+          "Next.js",
+          "Zustand",
+          "React Query",
+          "Dexie.js",
+          "TypeScript"
+        ],
+        "title": "Mercato-B2B"
+      }
+    },
+    "live_demo": "عرض حي"
+  },
+  "Security": {
+    "description": "مستند إلى رسالة الماجستير الخاصة بي حول أمن تطبيقات الويب من جهة العميل—أنماط أستخدمها في الإنتاج، وليست شرائح تحقق.",
+    "strategies": {
+      "auth": {
+        "description": "ملفات تعريف الارتباط HttpOnly و SameSite=Strict لمعالجة الرموز",
+        "title": "توثيق آمن"
+      },
+      "csp": {
+        "description": "سياسة أمن محتوى قائمة على النونس لتحييد هجمات XSS",
+        "title": "سياسة أمن محتوى صارمة"
+      },
+      "rendering": {
+        "description": "فرض تطهير DOMPurify للمحتوى الديناميكي",
+        "title": "عرض آمن"
+      },
+      "rsc": {
+        "description": "مكونات خادم React لإبقاء الأسرار بعيدة عن حزمة العميل",
+        "title": "معمارية RSC"
+      }
+    },
+    "title": "الأمن حسب التصميم"
+  },
+  "Skills": {
+    "description": "هندسة الواجهات الأمامية، والتسليم الكامل للتطبيقات، وأمن التطبيقات—نفس المزيج الذي استخدمته في منتجات ERP والمكاتب القانونية والأسواق.",
+    "groups": {
+      "backend": {
+        "items": [
+          "Node.js",
+          "PostgreSQL",
+          "Docker",
+          "AWS",
+          "CI/CD"
+        ],
+        "title": "الخلفية و DevOps"
+      },
+      "frontend": {
+        "items": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Framer Motion"
+        ],
+        "title": "هندسة الواجهة الأمامية"
+      },
+      "security": {
+        "items": [
+          "CSP",
+          "OAuth 2.0",
+          "OWASP Top 10",
+          "RSC Architecture"
+        ],
+        "title": "الأمن والمعمارية"
+      }
+    },
+    "title": "التقنيات ومجالات التركيز"
   },
   "ThemeSwitcher": {
-    "light": "فاتح",
+    "ariaLabel": "تبديل المظهر",
     "dark": "داكن",
-    "system": "النظام",
-    "ariaLabel": "تبديل المظهر"
+    "light": "فاتح",
+    "system": "النظام"
   }
 }

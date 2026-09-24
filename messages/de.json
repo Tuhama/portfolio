@@ -1,123 +1,7 @@
 {
-  "Hero": {
-    "badge": "Verfügbar für neue Möglichkeiten",
-    "title": "Senior Frontend Architekt",
-    "description": "Entwicklung leistungsstarker Unternehmensanwendungen.",
-    "subtitle": "Strategischer Architekt.",
-    "actions": {
-      "consultation": "Beratung anfordern",
-      "cv": "Lebenslauf herunterladen"
-    }
-  },
-  "Navigation": {
-    "about": "Über mich",
-    "projects": "Projekte",
-    "skills": "Kenntnisse",
-    "security": "Sicherheit"
-  },
-  "Projects": {
-    "title": "Ausgewählte Projekte",
-    "description": "Eine kuratierte Auswahl hochwirksamer Arbeiten, basierend auf der Philosophie, dass architektonische Integrität und sorgfältige Ausführung Vorrang vor reiner Quantität haben.",
-    "items": {
-      "bpro": {
-        "title": "BPro ERP Dashboard",
-        "description": "Ein leistungsstarkes Enterprise-ERP-Ökosystem, das eine integrierte modulare Architektur nutzt, um komplexe Geschäftsprozesse zu orchestrieren.",
-        "tags": ["React", "TypeScript", "Ant Design", "RTK", "Enterprise", "Berichtswesen"]
-      },
-      "mercato": {
-        "title": "Sentinel Security Audit",
-        "description": "Een B2B-marktplaats die kopers en leveranciers in de Iraakse farmaceutische markt ondersteunt.",
-        "tags": [
-          "Next.js",
-          "MUI",
-          "Zustand",
-          "React Query",
-          "Dexie.js",
-          "TypeScript"
-        ]
-      },
-      "glc": {
-        "title": "Gulf Legal Consultants",
-        "description": "Kanzleiverwaltungssystem",
-        "tags": ["React", "Shopify", "GraphQL", "Framer Motion"]
-      }
-    },
-    "view_project": "Projekt ansehen",
-    "live_demo": "Live-Demo"
-  },
-  "Skills": {
-    "title": "Technische Kompetenz",
-    "description": "Spezialisiert auf die Bereitstellung robuster, skalierbarer und sicherer Webarchitekturen.",
-    "groups": {
-      "frontend": {
-        "title": "Frontend Engineering",
-        "items": [
-          "React",
-          "Next.js",
-          "TypeScript",
-          "Tailwind CSS",
-          "Framer Motion"
-        ]
-      },
-      "backend": {
-        "title": "Backend & DevOps",
-        "items": ["Node.js", "PostgreSQL", "Docker", "AWS", "CI/CD"]
-      },
-      "security": {
-        "title": "Sicherheit & Architektur",
-        "items": ["CSP", "OAuth 2.0", "OWASP Mastery", "RSC Architecture"]
-      }
-    }
-  },
-  "Security": {
-    "title": "Sicherheit durch Design",
-    "description": "Aus meiner Masterarbeit: \"Sicherheit von clientseitigen Webanwendungen\"",
-    "strategies": {
-      "csp": {
-        "title": "Striktes CSP",
-        "description": "Nonce-basierte Content Security Policy zur Neutralisierung von XSS-Angriffen"
-      },
-      "auth": {
-        "title": "Sichere Authentifizierung",
-        "description": "HttpOnly, SameSite=Strict Cookies für Token-Handling"
-      },
-      "rendering": {
-        "title": "Sicheres Rendering",
-        "description": "Erzwingen der DOMPurify-Bereinigung für dynamische Inhalte"
-      },
-      "rsc": {
-        "title": "RSC-Architektur",
-        "description": "React Server Components, um Geheimnisse vom Client-Bundle fernzuhalten"
-      }
-    }
-  },
-  "Command": {
-    "hint": "Drücken Sie <shortcut>⌘K</shortcut> zum Suchen",
-    "placeholder": "Geben Sie einen Befehl ein oder suchen Sie...",
-    "empty": "Keine Ergebnisse gefunden.",
-    "groups": {
-      "suggestions": "Vorschläge",
-      "theme": "Thema"
-    },
-    "items": {
-      "home": "Startseite",
-      "skills": "Kenntnisse",
-      "projects": "Projekte",
-      "security": "Sicherheits-Hub",
-      "toggle_theme": "Dunkelmodus umschalten",
-      "light": "Hellmodus",
-      "dark": "Dunkelmodus",
-      "system": "Systemmodus"
-    },
-    "title": "Befehlsmenü"
-  },
-  "Build": {
-    "latest": "Letzter Build: Bestanden"
-  },
   "ADR": {
-    "title": "Architektur-Entscheidungsunterlagen (ADR)",
-    "description": "Dokumentation des \"Warum\" hinter der Architektur.",
     "decision": "Entscheidung: Akzeptiert",
+    "description": "Dokumentation des \"Warum\" hinter der Architektur.",
     "records": {
       "001": {
         "title": "001. Einführung des Next.js 16 App Routers"
@@ -125,12 +9,176 @@
       "002": {
         "title": "002. Tailwind CSS v4 CSS-First Ansatz"
       }
-    }
+    },
+    "title": "Architektur-Entscheidungsunterlagen (ADR)"
+  },
+  "A11y": {
+    "close": "Schließen",
+    "closeMenu": "Menü schließen",
+    "github": "GitHub",
+    "imagePreview": "Bildvorschau",
+    "openMenu": "Menü öffnen",
+    "skip": "Zum Inhalt springen",
+    "switchLanguage": "Sprache wechseln"
+  },
+  "Build": {
+    "alt": "Build-Status"
+  },
+  "Command": {
+    "empty": "Keine Ergebnisse gefunden.",
+    "groups": {
+      "suggestions": "Vorschläge",
+      "theme": "Thema"
+    },
+    "hint": "Drücken Sie <shortcut></shortcut> zum Suchen",
+    "items": {
+      "contact": "Kontakt",
+      "dark": "Dunkelmodus",
+      "home": "Startseite",
+      "light": "Hellmodus",
+      "projects": "Projekte",
+      "security": "Sicherheits-Hub",
+      "skills": "Kenntnisse",
+      "system": "Systemmodus",
+      "toggle_theme": "Dunkelmodus umschalten"
+    },
+    "placeholder": "Geben Sie einen Befehl ein oder suchen Sie...",
+    "title": "Befehlsmenü"
+  },
+  "Contact": {
+    "description": "Sie besetzen eine Senior-Frontend- oder security-orientierte Architektenrolle? Schreiben Sie mir, vernetzen Sie sich auf LinkedIn oder laden Sie meinen Lebenslauf herunter.",
+    "email": "E-Mail",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "title": "Sprechen wir"
+  },
+  "Footer": {
+    "copyright": "© 2026 Tuhama Qlyshi"
+  },
+  "Hero": {
+    "actions": {
+      "consultation": "Beratung anfordern",
+      "cv": "Lebenslauf herunterladen"
+    },
+    "badge": "Offen für neue Möglichkeiten",
+    "description": "Ich entwerfe und liefere Enterprise-Systeme mit React und Next.js für ERP, Legal und pharmazeutische B2B-Marktplätze—mit clientseitiger Sicherheit von Anfang an.",
+    "subtitle": "Senior Frontend Architekt",
+    "title": "Tuhama Qlyshi"
+  },
+  "Metadata": {
+    "description": "Senior Frontend Architekt mit Fokus auf Enterprise-Systeme mit React und Next.js sowie clientseitige Sicherheit. Arbeit in ERP, Legal und B2B-Marktplätzen.",
+    "title": "Tuhama Qlyshi — Senior Frontend Architekt"
+  },
+  "Navigation": {
+    "about": "Über mich",
+    "contact": "Kontakt",
+    "projects": "Projekte",
+    "security": "Sicherheit",
+    "skills": "Kenntnisse"
+  },
+  "Projects": {
+    "title": "Ausgewählte Projekte",
+    "description": "Drei Produktivsysteme: Enterprise-ERP, Kanzleiverwaltung und ein pharmazeutischer B2B-Marktplatz im Irak. Jedes priorisierte wartbare Architektur vor Feature-Menge.",
+    "items": {
+      "bpro": {
+        "description": "Modulares ERP-Dashboard für Inventar, Workflows und BI-Reporting über integrierte Geschäftseinheiten. Gebaut mit React, TypeScript und Ant Design, State-Management mit RTK im Enterprise-Maßstab.",
+        "tags": [
+          "React",
+          "TypeScript",
+          "Ant Design",
+          "RTK",
+          "Enterprise",
+          "Modulare Architektur",
+          "BI-Reporting"
+        ],
+        "title": "BPro ERP Dashboard"
+      },
+      "glc": {
+        "description": "Fall- und Mandantenverwaltung für Gulf Legal Consultants. Azure-AD-Anmeldung (MSAL), rollenbasierte Zugriffe und Ant-Design-Oberfläche für Anwälte und Administration.",
+        "tags": [
+          "React",
+          "MSAL",
+          "Ant Design",
+          "RTK",
+          "TypeScript"
+        ],
+        "title": "Gulf Legal Consultants"
+      },
+      "mercato": {
+        "description": "B2B-Marktplatz für Käufer und Lieferanten im irakischen Pharmamarkt—Katalogsuche, Bestellungen und offlinefähige Abläufe mit Dexie.js bei unsicherer Konnektivität.",
+        "tags": [
+          "Next.js",
+          "Zustand",
+          "React Query",
+          "Dexie.js",
+          "TypeScript"
+        ],
+        "title": "Mercato-B2B"
+      }
+    },
+    "live_demo": "Live-Demo"
+  },
+  "Security": {
+    "description": "Fundiert durch meine Masterarbeit zur Sicherheit clientseitiger Webanwendungen—Muster, die ich in Produktion einsetze, keine Checklisten-Folien.",
+    "strategies": {
+      "auth": {
+        "description": "HttpOnly, SameSite=Strict Cookies für Token-Handling",
+        "title": "Sichere Authentifizierung"
+      },
+      "csp": {
+        "description": "Nonce-basierte Content Security Policy zur Neutralisierung von XSS-Angriffen",
+        "title": "Striktes CSP"
+      },
+      "rendering": {
+        "description": "Erzwingen der DOMPurify-Bereinigung für dynamische Inhalte",
+        "title": "Sicheres Rendering"
+      },
+      "rsc": {
+        "description": "React Server Components, um Geheimnisse vom Client-Bundle fernzuhalten",
+        "title": "RSC-Architektur"
+      }
+    },
+    "title": "Sicherheit durch Design"
+  },
+  "Skills": {
+    "description": "Frontend-Architektur, Full-Stack-Umsetzung und Anwendungssicherheit—dieselbe Mischung wie in produktiven ERP-, Legal- und Marktplatzprodukten.",
+    "groups": {
+      "backend": {
+        "items": [
+          "Node.js",
+          "PostgreSQL",
+          "Docker",
+          "AWS",
+          "CI/CD"
+        ],
+        "title": "Backend & DevOps"
+      },
+      "frontend": {
+        "items": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Framer Motion"
+        ],
+        "title": "Frontend Engineering"
+      },
+      "security": {
+        "items": [
+          "CSP",
+          "OAuth 2.0",
+          "OWASP Top 10",
+          "RSC Architecture"
+        ],
+        "title": "Sicherheit & Architektur"
+      }
+    },
+    "title": "Stack und Schwerpunkte"
   },
   "ThemeSwitcher": {
-    "light": "Hell",
+    "ariaLabel": "Design umschalten",
     "dark": "Dunkel",
-    "system": "System",
-    "ariaLabel": "Design umschalten"
+    "light": "Hell",
+    "system": "System"
   }
 }
