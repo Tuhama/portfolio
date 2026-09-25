@@ -1,0 +1,12 @@
+{
+  "googleTranslate": {
+    "projectId": "",
+    "keyFilename": ""
+  },
+  "aiTranslate": {
+    "provider": "openai",
+    "apiKey": "",
+    "model": ""
+  },
+  "path": "messages"
+}

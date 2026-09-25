@@ -15,12 +15,12 @@ describe('LanguageSwitcher', () => {
     it('renders the language switcher button', () => {
         render(<LanguageSwitcher />)
         // Preferring getByRole for interactive elements
-        expect(screen.getByRole('button', { name: /switch language/i })).toBeDefined()
+        expect(screen.getByRole('button', { name: /switchlanguage/i })).toBeDefined()
     })
 
     it('opens the menu when clicked', () => {
         render(<LanguageSwitcher />)
-        const trigger = screen.getByRole('button', { name: /switch language/i })
+        const trigger = screen.getByRole('button', { name: /switchlanguage/i })
         fireEvent.click(trigger)
         expect(trigger).toBeTruthy()
     })

@@ -39,6 +39,10 @@ vi.mock("@radix-ui/react-dialog", () => ({
   DialogTitle: ({ children, className }: DialogComponentProps) => (
     <div className={className}>{children}</div>
   ),
+  Title: ({ children, className }: DialogComponentProps) => (
+    <h2 className={className}>{children}</h2>
+  ),
+  Description: ({ children }: DialogComponentProps) => <p>{children}</p>,
   Portal: ({ children }: DialogComponentProps) => <div>{children}</div>,
   Overlay: () => null,
   Content: ({ children, className }: DialogComponentProps) => (
@@ -46,6 +50,11 @@ vi.mock("@radix-ui/react-dialog", () => ({
   ),
   Root: ({ children }: DialogComponentProps) => <div>{children}</div>,
   Trigger: ({ children }: DialogComponentProps) => <div>{children}</div>,
+  Close: ({ children, className }: DialogComponentProps) => (
+    <button type="button" className={className}>
+      {children}
+    </button>
+  ),
 }));
 
 // Mock next-themes
@@ -70,10 +79,15 @@ vi.mock("next/navigation", () => ({
 
 // Mock next-intl
 vi.mock("next-intl", () => ({
-  useTranslations:
-    () =>
-    (key: string): string =>
-      key,
+  useTranslations: () => {
+    const t = ((key: string): string => key) as ((key: string) => string) & {
+      raw: (key: string) => unknown;
+      rich: (key: string) => string;
+    };
+    t.raw = () => [];
+    t.rich = (key) => key;
+    return t;
+  },
   useLocale: () => "en",
 }));
 

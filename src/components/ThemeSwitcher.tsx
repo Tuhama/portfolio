@@ -18,7 +18,7 @@ const ThemeSwitcher = () => {
   // Return a structural "shell" during SSR
   if (!mounted) {
     return (
-      <div className="flex p-1.5 rounded-2xl border h-10 w-[104px] items-center bg-surface-2/50 border-white/5 backdrop-blur-md">
+      <div className="flex h-10 w-[104px] items-center rounded-2xl border border-border/50 bg-surface-2/50 p-1.5 backdrop-blur-md">
         <div className="w-8 h-8 flex-1" />
         <div className="w-8 h-8 flex-1" />
         <div className="w-8 h-8 flex-1" />
@@ -33,7 +33,7 @@ const ThemeSwitcher = () => {
   ];
 
   return (
-    <div className="flex p-1.5 rounded-2xl border h-10 w-[104px] items-center bg-surface-2/50 border-white/5 backdrop-blur-md relative shadow-inner overflow-hidden">
+    <div className="relative flex h-10 w-[104px] items-center overflow-hidden rounded-2xl border border-border/50 bg-surface-2/50 p-1.5 shadow-inner backdrop-blur-md">
       {options.map((opt) => (
         <button
           key={opt.name}
@@ -44,7 +44,7 @@ const ThemeSwitcher = () => {
             relative z-10 p-2 rounded-xl transition-all duration-500 flex-1 flex items-center justify-center
             ${theme === opt.name
               ? "text-primary shadow-premium bg-surface-1"
-              : "text-muted-foreground hover:text-foreground hover:bg-white/5"
+              : "text-muted-foreground hover:text-foreground hover:bg-foreground/5"
             }
           `}
         >

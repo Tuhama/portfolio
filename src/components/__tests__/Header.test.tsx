@@ -14,8 +14,9 @@ describe('Header', () => {
 
         // We expect these to be links. In our mocks, t('key') returns the 'key' itself.
         // Using /key/i regex makes it resilient to small casing changes.
-        expect(screen.getByRole('link', { name: /about/i })).toBeDefined()
-        expect(screen.getByRole('link', { name: /projects/i })).toBeDefined()
-        expect(screen.getByRole('link', { name: /security/i })).toBeDefined()
+        expect(screen.getAllByRole('link', { name: /about/i }).length).toBeGreaterThan(0)
+        expect(screen.getAllByRole('link', { name: /projects/i }).length).toBeGreaterThan(0)
+        expect(screen.getAllByRole('link', { name: /security/i }).length).toBeGreaterThan(0)
+        expect(screen.getAllByRole('link', { name: /contact/i }).length).toBeGreaterThan(0)
     })
 })

@@ -75,7 +75,8 @@ describe("ProjectCard", () => {
 
   it("contains clickable image trigger", () => {
     render(<ProjectCard {...props} />);
-    const imageContainer = screen.getAllByAltText("Test Project")[0].parentElement;
-    expect(imageContainer).toBeDefined();
+    expect(
+      screen.getByRole("button", { name: /test project/i }),
+    ).toBeDefined();
   });
 });

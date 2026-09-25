@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { ShieldCheck, Lock, FileCode, Server } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { SectionHeading } from "@/components/SectionHeading";
 
 const strategies = [
   {
@@ -27,25 +28,17 @@ export function SecuritySpotlight() {
   const t = useTranslations("Security");
 
   return (
-    <section id="security" className="w-full py-32 sm:py-48">
-      <div className="mb-20 space-y-6 text-center reveal-up">
-        <h2 className="text-4xl font-extra-bold tracking-tighter sm:text-5xl md:text-6xl">
-          {t("title")}
-        </h2>
-        <p className="mx-auto max-w-[800px] text-xl text-muted-foreground leading-relaxed font-medium">
-          {t("description")}
-        </p>
+    <section id="security" className="w-full py-24 md:py-32">
+      <div className="reveal-up mb-16">
+        <SectionHeading title={t("title")} description={t("description")} />
       </div>
 
       <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
         {strategies.map((item, index) => (
-          <div
-            key={item.key}
-            className={`reveal-up stagger-${index + 1} group`}
-          >
-            <Card className="h-full bg-surface-1 border-white/5 shadow-xl transition-all duration-500 hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/20 rounded-3xl overflow-hidden p-2">
+          <div key={item.key} className={`reveal-up stagger-${index + 1} group`}>
+            <Card className="h-full overflow-hidden rounded-3xl border-border/50 bg-surface-1 p-2 shadow-xl transition-all duration-500 hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/20">
               <CardHeader className="space-y-6">
-                <div className="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/5 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-700 shadow-inner">
+                <div className="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/5 text-primary shadow-inner transition-all duration-700 group-hover:bg-primary group-hover:text-primary-foreground">
                   <item.icon className="h-8 w-8" />
                 </div>
                 <CardTitle className="text-2xl font-bold tracking-tight">
@@ -53,7 +46,7 @@ export function SecuritySpotlight() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-lg leading-relaxed text-muted-foreground/90 font-medium">
+                <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                   {t(`strategies.${item.key}.description`)}
                 </p>
               </CardContent>
