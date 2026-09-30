@@ -34,6 +34,7 @@
     "items": {
       "contact": "تواصل",
       "dark": "الوضع الداكن",
+      "experience": "الخبرات",
       "home": "الرئيسية",
       "light": "الوضع الفاتح",
       "projects": "المشاريع",
@@ -46,7 +47,7 @@
     "title": "قائمة الأوامر"
   },
   "Contact": {
-    "description": "تبحث عن مهندس واجهات أمامية كبير أو مهندس معماري يركز على الأمن؟ راسلني أو تواصل على LinkedIn أو حمّل سيرتي الذاتية.",
+    "description": "تبحث عن مهندس واجهات أمامية أول؟ راسلني أو تواصل على LinkedIn أو حمّل سيرتي الذاتية.",
     "email": "البريد الإلكتروني",
     "github": "GitHub",
     "linkedin": "LinkedIn",
@@ -55,68 +56,144 @@
   "Footer": {
     "copyright": "© 2026 Tuhama Qlyshi"
   },
+  "Experience": {
+    "title": "الخبرات",
+    "description": "أكثر من 15 عاماً في هندسة البرمجيات: قيادة واجهات نظام ERP مؤسسي، ورئاسة قسم برمجيات حكومي، وأداة i18n مفتوحة المصدر.",
+    "items": {
+      "freelance": {
+        "role": "مهندس واجهات أمامية مستقل",
+        "company": "عمل حر · سوريا (عن بُعد)",
+        "period": "09/2025 – حتى الآن",
+        "description": "أداة i18n مفتوحة المصدر، وموقع تعريفي بـ Next.js، وإدارة مستندات SharePoint لنظام مكتب محاماة.",
+        "highlights": [
+          "بناء ونشر @tuhama/translation-manager، حزمة npm مفتوحة المصدر بواجهة لإدارة i18n وترجمة بمساعدة الذكاء الاصطناعي واستخراج سياق الشيفرة.",
+          "تصميم موقع تعريفي عالي الأداء وسهل الوصول باستخدام Next.js 14 و Redux Toolkit و Tailwind CSS و Framer Motion، مع نشر عبر GitHub Actions.",
+          "GLC (نظام إدارة مكتب محاماة): إدارة مستندات SharePoint على مستوى المؤسسات في React باستخدام @azure/msal-react و Microsoft Graph API، مع مصادقة Microsoft Entra ID."
+        ],
+        "tags": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "MSAL",
+          "Microsoft Graph",
+          "Tailwind CSS",
+          "GitHub Actions"
+        ]
+      },
+      "bpro": {
+        "role": "مطور واجهات أمامية أول",
+        "company": "BPro ERP · عن بُعد",
+        "period": "02/2021 – 08/2025",
+        "description": "قيادة تطوير الواجهات الأمامية لنظام ERP مؤسسي واسع، بالتوازي مع العمل الحكومي.",
+        "highlights": [
+          "قيادة تطوير الواجهات لأكثر من 4 سنوات، مع مراجعات للشيفرة وتوجيه المهندسين المبتدئين في معمارية الواجهة والأداء وقابلية الصيانة.",
+          "بناء واجهات معيارية للمبيعات والمخزون وإدارة الموارد، مع نظام صلاحيات دقيق (RBAC).",
+          "دمج مسارات الواجهة في Jenkins CI/CD مع Gitee، بالتعاون مع فرق الخلفية و DevOps للنشر الآلي للفروع."
+        ],
+        "tags": [
+          "React",
+          "TypeScript",
+          "RBAC",
+          "Jenkins",
+          "Gitee",
+          "CI/CD"
+        ]
+      },
+      "directorate": {
+        "role": "رئيس قسم التحليل والبرمجيات، دائرة تقنية المعلومات",
+        "company": "مديرية المالية · حمص، سوريا",
+        "period": "07/2008 – 05/2025",
+        "description": "إدارة قسم البرمجيات: التحليل والتصميم واستراتيجية التنفيذ.",
+        "highlights": [
+          "إدارة قسم البرمجيات والإشراف على استراتيجية التحليل والتصميم والتنفيذ.",
+          "تصميم وبناء أنظمة داخلية باستخدام Java Spring Boot و MySQL و React.",
+          "أبرز المشاريع: نظام إدارة المستودعات وبوابة شؤون الموظفين."
+        ],
+        "tags": [
+          "Java Spring Boot",
+          "MySQL",
+          "React",
+          "تحليل النظم"
+        ]
+      },
+      "miditec": {
+        "role": "مبرمج Java Applets",
+        "company": "MIDITEC · دمشق، سوريا",
+        "period": "08/2007 – 05/2008",
+        "description": "تدريب وعمل كمبرمج Java على MTZ Web، منتج ERP الخاص بـ MIDITEC، مباشرة بعد التخرج.",
+        "highlights": [
+          "العمل على MTZ Web مباشرة بعد التخرج."
+        ],
+        "tags": [
+          "Java",
+          "ERP"
+        ]
+      }
+    }
+  },
   "Hero": {
     "actions": {
       "consultation": "طلب استشارة",
       "cv": "تحميل السيرة الذاتية"
     },
-    "badge": "متاح لفرص جديدة",
-    "description": "أصمم وأبني أنظمة مؤسسية بـ React و Next.js لـ ERP والمكاتب القانونية وأسواق B2B للأدوية—مع أمن جهة العميل منذ اليوم الأول.",
-    "subtitle": "كبير مهندسي الواجهات الأمامية",
+    "badge": "متاح فوراً · ألمانيا",
+    "description": "مهندس واجهات أمامية أول بخبرة تزيد على 15 عاماً في هندسة البرمجيات، متخصص في React و Next.js و TypeScript، مع خبرة عملية في Java Spring Boot و MySQL.",
+    "subtitle": "مهندس واجهات أمامية أول",
     "title": "Tuhama Qlyshi"
   },
   "Metadata": {
-    "description": "كبير مهندسي الواجهات الأمامية متخصص في أنظمة React و Next.js المؤسسية وأمن جهة العميل. عمل في ERP والمكاتب القانونية وأسواق B2B.",
-    "title": "Tuhama Qlyshi — كبير مهندسي الواجهات الأمامية"
+    "description": "مهندس واجهات أمامية أول متخصص في React و Next.js و TypeScript، مع خبرة خلفية في Java Spring Boot و MySQL. مقيم في ألمانيا ومتاح فوراً.",
+    "title": "Tuhama Qlyshi — مهندس واجهات أمامية أول"
   },
   "Navigation": {
     "about": "عني",
     "contact": "تواصل",
+    "experience": "الخبرات",
     "projects": "المشاريع",
     "security": "الأمان",
     "skills": "المهارات"
   },
   "Projects": {
     "title": "مشاريع مميزة",
-    "description": "ثلاثة أنظمة في الإنتاج: ERP مؤسسي، وإدارة مكاتب قانونية، وسوق أدوية B2B في العراق. كل مشروع أعطى الأولوية لمعمارية قابلة للصيانة على تراكم الميزات.",
+    "description": "نظام ERP مؤسسي، ونظام مكتب محاماة مع إدارة مستندات SharePoint، وأداة i18n مفتوحة المصدر لتطبيقات React متعددة اللغات.",
     "items": {
       "bpro": {
-        "description": "لوحة تحكم ERP معيارية للمخزون وسير العمل وتقارير ذكاء الأعمال عبر وحدات الأعمال المتكاملة. مبنية بـ React و TypeScript و Ant Design، مع RTK لإدارة الحالة على نطاق المؤسسات.",
+        "description": "واجهة نظام ERP مؤسسي واسع تغطي المبيعات والمخزون وإدارة الموارد، مع نظام صلاحيات دقيق (RBAC).",
         "tags": [
           "React",
           "TypeScript",
-          "Ant Design",
-          "RTK",
-          "مؤسسي",
-          "معمارية معيارية",
-          "تقارير ذكاء الأعمال"
+          "RBAC",
+          "المبيعات",
+          "المخزون",
+          "إدارة الموارد"
         ],
-        "title": "لوحة تحكم BPro ERP"
+        "title": "BPro ERP"
       },
       "glc": {
-        "description": "بوابة لإدارة القضايا والعملاء لمكتب الخليج للاستشارات القانونية. تسجيل الدخول عبر Azure AD (MSAL)، وصلاحيات حسب الدور، وواجهة Ant Design للمحامين والإدارة.",
+        "description": "نظام إدارة مكتب محاماة مع إدارة مستندات SharePoint في React، باستخدام @azure/msal-react و Microsoft Graph API، مع مصادقة Microsoft Entra ID.",
         "tags": [
           "React",
           "MSAL",
-          "Ant Design",
-          "RTK",
-          "TypeScript"
+          "Microsoft Graph",
+          "Entra ID",
+          "SharePoint"
         ],
-        "title": "الخليج للاستشارات القانونية"
+        "title": "GLC"
       },
-      "mercato": {
-        "description": "سوق B2B يربط المشترين والموردين في سوق الأدوية العراقي—بحث في الكتالوج والطلبات وتدفقات تعمل دون اتصال عبر Dexie.js عند ضعف الاتصال.",
+      "translationManager": {
+        "description": "حزمة npm مفتوحة المصدر بواجهة لإدارة i18n وترجمة بمساعدة الذكاء الاصطناعي واستخراج سياق الشيفرة لمشاريع React متعددة اللغات.",
         "tags": [
-          "Next.js",
-          "Zustand",
-          "React Query",
-          "Dexie.js",
-          "TypeScript"
+          "i18n",
+          "React",
+          "TypeScript",
+          "npm",
+          "مفتوح المصدر"
         ],
-        "title": "Mercato-B2B"
+        "title": "@tuhama/translation-manager"
       }
     },
-    "live_demo": "عرض حي"
+    "live_demo": "عرض حي",
+    "view_package": "عرض الحزمة"
   },
   "Security": {
     "description": "مستند إلى رسالة الماجستير الخاصة بي حول أمن تطبيقات الويب من جهة العميل—أنماط أستخدمها في الإنتاج، وليست شرائح تحقق.",
@@ -141,14 +218,16 @@
     "title": "الأمن حسب التصميم"
   },
   "Skills": {
-    "description": "هندسة الواجهات الأمامية، والتسليم الكامل للتطبيقات، وأمن التطبيقات—نفس المزيج الذي استخدمته في منتجات ERP والمكاتب القانونية والأسواق.",
+    "description": "React و Next.js في الإنتاج، مع Java Spring Boot و MySQL، إضافة إلى المصادقة والاختبار وأدوات التسليم المذكورة في السيرة.",
     "groups": {
       "backend": {
         "items": [
-          "Node.js",
-          "PostgreSQL",
+          "Java Spring Boot",
+          "MySQL",
           "Docker",
-          "AWS",
+          "Jenkins",
+          "GitHub Actions",
+          "Gitee",
           "CI/CD"
         ],
         "title": "الخلفية و DevOps"
@@ -158,19 +237,26 @@
           "React",
           "Next.js",
           "TypeScript",
+          "Redux Toolkit",
+          "Zustand",
           "Tailwind CSS",
-          "Framer Motion"
+          "Ant Design",
+          "shadcn/ui",
+          "Framer Motion",
+          "i18next"
         ],
-        "title": "هندسة الواجهة الأمامية"
+        "title": "الواجهة الأمامية"
       },
       "security": {
         "items": [
-          "CSP",
-          "OAuth 2.0",
-          "OWASP Top 10",
-          "RSC Architecture"
+          "MSAL",
+          "Microsoft Entra ID",
+          "RBAC",
+          "OWASP",
+          "Cypress",
+          "Microsoft Graph API"
         ],
-        "title": "الأمن والمعمارية"
+        "title": "المصادقة والأمن والجودة"
       }
     },
     "title": "التقنيات ومجالات التركيز"

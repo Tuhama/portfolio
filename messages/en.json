@@ -34,6 +34,7 @@
     "items": {
       "contact": "Contact",
       "dark": "Dark Mode",
+      "experience": "Experience",
       "home": "Home",
       "light": "Light Mode",
       "projects": "Projects",
@@ -46,7 +47,7 @@
     "title": "Command Menu"
   },
   "Contact": {
-    "description": "Hiring for a senior frontend or security-minded architect role? Email me, connect on LinkedIn, or download my CV.",
+    "description": "Hiring a senior frontend engineer? Email me, connect on LinkedIn, or download my CV.",
     "email": "Email",
     "github": "GitHub",
     "linkedin": "LinkedIn",
@@ -55,68 +56,144 @@
   "Footer": {
     "copyright": "© 2026 Tuhama Qlyshi"
   },
+  "Experience": {
+    "title": "Experience",
+    "description": "15+ years in software engineering: enterprise ERP frontend leadership, a government software division, and open-source i18n tooling.",
+    "items": {
+      "freelance": {
+        "role": "Freelance Frontend Engineer",
+        "company": "Self-employed · Syria (remote)",
+        "period": "09/2025 – Present",
+        "description": "Open-source i18n tooling, a Next.js portfolio, and SharePoint document management for a law-office system.",
+        "highlights": [
+          "Built and published @tuhama/translation-manager, an open-source npm package with an i18n management UI, AI-assisted translation, and code-context extraction.",
+          "Architected a high-performance, accessible portfolio in Next.js 14 with Redux Toolkit, Tailwind CSS, and Framer Motion, deployed through GitHub Actions.",
+          "GLC (law office management): enterprise SharePoint document management in React with @azure/msal-react and the Microsoft Graph API, including Microsoft Entra ID authentication."
+        ],
+        "tags": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "MSAL",
+          "Microsoft Graph",
+          "Tailwind CSS",
+          "GitHub Actions"
+        ]
+      },
+      "bpro": {
+        "role": "Senior Frontend Developer",
+        "company": "BPro ERP · Remote",
+        "period": "02/2021 – 08/2025",
+        "description": "Led frontend development of a large-scale enterprise ERP, held alongside the government role.",
+        "highlights": [
+          "Led frontend development for 4+ years, running code reviews and mentoring junior engineers on UI architecture, performance, and maintainability.",
+          "Architected modular UI for Sales, Inventory, and Resource Management, plus a granular role-based access control (RBAC) permission system.",
+          "Integrated frontend workflows into Jenkins CI/CD with Gitee, working with backend and DevOps teams on automated branch deployments."
+        ],
+        "tags": [
+          "React",
+          "TypeScript",
+          "RBAC",
+          "Jenkins",
+          "Gitee",
+          "CI/CD"
+        ]
+      },
+      "directorate": {
+        "role": "Head of Analysis and Software Division, IT Department",
+        "company": "Directorate of Finance · Homs, Syria",
+        "period": "07/2008 – 05/2025",
+        "description": "Directed the software division, covering analysis, design, and implementation strategy.",
+        "highlights": [
+          "Directed the software division and its analysis, design, and implementation strategy.",
+          "Designed and built internal systems with Java Spring Boot, MySQL, and React.",
+          "Key projects: Warehouse Management System and Personnel Portal."
+        ],
+        "tags": [
+          "Java Spring Boot",
+          "MySQL",
+          "React",
+          "System Analysis"
+        ]
+      },
+      "miditec": {
+        "role": "Java Applets Programmer",
+        "company": "MIDITEC · Damascus, Syria",
+        "period": "08/2007 – 05/2008",
+        "description": "Trained and worked as a Java programmer on MTZ Web, MIDITEC’s ERP product, directly after graduation.",
+        "highlights": [
+          "Worked on MTZ Web, MIDITEC’s ERP product, immediately after graduation."
+        ],
+        "tags": [
+          "Java",
+          "ERP"
+        ]
+      }
+    }
+  },
   "Hero": {
     "actions": {
       "consultation": "Request Consultation",
       "cv": "Download CV"
     },
-    "badge": "Available for new opportunities",
-    "description": "I design and ship enterprise React and Next.js systems for ERP, legal, and pharmaceutical B2B marketplaces—with client-side security built in from day one.",
-    "subtitle": "Senior Frontend Architect",
+    "badge": "Available immediately · Germany",
+    "description": "Senior Frontend Engineer with 15+ years in software engineering, specializing in React, Next.js, and TypeScript, with hands-on backend experience in Java Spring Boot and MySQL.",
+    "subtitle": "Senior Frontend Engineer",
     "title": "Tuhama Qlyshi"
   },
   "Metadata": {
-    "description": "Senior frontend architect specializing in enterprise React and Next.js systems and client-side security. Work across ERP, legal, and B2B marketplaces.",
-    "title": "Tuhama Qlyshi — Senior Frontend Architect"
+    "description": "Senior Frontend Engineer specializing in React, Next.js, and TypeScript, with backend experience in Java Spring Boot and MySQL. Based in Germany and available immediately.",
+    "title": "Tuhama Qlyshi — Senior Frontend Engineer"
   },
   "Navigation": {
     "about": "About",
     "contact": "Contact",
+    "experience": "Experience",
     "projects": "Projects",
     "security": "Security",
     "skills": "Skills"
   },
   "Projects": {
     "title": "Featured Projects",
-    "description": "Three production systems: enterprise ERP, legal practice management, and a pharmaceutical B2B marketplace in Iraq. Each one prioritized maintainable architecture over feature churn.",
+    "description": "Enterprise ERP, a law-office system with SharePoint document management, and an open-source i18n tool for multilingual React apps.",
     "items": {
       "bpro": {
-        "description": "Modular ERP dashboard for inventory, workflows, and BI reporting across integrated business units. Built with React, TypeScript, and Ant Design, with RTK for enterprise-scale state.",
+        "description": "Large-scale enterprise ERP frontend covering Sales, Inventory, and Resource Management, with a granular role-based access control (RBAC) permission system.",
         "tags": [
           "React",
           "TypeScript",
-          "Ant Design",
-          "RTK",
-          "Enterprise",
-          "Modular Architecture",
-          "BI Reporting"
+          "RBAC",
+          "Sales",
+          "Inventory",
+          "Resource Management"
         ],
-        "title": "BPro ERP Dashboard"
+        "title": "BPro ERP"
       },
       "glc": {
-        "description": "Case and client management portal for Gulf Legal Consultants. Azure AD sign-in (MSAL), role-based access, and Ant Design UI for lawyers and admin staff.",
+        "description": "Law office management system with enterprise SharePoint document management in React, using @azure/msal-react and the Microsoft Graph API, with Microsoft Entra ID authentication.",
         "tags": [
           "React",
           "MSAL",
-          "Ant Design",
-          "RTK",
-          "TypeScript"
+          "Microsoft Graph",
+          "Entra ID",
+          "SharePoint"
         ],
-        "title": "Gulf Legal Consultants"
+        "title": "GLC"
       },
-      "mercato": {
-        "description": "B2B marketplace connecting pharmaceutical buyers and suppliers across Iraq—catalog search, ordering, and offline-capable flows with Dexie.js for unreliable connectivity.",
+      "translationManager": {
+        "description": "Open-source npm package with an i18n management UI, AI-assisted translation, and code-context extraction for multilingual React projects.",
         "tags": [
-          "Next.js",
-          "Zustand",
-          "React Query",
-          "Dexie.js",
-          "TypeScript"
+          "i18n",
+          "React",
+          "TypeScript",
+          "npm",
+          "Open Source"
         ],
-        "title": "Mercato-B2B"
+        "title": "@tuhama/translation-manager"
       }
     },
-    "live_demo": "Live Demo"
+    "live_demo": "Live Demo",
+    "view_package": "View package"
   },
   "Security": {
     "description": "Grounded in my master's thesis on client-side web application security—patterns I use in production, not checklist slides.",
@@ -141,14 +218,16 @@
     "title": "Security by design"
   },
   "Skills": {
-    "description": "Frontend architecture, full-stack delivery, and application security—the mix I used in production ERP, legal, and marketplace products.",
+    "description": "React and Next.js in production, with Java Spring Boot and MySQL, plus auth, testing, and delivery tooling from the CV.",
     "groups": {
       "backend": {
         "items": [
-          "Node.js",
-          "PostgreSQL",
+          "Java Spring Boot",
+          "MySQL",
           "Docker",
-          "AWS",
+          "Jenkins",
+          "GitHub Actions",
+          "Gitee",
           "CI/CD"
         ],
         "title": "Backend & DevOps"
@@ -158,19 +237,26 @@
           "React",
           "Next.js",
           "TypeScript",
+          "Redux Toolkit",
+          "Zustand",
           "Tailwind CSS",
-          "Framer Motion"
+          "Ant Design",
+          "shadcn/ui",
+          "Framer Motion",
+          "i18next"
         ],
-        "title": "Frontend Engineering"
+        "title": "Frontend"
       },
       "security": {
         "items": [
-          "CSP",
-          "OAuth 2.0",
-          "OWASP Top 10",
-          "RSC Architecture"
+          "MSAL",
+          "Microsoft Entra ID",
+          "RBAC",
+          "OWASP",
+          "Cypress",
+          "Microsoft Graph API"
         ],
-        "title": "Security & Architecture"
+        "title": "Auth, Security & Quality"
       }
     },
     "title": "Stack & focus"

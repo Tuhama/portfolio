@@ -30,7 +30,9 @@ interface ProjectCardProps {
   links?: {
     github?: string;
     live?: string;
+    liveLabel?: string;
   };
+  imageFit?: "cover" | "contain";
 }
 
 export function ProjectCard({
@@ -39,6 +41,7 @@ export function ProjectCard({
   image,
   tags,
   links,
+  imageFit = "cover",
 }: ProjectCardProps) {
   const t = useTranslations("Projects");
   const tA11y = useTranslations("A11y");
@@ -69,7 +72,7 @@ export function ProjectCard({
                 src={image}
                 alt={title}
                 fill
-                className="object-cover transition-transform duration-1000 ease-[cubic-bezier(0.2,1,0.3,1)] group-hover:scale-110"
+                className={`${imageFit === "contain" ? "object-contain p-16" : "object-cover"} transition-transform duration-1000 ease-[cubic-bezier(0.2,1,0.3,1)] group-hover:scale-110`}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-60 transition-opacity duration-700 group-hover:opacity-40" />
               <div className="pointer-events-none absolute inset-0 border border-white/10 opacity-0 transition-opacity duration-700 group-hover:opacity-100" />
@@ -89,7 +92,7 @@ export function ProjectCard({
                 src={image}
                 alt={title}
                 fill
-                className="object-contain"
+                className={imageFit === "contain" ? "object-contain p-16" : "object-contain"}
                 priority
               />
             </div>
@@ -126,7 +129,7 @@ export function ProjectCard({
             >
               <a href={links.live} target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="h-4 w-4" />
-                <span>{t("live_demo")}</span>
+                <span>{links.liveLabel ?? t("live_demo")}</span>
               </a>
             </Button>
           )}

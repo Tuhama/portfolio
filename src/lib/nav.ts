@@ -1,5 +1,6 @@
 export const SECTION_LINKS = [
   { key: "about", href: "/" },
+  { key: "experience", href: "/#experience" },
   { key: "skills", href: "/#skills" },
   { key: "projects", href: "/#projects" },
   { key: "security", href: "/#security" },

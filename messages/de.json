@@ -34,6 +34,7 @@
     "items": {
       "contact": "Kontakt",
       "dark": "Dunkelmodus",
+      "experience": "Erfahrung",
       "home": "Startseite",
       "light": "Hellmodus",
       "projects": "Projekte",
@@ -46,7 +47,7 @@
     "title": "Befehlsmenü"
   },
   "Contact": {
-    "description": "Sie besetzen eine Senior-Frontend- oder security-orientierte Architektenrolle? Schreiben Sie mir, vernetzen Sie sich auf LinkedIn oder laden Sie meinen Lebenslauf herunter.",
+    "description": "Sie besetzen eine Senior-Frontend-Rolle? Schreiben Sie mir, vernetzen Sie sich auf LinkedIn oder laden Sie meinen Lebenslauf herunter.",
     "email": "E-Mail",
     "github": "GitHub",
     "linkedin": "LinkedIn",
@@ -55,68 +56,144 @@
   "Footer": {
     "copyright": "© 2026 Tuhama Qlyshi"
   },
+  "Experience": {
+    "title": "Erfahrung",
+    "description": "Über 15 Jahre Software-Engineering: Frontend-Leitung eines Enterprise-ERP, Leitung einer staatlichen Softwareabteilung und Open-Source-i18n-Tooling.",
+    "items": {
+      "freelance": {
+        "role": "Freelance Frontend Engineer",
+        "company": "Selbstständig · Syrien (Remote)",
+        "period": "09/2025 – heute",
+        "description": "Open-Source-i18n-Tooling, eine Next.js-Portfolio-Seite und SharePoint-Dokumentenverwaltung für ein Kanzleisystem.",
+        "highlights": [
+          "Entwicklung und Veröffentlichung von @tuhama/translation-manager, einem Open-Source-npm-Paket mit i18n-Verwaltungsoberfläche, KI-gestützter Übersetzung und Extraktion von Code-Kontext.",
+          "Architektur einer leistungsfähigen, barrierearmen Portfolio-Seite mit Next.js 14, Redux Toolkit, Tailwind CSS und Framer Motion, ausgeliefert über GitHub Actions.",
+          "GLC (Kanzleiverwaltung): SharePoint-Dokumentenverwaltung in React mit @azure/msal-react und der Microsoft Graph API, inklusive Authentifizierung über Microsoft Entra ID."
+        ],
+        "tags": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "MSAL",
+          "Microsoft Graph",
+          "Tailwind CSS",
+          "GitHub Actions"
+        ]
+      },
+      "bpro": {
+        "role": "Senior Frontend Developer",
+        "company": "BPro ERP · Remote",
+        "period": "02/2021 – 08/2025",
+        "description": "Leitung der Frontend-Entwicklung eines großen Enterprise-ERP, parallel zur staatlichen Tätigkeit.",
+        "highlights": [
+          "Leitung der Frontend-Entwicklung über mehr als 4 Jahre, inklusive Code-Reviews und Mentoring von Junior Engineers zu UI-Architektur, Performance und Wartbarkeit.",
+          "Modulare UI für Vertrieb, Lager und Ressourcenmanagement sowie ein feingranulares RBAC-Berechtigungssystem.",
+          "Anbindung der Frontend-Workflows an Jenkins-CI/CD mit Gitee, gemeinsam mit Backend- und DevOps-Teams für automatisierte Branch-Deployments."
+        ],
+        "tags": [
+          "React",
+          "TypeScript",
+          "RBAC",
+          "Jenkins",
+          "Gitee",
+          "CI/CD"
+        ]
+      },
+      "directorate": {
+        "role": "Leiter der Abteilung Analyse und Software, IT",
+        "company": "Finanzdirektion · Homs, Syrien",
+        "period": "07/2008 – 05/2025",
+        "description": "Leitung der Softwareabteilung: Analyse, Entwurf und Umsetzungsstrategie.",
+        "highlights": [
+          "Leitung der Softwareabteilung sowie der Strategie für Analyse, Entwurf und Umsetzung.",
+          "Entwurf und Entwicklung interner Systeme mit Java Spring Boot, MySQL und React.",
+          "Schlüsselprojekte: Lagerverwaltungssystem und Personalportal."
+        ],
+        "tags": [
+          "Java Spring Boot",
+          "MySQL",
+          "React",
+          "Systemanalyse"
+        ]
+      },
+      "miditec": {
+        "role": "Java-Applets-Programmierer",
+        "company": "MIDITEC · Damaskus, Syrien",
+        "period": "08/2007 – 05/2008",
+        "description": "Ausbildung und Tätigkeit als Java-Programmierer an MTZ Web, dem ERP-Produkt von MIDITEC, direkt nach dem Abschluss.",
+        "highlights": [
+          "Mitarbeit an MTZ Web unmittelbar nach dem Studium."
+        ],
+        "tags": [
+          "Java",
+          "ERP"
+        ]
+      }
+    }
+  },
   "Hero": {
     "actions": {
       "consultation": "Beratung anfordern",
       "cv": "Lebenslauf herunterladen"
     },
-    "badge": "Offen für neue Möglichkeiten",
-    "description": "Ich entwerfe und liefere Enterprise-Systeme mit React und Next.js für ERP, Legal und pharmazeutische B2B-Marktplätze—mit clientseitiger Sicherheit von Anfang an.",
-    "subtitle": "Senior Frontend Architekt",
+    "badge": "Sofort verfügbar · Deutschland",
+    "description": "Senior Frontend Engineer mit über 15 Jahren Software-Engineering, spezialisiert auf React, Next.js und TypeScript, mit praktischer Backend-Erfahrung in Java Spring Boot und MySQL.",
+    "subtitle": "Senior Frontend Engineer",
     "title": "Tuhama Qlyshi"
   },
   "Metadata": {
-    "description": "Senior Frontend Architekt mit Fokus auf Enterprise-Systeme mit React und Next.js sowie clientseitige Sicherheit. Arbeit in ERP, Legal und B2B-Marktplätzen.",
-    "title": "Tuhama Qlyshi — Senior Frontend Architekt"
+    "description": "Senior Frontend Engineer mit Schwerpunkt React, Next.js und TypeScript sowie Backend-Erfahrung in Java Spring Boot und MySQL. Wohnhaft in Deutschland und sofort verfügbar.",
+    "title": "Tuhama Qlyshi — Senior Frontend Engineer"
   },
   "Navigation": {
     "about": "Über mich",
     "contact": "Kontakt",
+    "experience": "Erfahrung",
     "projects": "Projekte",
     "security": "Sicherheit",
     "skills": "Kenntnisse"
   },
   "Projects": {
     "title": "Ausgewählte Projekte",
-    "description": "Drei Produktivsysteme: Enterprise-ERP, Kanzleiverwaltung und ein pharmazeutischer B2B-Marktplatz im Irak. Jedes priorisierte wartbare Architektur vor Feature-Menge.",
+    "description": "Enterprise-ERP, ein Kanzleisystem mit SharePoint-Dokumentenverwaltung und ein Open-Source-i18n-Werkzeug für mehrsprachige React-Anwendungen.",
     "items": {
       "bpro": {
-        "description": "Modulares ERP-Dashboard für Inventar, Workflows und BI-Reporting über integrierte Geschäftseinheiten. Gebaut mit React, TypeScript und Ant Design, State-Management mit RTK im Enterprise-Maßstab.",
+        "description": "Frontend eines großen Enterprise-ERP für Vertrieb, Lager und Ressourcenmanagement, mit einem feingranularen RBAC-Berechtigungssystem.",
         "tags": [
           "React",
           "TypeScript",
-          "Ant Design",
-          "RTK",
-          "Enterprise",
-          "Modulare Architektur",
-          "BI-Reporting"
+          "RBAC",
+          "Vertrieb",
+          "Lager",
+          "Ressourcenmanagement"
         ],
-        "title": "BPro ERP Dashboard"
+        "title": "BPro ERP"
       },
       "glc": {
-        "description": "Fall- und Mandantenverwaltung für Gulf Legal Consultants. Azure-AD-Anmeldung (MSAL), rollenbasierte Zugriffe und Ant-Design-Oberfläche für Anwälte und Administration.",
+        "description": "Kanzleiverwaltung mit SharePoint-Dokumentenmanagement in React, über @azure/msal-react und die Microsoft Graph API, mit Authentifizierung über Microsoft Entra ID.",
         "tags": [
           "React",
           "MSAL",
-          "Ant Design",
-          "RTK",
-          "TypeScript"
+          "Microsoft Graph",
+          "Entra ID",
+          "SharePoint"
         ],
-        "title": "Gulf Legal Consultants"
+        "title": "GLC"
       },
-      "mercato": {
-        "description": "B2B-Marktplatz für Käufer und Lieferanten im irakischen Pharmamarkt—Katalogsuche, Bestellungen und offlinefähige Abläufe mit Dexie.js bei unsicherer Konnektivität.",
+      "translationManager": {
+        "description": "Open-Source-npm-Paket mit i18n-Verwaltungsoberfläche, KI-gestützter Übersetzung und Extraktion von Code-Kontext für mehrsprachige React-Projekte.",
         "tags": [
-          "Next.js",
-          "Zustand",
-          "React Query",
-          "Dexie.js",
-          "TypeScript"
+          "i18n",
+          "React",
+          "TypeScript",
+          "npm",
+          "Open Source"
         ],
-        "title": "Mercato-B2B"
+        "title": "@tuhama/translation-manager"
       }
     },
-    "live_demo": "Live-Demo"
+    "live_demo": "Live-Demo",
+    "view_package": "Paket ansehen"
   },
   "Security": {
     "description": "Fundiert durch meine Masterarbeit zur Sicherheit clientseitiger Webanwendungen—Muster, die ich in Produktion einsetze, keine Checklisten-Folien.",
@@ -141,14 +218,16 @@
     "title": "Sicherheit durch Design"
   },
   "Skills": {
-    "description": "Frontend-Architektur, Full-Stack-Umsetzung und Anwendungssicherheit—dieselbe Mischung wie in produktiven ERP-, Legal- und Marktplatzprodukten.",
+    "description": "React und Next.js in Produktion, mit Java Spring Boot und MySQL, plus Authentifizierung, Tests und Delivery-Werkzeuge aus dem Lebenslauf.",
     "groups": {
       "backend": {
         "items": [
-          "Node.js",
-          "PostgreSQL",
+          "Java Spring Boot",
+          "MySQL",
           "Docker",
-          "AWS",
+          "Jenkins",
+          "GitHub Actions",
+          "Gitee",
           "CI/CD"
         ],
         "title": "Backend & DevOps"
@@ -158,19 +237,26 @@
           "React",
           "Next.js",
           "TypeScript",
+          "Redux Toolkit",
+          "Zustand",
           "Tailwind CSS",
-          "Framer Motion"
+          "Ant Design",
+          "shadcn/ui",
+          "Framer Motion",
+          "i18next"
         ],
-        "title": "Frontend Engineering"
+        "title": "Frontend"
       },
       "security": {
         "items": [
-          "CSP",
-          "OAuth 2.0",
-          "OWASP Top 10",
-          "RSC Architecture"
+          "MSAL",
+          "Microsoft Entra ID",
+          "RBAC",
+          "OWASP",
+          "Cypress",
+          "Microsoft Graph API"
         ],
-        "title": "Sicherheit & Architektur"
+        "title": "Auth, Sicherheit & Qualität"
       }
     },
     "title": "Stack und Schwerpunkte"
