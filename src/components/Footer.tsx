@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
+import { BuildStatus } from "./BuildStatus";
 import { SECTION_LINKS } from "@/lib/nav";
 import { SITE } from "@/lib/site";
 
@@ -55,7 +56,10 @@ export function Footer() {
             ))}
           </nav>
         </div>
-        <p className="text-sm text-muted-foreground">{t("copyright")}</p>
+        <div className="flex flex-col gap-4 border-t border-border/40 pt-6 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-sm text-muted-foreground">{t("copyright")}</p>
+          <BuildStatus />
+        </div>
       </div>
     </footer>
   );

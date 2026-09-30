@@ -22,7 +22,12 @@
     "switchLanguage": "Sprache wechseln"
   },
   "Build": {
-    "alt": "Build-Status"
+    "aria": "Produktions-Build-Status: {status}",
+    "failure": "Fehlgeschlagen",
+    "label": "Produktion",
+    "pending": "Läuft",
+    "success": "Bestanden",
+    "unknown": "Nicht verfügbar"
   },
   "Command": {
     "empty": "Keine Ergebnisse gefunden.",

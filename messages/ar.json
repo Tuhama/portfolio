@@ -22,7 +22,12 @@
     "switchLanguage": "تبديل اللغة"
   },
   "Build": {
-    "alt": "حالة البناء"
+    "aria": "حالة بناء الإنتاج: {status}",
+    "failure": "فاشل",
+    "label": "الإنتاج",
+    "pending": "قيد التشغيل",
+    "success": "ناجح",
+    "unknown": "غير متاح"
   },
   "Command": {
     "empty": "لم يتم العثور على نتائج.",

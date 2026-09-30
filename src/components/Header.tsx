@@ -3,7 +3,6 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import { LanguageSwitcher } from "./LanguageSwitcher";
-import { BuildStatus } from "./BuildStatus";
 import ThemeSwitcher from "./ThemeSwitcher";
 import { MobileNav } from "./MobileNav";
 import { SECTION_LINKS } from "@/lib/nav";
@@ -11,7 +10,6 @@ import { SITE } from "@/lib/site";
 
 export function Header() {
   const t = useTranslations("Navigation");
-  const tBuild = useTranslations("Build");
 
   return (
     <header className="sticky top-0 z-40 w-full">
@@ -42,15 +40,10 @@ export function Header() {
             ))}
           </nav>
         </div>
-        <div className="flex items-center gap-4">
-          <div className="hidden items-center md:flex">
-            <BuildStatus alt={tBuild("alt")} />
-          </div>
-          <div className="flex items-center gap-3 border-s border-border/50 ps-4">
-            <ThemeSwitcher />
-            <LanguageSwitcher />
-            <MobileNav />
-          </div>
+        <div className="flex items-center gap-3">
+          <ThemeSwitcher />
+          <LanguageSwitcher />
+          <MobileNav />
         </div>
       </div>
     </header>
