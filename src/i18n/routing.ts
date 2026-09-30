@@ -1,15 +1,12 @@
 import { defineRouting } from "next-intl/routing";
 import { createNavigation } from "next-intl/navigation";
+import { defaultLocale, Locale, locales } from "./locales";
 
-export enum Locale {
-  English = "en",
-  Arabic = "ar",
-  Deutsch = "de",
-}
+export { Locale };
 
 export const routing = defineRouting({
-  locales: [Locale.English, Locale.Arabic, Locale.Deutsch],
-  defaultLocale: Locale.English,
+  locales: [...locales],
+  defaultLocale,
   localePrefix: "as-needed",
 });
 

@@ -9,6 +9,8 @@ import { Footer } from "@/components/Footer";
 import { CommandMenu } from "@/components/CommandMenu";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Metadata } from "next";
+import { SITE, getSiteUrl } from "@/lib/site";
+import { openGraphAlternateLocales, openGraphLocale } from "@/lib/urls";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -21,6 +23,10 @@ const notoSansArabic = Noto_Sans_Arabic({
   variable: "--font-noto-arabic",
 });
 
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -30,8 +36,28 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
   return {
-    title: t("title"),
+    metadataBase: new URL(getSiteUrl()),
+    title: {
+      default: t("title"),
+      template: `%s — ${SITE.name}`,
+    },
     description: t("description"),
+    applicationName: SITE.brand,
+    authors: [{ name: SITE.name, url: getSiteUrl() }],
+    creator: SITE.name,
+    robots: {
+      index: true,
+      follow: true,
+    },
+    openGraph: {
+      type: "website",
+      siteName: SITE.brand,
+      locale: openGraphLocale(locale),
+      alternateLocale: openGraphAlternateLocales(locale),
+    },
+    twitter: {
+      card: "summary_large_image",
+    },
   };
 }
 
