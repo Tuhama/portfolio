@@ -72,6 +72,7 @@ export function ProjectCard({
                 src={image}
                 alt={title}
                 fill
+                sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                 className={`${imageFit === "contain" ? "object-contain p-16" : "object-cover"} transition-transform duration-1000 ease-[cubic-bezier(0.2,1,0.3,1)] group-hover:scale-110`}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-60 transition-opacity duration-700 group-hover:opacity-40" />
@@ -92,8 +93,8 @@ export function ProjectCard({
                 src={image}
                 alt={title}
                 fill
+                sizes="(min-width: 1024px) 64rem, 100vw"
                 className={imageFit === "contain" ? "object-contain p-16" : "object-contain"}
-                priority
               />
             </div>
           </DialogContent>

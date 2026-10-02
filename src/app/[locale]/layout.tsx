@@ -8,8 +8,9 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { CommandMenu } from "@/components/CommandMenu";
 import { ThemeProvider } from "@/components/ThemeProvider";
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
 import { SITE, getSiteUrl } from "@/lib/site";
+import { robotsMetadata } from "@/lib/indexing";
 import { openGraphAlternateLocales, openGraphLocale } from "@/lib/urls";
 
 const inter = Inter({
@@ -26,6 +27,13 @@ const notoSansArabic = Noto_Sans_Arabic({
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f8fafc" },
+    { media: "(prefers-color-scheme: dark)", color: "#020817" },
+  ],
+};
 
 export async function generateMetadata({
   params,
@@ -45,10 +53,7 @@ export async function generateMetadata({
     applicationName: SITE.brand,
     authors: [{ name: SITE.name, url: getSiteUrl() }],
     creator: SITE.name,
-    robots: {
-      index: true,
-      follow: true,
-    },
+    robots: robotsMetadata(),
     openGraph: {
       type: "website",
       siteName: SITE.brand,

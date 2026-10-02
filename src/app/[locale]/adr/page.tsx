@@ -9,11 +9,11 @@ export default function ADRPage() {
             <p className="text-muted-foreground">{t("description")}</p>
             <div className="mt-8 grid gap-4">
                 <div className="p-4 border rounded-lg hover:bg-muted/50 transition cursor-pointer">
-                    <h3 className="font-semibold">{t("records.001.title")}</h3>
+                    <h2 className="font-semibold">{t("records.001.title")}</h2>
                     <p className="text-sm text-muted-foreground mt-1">{t("decision")}</p>
                 </div>
                 <div className="p-4 border rounded-lg hover:bg-muted/50 transition cursor-pointer">
-                    <h3 className="font-semibold">{t("records.002.title")}</h3>
+                    <h2 className="font-semibold">{t("records.002.title")}</h2>
                     <p className="text-sm text-muted-foreground mt-1">{t("decision")}</p>
                 </div>
             </div>

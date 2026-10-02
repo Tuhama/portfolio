@@ -2,12 +2,24 @@ const DEFAULT_SITE_URL = "https://tuhama.vercel.app";
 
 export const SITE = {
   name: "Tuhama Qlyshi",
+  givenName: "Tuhama",
+  familyName: "Qlyshi",
   brand: "Tuhama.dev",
   email: "tuhama.gh.qlyshi@gmail.com",
   github: "https://github.com/Tuhama",
   linkedin: "https://www.linkedin.com/in/tuhama-ql",
   cvHref: "/assets/docs/TuhamaQlyshi_CV.pdf",
   cvFilename: "TuhamaQlyshi_CV.pdf",
+  expertise: [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Java Spring Boot",
+    "MySQL",
+    "Frontend architecture",
+    "Web application security",
+    "Internationalization",
+  ],
 } as const;
 
 export function getSiteUrl(): string {

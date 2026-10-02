@@ -27,7 +27,7 @@ export function Contact() {
         <a
           href={SITE.linkedin}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="me noopener noreferrer"
           className="w-full sm:w-auto"
         >
           <Button
@@ -39,7 +39,7 @@ export function Contact() {
             {t("linkedin")}
           </Button>
         </a>
-        <a href={SITE.github} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+        <a href={SITE.github} target="_blank" rel="me noopener noreferrer" className="w-full sm:w-auto">
           <Button
             size="lg"
             variant="outline"

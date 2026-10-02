@@ -13,15 +13,18 @@ export function pageMetadata({
   title,
   description,
   absoluteTitle = false,
+  profile = false,
 }: {
   locale: string;
   path: string;
   title: string;
   description: string;
   absoluteTitle?: boolean;
+  profile?: boolean;
 }): Metadata {
   const canonical = localizedPath(locale, path);
   const image = localizedPath(locale, "/og");
+  const imageAlt = SITE.name;
 
   return {
     title: absoluteTitle ? { absolute: title } : title,
@@ -31,19 +34,26 @@ export function pageMetadata({
       languages: languageAlternates(path),
     },
     openGraph: {
-      type: "website",
+      type: profile ? "profile" : "website",
       siteName: SITE.brand,
       title,
       description,
       url: canonical,
       locale: openGraphLocale(locale),
       alternateLocale: openGraphAlternateLocales(locale),
+      ...(profile
+        ? {
+            firstName: SITE.givenName,
+            lastName: SITE.familyName,
+            username: SITE.givenName,
+          }
+        : {}),
       images: [
         {
           url: image,
           width: 1200,
           height: 630,
-          alt: SITE.name,
+          alt: imageAlt,
         },
       ],
     },
@@ -51,7 +61,7 @@ export function pageMetadata({
       card: "summary_large_image",
       title,
       description,
-      images: [image],
+      images: [{ url: image, alt: imageAlt }],
     },
   };
 }
