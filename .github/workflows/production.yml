@@ -28,7 +28,8 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: 🛡️ Security Audit
-        run: pnpm audit --audit-level=high
+        # CVE-2026-93687 has no release above braces@3.0.3. It is only used by ESLint.
+        run: pnpm audit --audit-level=high --ignore CVE-2026-93687
 
       - name: ✨ Linting
         run: pnpm run lint
