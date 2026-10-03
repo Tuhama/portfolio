@@ -53,6 +53,9 @@ export async function generateMetadata({
     applicationName: SITE.brand,
     authors: [{ name: SITE.name, url: getSiteUrl() }],
     creator: SITE.name,
+    verification: {
+      google: "ldL_qoZ9IHBsQofgasSEG2DSnZ8WNE_DKtgtJKZuwhg",
+    },
     robots: robotsMetadata(),
     openGraph: {
       type: "website",
