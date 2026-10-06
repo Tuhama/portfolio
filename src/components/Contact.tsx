@@ -16,16 +16,17 @@ export function Contact() {
       <div className="reveal-up mx-auto max-w-3xl space-y-8 text-center">
         <SectionHeading title={t("title")} description={t("description")} />
         <div className="flex flex-col items-center gap-5">
-          <a href={`mailto:${SITE.email}`}>
-            <Button
-              size="lg"
-              variant="premium"
-              className="h-12 gap-2.5 px-8 text-base font-bold"
-            >
+          <Button
+            size="lg"
+            variant="premium"
+            className="h-12 gap-2.5 px-8 text-base font-bold"
+            asChild
+          >
+            <a href={`mailto:${SITE.email}`}>
               <Mail className="h-5 w-5" />
               {t("email")}
-            </Button>
-          </a>
+            </a>
+          </Button>
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
             <a
               href={SITE.linkedin}

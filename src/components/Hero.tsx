@@ -39,26 +39,28 @@ export function Hero() {
         </div>
 
         <div className="reveal-up stagger-4 flex flex-col items-center justify-center gap-4 pt-8 sm:flex-row">
-          <a href={SITE.cvHref} download={SITE.cvFilename} className="w-full sm:w-auto">
-            <Button
-              size="lg"
-              variant="outline"
-              className="glass-morphism h-16 w-full gap-3 border-border/50 px-12 text-lg font-bold transition-all duration-300 hover:bg-primary/5 motion-safe:active:scale-95 sm:w-auto"
-            >
+          <Button
+            size="lg"
+            variant="outline"
+            className="glass-morphism h-16 w-full gap-3 border-border/50 px-12 text-lg font-bold transition-all duration-300 hover:bg-primary/5 motion-safe:active:scale-95 sm:w-auto"
+            asChild
+          >
+            <a href={SITE.cvHref} download={SITE.cvFilename}>
               <Download className="h-5 w-5" />
               {t("actions.cv")}
-            </Button>
-          </a>
-          <a href={`mailto:${SITE.email}`} className="w-full sm:w-auto">
-            <Button
-              size="lg"
-              variant="premium"
-              className="h-16 w-full gap-3 px-12 text-lg font-bold sm:w-auto"
-            >
+            </a>
+          </Button>
+          <Button
+            size="lg"
+            variant="premium"
+            className="h-16 w-full gap-3 px-12 text-lg font-bold sm:w-auto"
+            asChild
+          >
+            <a href={`mailto:${SITE.email}`}>
               <MessageSquare className="h-5 w-5" />
               {t("actions.consultation")}
-            </Button>
-          </a>
+            </a>
+          </Button>
         </div>
       </div>
     </section>
