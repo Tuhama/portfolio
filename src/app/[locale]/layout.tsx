@@ -9,6 +9,7 @@ import { Footer } from "@/components/Footer";
 import { CommandMenu } from "@/components/CommandMenu";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Metadata, Viewport } from "next";
+import { headers } from "next/headers";
 import { SITE, getSiteUrl } from "@/lib/site";
 import { robotsMetadata } from "@/lib/indexing";
 import { openGraphAlternateLocales, openGraphLocale } from "@/lib/urls";
@@ -84,6 +85,7 @@ export default async function LocaleLayout({
 
   const messages = await getMessages();
   const tA11y = await getTranslations({ locale, namespace: "A11y" });
+  const nonce = (await headers()).get("x-nonce") ?? undefined;
 
   return (
     <html
@@ -100,6 +102,7 @@ export default async function LocaleLayout({
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
+            nonce={nonce}
           >
             <a href="#main" className="skip-link">
               {tA11y("skip")}
