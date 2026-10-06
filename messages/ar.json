@@ -72,7 +72,7 @@
         "description": "أداة i18n مفتوحة المصدر، وموقع تعريفي بـ Next.js، وإدارة مستندات SharePoint لنظام مكتب محاماة.",
         "highlights": [
           "بناء ونشر @tuhama/translation-manager، حزمة npm مفتوحة المصدر بواجهة لإدارة i18n وترجمة بمساعدة الذكاء الاصطناعي واستخراج سياق الشيفرة.",
-          "تصميم موقع تعريفي عالي الأداء وسهل الوصول باستخدام Next.js 14 و Redux Toolkit و Tailwind CSS و Framer Motion، مع نشر عبر GitHub Actions.",
+          "بناء هذا الموقع التعريفي سهل الوصول باستخدام Next.js 16 و TypeScript و Tailwind CSS و next-intl للإنجليزية والعربية والألمانية، مع اختبارات Vitest ونشر عبر GitHub Actions.",
           "GLC (نظام إدارة مكتب محاماة): إدارة مستندات SharePoint على مستوى المؤسسات في React باستخدام @azure/msal-react و Microsoft Graph API، مع مصادقة Microsoft Entra ID."
         ],
         "tags": [

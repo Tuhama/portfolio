@@ -72,7 +72,7 @@
         "description": "Open-Source-i18n-Tooling, eine Next.js-Portfolio-Seite und SharePoint-Dokumentenverwaltung für ein Kanzleisystem.",
         "highlights": [
           "Entwicklung und Veröffentlichung von @tuhama/translation-manager, einem Open-Source-npm-Paket mit i18n-Verwaltungsoberfläche, KI-gestützter Übersetzung und Extraktion von Code-Kontext.",
-          "Architektur einer leistungsfähigen, barrierearmen Portfolio-Seite mit Next.js 14, Redux Toolkit, Tailwind CSS und Framer Motion, ausgeliefert über GitHub Actions.",
+          "Diese barrierearme Portfolio-Seite mit Next.js 16, TypeScript, Tailwind CSS und next-intl für Englisch, Arabisch und Deutsch umgesetzt, mit Vitest getestet und über GitHub Actions ausgeliefert.",
           "GLC (Kanzleiverwaltung): SharePoint-Dokumentenverwaltung in React mit @azure/msal-react und der Microsoft Graph API, inklusive Authentifizierung über Microsoft Entra ID."
         ],
         "tags": [
