@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tuhama Qlyshi — Portfolio
 
-## Getting Started
+Personal site for Tuhama Qlyshi, a senior frontend engineer. Live at [tuhama.vercel.app](https://tuhama.vercel.app).
 
-First, run the development server:
+The site covers experience, skills, featured projects, a security section, and contact, in English, Arabic, and German.
+
+## Stack
+
+- [Next.js](https://nextjs.org) App Router and React
+- [next-intl](https://next-intl.dev) for English, Arabic, and German
+- Tailwind CSS and [next-themes](https://github.com/pacocoursey/next-themes)
+- Vitest and Testing Library
+- Deployed on Vercel through GitHub Actions
+
+## Getting started
+
+Requires Node.js 24 and pnpm 10.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000). Arabic is at `/ar` and German is at `/de`. English is served at `/`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command | What it does |
+| --- | --- |
+| `pnpm dev` | Start the development server |
+| `pnpm build` | Production build |
+| `pnpm start` | Serve the production build |
+| `pnpm lint` | Run ESLint |
+| `pnpm test:unit` | Run unit tests once |
+| `pnpm test:watch` | Run unit tests in watch mode |
+| `pnpm test:coverage` | Run unit tests with coverage |
 
-## Learn More
+## Site URL
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Canonical links default to `https://tuhama.vercel.app`. Set `NEXT_PUBLIC_SITE_URL` to override that (for example in a preview). On Vercel production, `VERCEL_PROJECT_PRODUCTION_URL` is used when the public URL is unset.
