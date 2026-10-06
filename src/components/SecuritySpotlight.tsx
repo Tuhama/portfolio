@@ -22,7 +22,7 @@ const strategies = [
     icon: Server,
     key: "rsc",
   },
-];
+] as const;
 
 export function SecuritySpotlight() {
   const t = useTranslations("Security");

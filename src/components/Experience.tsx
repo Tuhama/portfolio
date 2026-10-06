@@ -1,30 +1,7 @@
 import { useTranslations } from "next-intl";
-import { Briefcase, Building2, Calendar, Code2, Sparkles } from "lucide-react";
+import { Building2, Calendar } from "lucide-react";
 import { SectionHeading } from "@/components/SectionHeading";
-
-interface ExperienceItemConfig {
-  key: string;
-  icon: typeof Briefcase;
-}
-
-const experiences: ExperienceItemConfig[] = [
-  {
-    key: "freelance",
-    icon: Sparkles,
-  },
-  {
-    key: "bpro",
-    icon: Briefcase,
-  },
-  {
-    key: "directorate",
-    icon: Building2,
-  },
-  {
-    key: "miditec",
-    icon: Code2,
-  },
-];
+import { catalog } from "@/lib/catalog";
 
 export function Experience() {
   const t = useTranslations("Experience");
@@ -37,10 +14,12 @@ export function Experience() {
 
       <div className="mx-auto max-w-5xl">
         <div className="relative border-s-2 border-primary/20 ms-4 sm:ms-8 ps-6 sm:ps-12 space-y-12">
-          {experiences.map((item, index) => {
+          {catalog.roles.map((item, index) => {
             const Icon = item.icon;
-            const highlights: string[] = t.raw(`items.${item.key}.highlights`);
-            const tags: string[] = t.raw(`items.${item.key}.tags`);
+            const highlights = t.raw(
+              `items.${item.key}.highlights`,
+            ) as readonly string[];
+            const tags = t.raw(`items.${item.key}.tags`) as readonly string[];
 
             return (
               <div
