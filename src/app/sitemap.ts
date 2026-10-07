@@ -4,7 +4,6 @@ import { absoluteLanguageAlternates, absoluteUrl } from "@/lib/urls";
 
 const routes = [
   { path: "/", changeFrequency: "monthly" as const, priority: 1 },
-  { path: "/adr", changeFrequency: "yearly" as const, priority: 0.4 },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
