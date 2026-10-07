@@ -17,8 +17,8 @@ let fontsPromise: Promise<[Buffer, Buffer]> | null = null;
 function loadFonts() {
   if (!fontsPromise) {
     fontsPromise = Promise.all([
-      readFile(join(process.cwd(), "node_modules/@fontsource/inter/files/inter-latin-700-normal.woff")),
-      readFile(join(process.cwd(), "node_modules/@fontsource/cairo/files/cairo-arabic-700-normal.woff")),
+      readFile(join(process.cwd(), "src/assets/fonts/inter-latin-700-normal.woff")),
+      readFile(join(process.cwd(), "src/assets/fonts/cairo-arabic-700-normal.woff")),
     ]);
   }
 
