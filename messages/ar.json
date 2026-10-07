@@ -186,13 +186,13 @@
         "title": "GLC"
       },
       "translationManager": {
-        "description": "حزمة npm مفتوحة المصدر بواجهة لإدارة i18n وترجمة بمساعدة الذكاء الاصطناعي واستخراج سياق الشيفرة لمشاريع React متعددة اللغات.",
+        "description": "حزمة npm منشورة: واجهة CLI محلية تفحص React عن مفاتيح الترجمة وتمرّر الشيفرة المحيطة إلى OpenAI أو Gemini أو Google Translate.",
         "tags": [
+          "CLI",
           "i18n",
-          "React",
-          "TypeScript",
-          "npm",
-          "مفتوح المصدر"
+          "OpenAI",
+          "Gemini",
+          "React"
         ],
         "title": "@tuhama/translation-manager"
       }

@@ -52,6 +52,7 @@ const projects = complete<ProjectEntry>()([
     key: "translationManager",
     image: "/assets/projects/TranslationManager.png",
     links: {
+      github: "https://github.com/Tuhama/translationManager",
       live: "https://www.npmjs.com/package/@tuhama/translation-manager",
       liveLabel: "view_package",
     },

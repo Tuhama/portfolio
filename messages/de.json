@@ -186,13 +186,13 @@
         "title": "GLC"
       },
       "translationManager": {
-        "description": "Open-Source-npm-Paket mit i18n-Verwaltungsoberfläche, KI-gestützter Übersetzung und Extraktion von Code-Kontext für mehrsprachige React-Projekte.",
+        "description": "npm-CLI mit lokaler UI. Scannt React nach i18n-Schlüsseln und übergibt den umgebenden Code an OpenAI, Gemini oder Google Translate.",
         "tags": [
+          "CLI",
           "i18n",
-          "React",
-          "TypeScript",
-          "npm",
-          "Open Source"
+          "OpenAI",
+          "Gemini",
+          "React"
         ],
         "title": "@tuhama/translation-manager"
       }
