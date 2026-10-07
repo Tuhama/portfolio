@@ -1,7 +1,8 @@
-import { render, screen } from "@testing-library/react";
+import { screen } from "@testing-library/react";
 import { vi, describe, it, expect } from "vitest";
 import { ProjectCard } from "../ProjectCard";
 import { ReactNode } from "react";
+import { renderWithIntl } from "@/test/render";
 
 // Mock the Dialog components
 vi.mock("@/components/ui/dialog", () => ({
@@ -40,11 +41,6 @@ vi.mock("@/components/ui/button", () => ({
   ),
 }));
 
-// Mock next-intl
-vi.mock("next-intl", () => ({
-  useTranslations: () => (key: string) => key,
-}));
-
 // Mock next-themes
 vi.mock("next-themes", () => ({
   useTheme: () => ({ resolvedTheme: "dark" }),
@@ -67,14 +63,16 @@ describe("ProjectCard", () => {
   };
 
   it("renders correctly", () => {
-    render(<ProjectCard {...props} />);
+    renderWithIntl(<ProjectCard {...props} />);
     expect(screen.getByText("Test Project")).toBeDefined();
     expect(screen.getByText("Test Description")).toBeDefined();
     expect(screen.getAllByAltText("Test Project")[0]).toBeDefined();
+    expect(screen.getByText("React")).toBeDefined();
+    expect(screen.getByText("TypeScript")).toBeDefined();
   });
 
   it("contains clickable image trigger", () => {
-    render(<ProjectCard {...props} />);
+    renderWithIntl(<ProjectCard {...props} />);
     expect(
       screen.getByRole("button", { name: /test project/i }),
     ).toBeDefined();

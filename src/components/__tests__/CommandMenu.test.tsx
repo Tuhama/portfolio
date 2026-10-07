@@ -1,7 +1,8 @@
-import { render, screen, fireEvent } from "@testing-library/react";
+import { screen, fireEvent } from "@testing-library/react";
 import { vi, describe, it, expect } from "vitest";
 import { CommandMenu } from "../CommandMenu";
 import { ReactNode } from "react";
+import { renderWithIntl } from "@/test/render";
 
 interface CommandProps {
   children?: ReactNode;
@@ -50,39 +51,18 @@ vi.mock("@radix-ui/react-dialog", () => ({
   ),
 }));
 
-// Mock next-intl with proper types
-interface TranslationValues {
-  shortcut?: (key: string) => ReactNode;
-  [key: string]: unknown;
-}
-
-type TranslationFunction = {
-  (key: string): string;
-  rich: (key: string, values: TranslationValues) => ReactNode;
-};
-
-vi.mock("next-intl", () => ({
-  useTranslations: (): TranslationFunction => {
-    const t = ((key: string) => key) as TranslationFunction;
-    t.rich = (key: string, values: TranslationValues) => {
-      if (key === "hint" && values.shortcut) {
-        return <div>hint {values.shortcut("shortcut")}</div>;
-      }
-      return key;
-    };
-    return t;
-  },
-}));
-
 describe("CommandMenu", () => {
-  it("renders the keyboard shortcut hint key", () => {
-    render(<CommandMenu />);
-    expect(screen.getByText(/hint/i)).toBeDefined();
+  it("renders the keyboard shortcut hint", () => {
+    renderWithIntl(<CommandMenu />);
+    expect(screen.getByText(/press/i)).toBeDefined();
+    expect(screen.getByText(/to search/i)).toBeDefined();
   });
 
-  it("opens dialog when Cmd+K is pressed and shows accessible title key", async () => {
-    render(<CommandMenu />);
+  it("opens dialog when Cmd+K is pressed and shows the accessible title", async () => {
+    renderWithIntl(<CommandMenu />);
     fireEvent.keyDown(document, { key: "k", metaKey: true });
-    expect(screen.getByRole("heading", { name: /title/i })).toBeTruthy();
+    expect(
+      screen.getByRole("heading", { name: "Command Menu" }),
+    ).toBeTruthy();
   });
 });

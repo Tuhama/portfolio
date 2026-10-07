@@ -1,27 +1,28 @@
-import { render, screen, fireEvent } from '@testing-library/react'
-import { vi, describe, it, expect } from 'vitest'
-import { LanguageSwitcher } from '../LanguageSwitcher'
+import { screen, fireEvent } from "@testing-library/react";
+import { vi, describe, it, expect } from "vitest";
+import { LanguageSwitcher } from "../LanguageSwitcher";
+import { renderWithIntl } from "@/test/render";
 
-// Mock the router specifically
-vi.mock('@/i18n/routing', () => ({
-    useRouter: vi.fn(() => ({
-        replace: vi.fn(),
-        push: vi.fn(),
-    })),
-    usePathname: vi.fn(() => '/'),
-}))
+vi.mock("@/i18n/routing", () => ({
+  useRouter: vi.fn(() => ({
+    replace: vi.fn(),
+    push: vi.fn(),
+  })),
+  usePathname: vi.fn(() => "/"),
+}));
 
-describe('LanguageSwitcher', () => {
-    it('renders the language switcher button', () => {
-        render(<LanguageSwitcher />)
-        // Preferring getByRole for interactive elements
-        expect(screen.getByRole('button', { name: /switchlanguage/i })).toBeDefined()
-    })
+describe("LanguageSwitcher", () => {
+  it("renders the language switcher button", () => {
+    renderWithIntl(<LanguageSwitcher />);
+    expect(
+      screen.getByRole("button", { name: "Switch language" }),
+    ).toBeDefined();
+  });
 
-    it('opens the menu when clicked', () => {
-        render(<LanguageSwitcher />)
-        const trigger = screen.getByRole('button', { name: /switchlanguage/i })
-        fireEvent.click(trigger)
-        expect(trigger).toBeTruthy()
-    })
-})
+  it("opens the menu when clicked", () => {
+    renderWithIntl(<LanguageSwitcher />);
+    const trigger = screen.getByRole("button", { name: "Switch language" });
+    fireEvent.click(trigger);
+    expect(trigger).toBeTruthy();
+  });
+});

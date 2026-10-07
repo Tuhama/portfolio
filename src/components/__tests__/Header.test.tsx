@@ -1,22 +1,28 @@
-import { render, screen } from '@testing-library/react'
-import { describe, it, expect } from 'vitest'
-import { Header } from '../Header'
+import { screen } from "@testing-library/react";
+import { describe, it, expect } from "vitest";
+import { Header } from "../Header";
+import { renderWithIntl } from "@/test/render";
 
-describe('Header', () => {
-    it('renders the site name link', () => {
-        render(<Header />)
-        // Linking to branding is a key architectural choice
-        expect(screen.getByRole('link', { name: /tuhama\.dev/i })).toBeDefined()
-    })
+describe("Header", () => {
+  it("renders the site name link", () => {
+    renderWithIntl(<Header />);
+    expect(screen.getByRole("link", { name: /tuhama\.dev/i })).toBeDefined();
+  });
 
-    it('renders navigation links via translations using accessible roles', () => {
-        render(<Header />)
+  it("renders navigation links via translations using accessible roles", () => {
+    renderWithIntl(<Header />);
 
-        // We expect these to be links. In our mocks, t('key') returns the 'key' itself.
-        // Using /key/i regex makes it resilient to small casing changes.
-        expect(screen.getAllByRole('link', { name: /about/i }).length).toBeGreaterThan(0)
-        expect(screen.getAllByRole('link', { name: /experience/i }).length).toBeGreaterThan(0)
-        expect(screen.getAllByRole('link', { name: /projects/i }).length).toBeGreaterThan(0)
-        expect(screen.getAllByRole('link', { name: /contact/i }).length).toBeGreaterThan(0)
-    })
-})
+    expect(screen.getAllByRole("link", { name: "About" }).length).toBeGreaterThan(
+      0,
+    );
+    expect(
+      screen.getAllByRole("link", { name: "Experience" }).length,
+    ).toBeGreaterThan(0);
+    expect(
+      screen.getAllByRole("link", { name: "Projects" }).length,
+    ).toBeGreaterThan(0);
+    expect(
+      screen.getAllByRole("link", { name: "Contact" }).length,
+    ).toBeGreaterThan(0);
+  });
+});

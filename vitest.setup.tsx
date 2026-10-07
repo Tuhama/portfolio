@@ -77,20 +77,6 @@ vi.mock("next/navigation", () => ({
   useSearchParams: () => new URLSearchParams(),
 }));
 
-// Mock next-intl
-vi.mock("next-intl", () => ({
-  useTranslations: () => {
-    const t = ((key: string): string => key) as ((key: string) => string) & {
-      raw: (key: string) => unknown;
-      rich: (key: string) => string;
-    };
-    t.raw = () => [];
-    t.rich = (key) => key;
-    return t;
-  },
-  useLocale: () => "en",
-}));
-
 // Mock our custom i18n routing
 vi.mock("@/i18n/routing", () => ({
   useRouter: () => ({
