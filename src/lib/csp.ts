@@ -1,5 +1,3 @@
-const remoteImageOrigins = ["https://dev.mercato-b2b.com"];
-
 type ContentSecurityPolicyOptions = {
   nonce: string;
   isDev: boolean;
@@ -24,7 +22,7 @@ export function contentSecurityPolicy({
     "default-src 'self'",
     `script-src ${scriptSrc}`,
     "style-src 'self' 'unsafe-inline'",
-    `img-src 'self' blob: data: ${remoteImageOrigins.join(" ")}`,
+    "img-src 'self' blob: data:",
     "font-src 'self'",
     `connect-src ${connectSrc}`,
     "object-src 'none'",

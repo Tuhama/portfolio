@@ -13,7 +13,7 @@ describe("contentSecurityPolicy", () => {
     );
     expect(policy).toContain("style-src 'self' 'unsafe-inline'");
     expect(policy).toContain(
-      "img-src 'self' blob: data: https://dev.mercato-b2b.com",
+      "img-src 'self' blob: data:",
     );
     expect(policy).toContain("font-src 'self'");
     expect(policy).toContain("connect-src 'self'");
