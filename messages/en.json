@@ -43,7 +43,6 @@
       "home": "Home",
       "light": "Light Mode",
       "projects": "Projects",
-      "security": "Security Hub",
       "skills": "Skills",
       "system": "System Mode",
       "toggle_theme": "Toggle Dark Mode"
@@ -155,7 +154,6 @@
     "contact": "Contact",
     "experience": "Experience",
     "projects": "Projects",
-    "security": "Security",
     "skills": "Skills"
   },
   "Projects": {
@@ -200,30 +198,8 @@
     "live_demo": "Live Demo",
     "view_package": "View package"
   },
-  "Security": {
-    "description": "Grounded in my master's thesis on client-side web application security—patterns I use in production, not checklist slides.",
-    "strategies": {
-      "auth": {
-        "description": "HttpOnly, SameSite=Strict cookies for token handling",
-        "title": "Secure Auth"
-      },
-      "csp": {
-        "description": "Nonce-based Content Security Policy to neutralize XSS attacks",
-        "title": "Strict CSP"
-      },
-      "rendering": {
-        "description": "Enforcing DOMPurify sanitization for dynamic content",
-        "title": "Safe Rendering"
-      },
-      "rsc": {
-        "description": "React Server Components to keep secrets off the client bundle",
-        "title": "RSC Architecture"
-      }
-    },
-    "title": "Security by design"
-  },
   "Skills": {
-    "description": "React and Next.js in production, with Java Spring Boot and MySQL, plus auth, testing, and delivery tooling from the CV.",
+    "description": "React and Next.js in production, with Java Spring Boot and MySQL, plus identity, testing, and delivery tooling from the CV—including how sessions and access are handled.",
     "groups": {
       "backend": {
         "items": [
@@ -261,7 +237,7 @@
           "Cypress",
           "Microsoft Graph API"
         ],
-        "title": "Auth, Security & Quality"
+        "title": "Access & quality"
       }
     },
     "title": "Stack & focus"

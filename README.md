@@ -2,7 +2,7 @@
 
 Personal site for Tuhama Qlyshi, a senior frontend engineer. Live at [tuhama.vercel.app](https://tuhama.vercel.app).
 
-The site covers experience, skills, featured projects, a security section, and contact, in English, Arabic, and German.
+The site covers experience, skills, featured projects, and contact, in English, Arabic, and German.
 
 ## Stack
 

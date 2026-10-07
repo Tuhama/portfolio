@@ -43,7 +43,6 @@
       "home": "الرئيسية",
       "light": "الوضع الفاتح",
       "projects": "المشاريع",
-      "security": "مركز الأمان",
       "skills": "المهارات",
       "system": "وضع النظام",
       "toggle_theme": "تبديل الوضع الداكن"
@@ -155,7 +154,6 @@
     "contact": "تواصل",
     "experience": "الخبرات",
     "projects": "المشاريع",
-    "security": "الأمان",
     "skills": "المهارات"
   },
   "Projects": {
@@ -200,30 +198,8 @@
     "live_demo": "عرض حي",
     "view_package": "عرض الحزمة"
   },
-  "Security": {
-    "description": "مستند إلى رسالة الماجستير الخاصة بي حول أمن تطبيقات الويب من جهة العميل—أنماط أستخدمها في الإنتاج، وليست شرائح تحقق.",
-    "strategies": {
-      "auth": {
-        "description": "ملفات تعريف الارتباط HttpOnly و SameSite=Strict لمعالجة الرموز",
-        "title": "توثيق آمن"
-      },
-      "csp": {
-        "description": "سياسة أمن محتوى قائمة على النونس لتحييد هجمات XSS",
-        "title": "سياسة أمن محتوى صارمة"
-      },
-      "rendering": {
-        "description": "فرض تطهير DOMPurify للمحتوى الديناميكي",
-        "title": "عرض آمن"
-      },
-      "rsc": {
-        "description": "مكونات خادم React لإبقاء الأسرار بعيدة عن حزمة العميل",
-        "title": "معمارية RSC"
-      }
-    },
-    "title": "الأمن حسب التصميم"
-  },
   "Skills": {
-    "description": "React و Next.js في الإنتاج، مع Java Spring Boot و MySQL، إضافة إلى المصادقة والاختبار وأدوات التسليم المذكورة في السيرة.",
+    "description": "React و Next.js في الإنتاج، مع Java Spring Boot و MySQL، إضافة إلى الهوية والاختبار وأدوات التسليم المذكورة في السيرة، بما في ذلك التعامل مع الجلسات والوصول.",
     "groups": {
       "backend": {
         "items": [
@@ -259,7 +235,9 @@
           "RBAC",
           "OWASP",
           "Cypress",
-          "Microsoft Graph API"
+          "Microsoft Graph API",
+          "Content Security Policy",
+          "Security Headers"
         ],
         "title": "المصادقة والأمن والجودة"
       }

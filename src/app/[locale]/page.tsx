@@ -4,7 +4,6 @@ import { Hero } from "@/components/Hero";
 import { Experience } from "@/components/Experience";
 import { Skills } from "@/components/Skills";
 import { Projects } from "@/components/Projects";
-import { SecuritySpotlight } from "@/components/SecuritySpotlight";
 import { Contact } from "@/components/Contact";
 import { PersonJsonLd } from "@/components/PersonJsonLd";
 import { pageMetadata } from "@/lib/metadata";
@@ -44,7 +43,6 @@ export default async function HomePage({
       <Experience />
       <Skills />
       <Projects />
-      <SecuritySpotlight />
       <Contact />
     </main>
   );

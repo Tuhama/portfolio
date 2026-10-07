@@ -3,7 +3,6 @@ export const SECTION_LINKS = [
   { key: "experience", href: "/#experience" },
   { key: "skills", href: "/#skills" },
   { key: "projects", href: "/#projects" },
-  { key: "security", href: "/#security" },
   { key: "contact", href: "/#contact" },
 ] as const;
 

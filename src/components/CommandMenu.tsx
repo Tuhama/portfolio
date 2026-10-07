@@ -81,9 +81,6 @@ export function CommandMenu() {
             <CommandItem onSelect={() => goTo("/#projects")}>
               <span>{t("items.projects")}</span>
             </CommandItem>
-            <CommandItem onSelect={() => goTo("/#security")}>
-              <span>{t("items.security")}</span>
-            </CommandItem>
             <CommandItem onSelect={() => goTo("/#contact")}>
               <span>{t("items.contact")}</span>
             </CommandItem>

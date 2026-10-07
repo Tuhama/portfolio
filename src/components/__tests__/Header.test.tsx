@@ -17,7 +17,6 @@ describe('Header', () => {
         expect(screen.getAllByRole('link', { name: /about/i }).length).toBeGreaterThan(0)
         expect(screen.getAllByRole('link', { name: /experience/i }).length).toBeGreaterThan(0)
         expect(screen.getAllByRole('link', { name: /projects/i }).length).toBeGreaterThan(0)
-        expect(screen.getAllByRole('link', { name: /security/i }).length).toBeGreaterThan(0)
         expect(screen.getAllByRole('link', { name: /contact/i }).length).toBeGreaterThan(0)
     })
 })

@@ -43,7 +43,6 @@
       "home": "Startseite",
       "light": "Hellmodus",
       "projects": "Projekte",
-      "security": "Sicherheits-Hub",
       "skills": "Kenntnisse",
       "system": "Systemmodus",
       "toggle_theme": "Dunkelmodus umschalten"
@@ -155,7 +154,6 @@
     "contact": "Kontakt",
     "experience": "Erfahrung",
     "projects": "Projekte",
-    "security": "Sicherheit",
     "skills": "Kenntnisse"
   },
   "Projects": {
@@ -200,30 +198,8 @@
     "live_demo": "Live-Demo",
     "view_package": "Paket ansehen"
   },
-  "Security": {
-    "description": "Fundiert durch meine Masterarbeit zur Sicherheit clientseitiger Webanwendungen—Muster, die ich in Produktion einsetze, keine Checklisten-Folien.",
-    "strategies": {
-      "auth": {
-        "description": "HttpOnly, SameSite=Strict Cookies für Token-Handling",
-        "title": "Sichere Authentifizierung"
-      },
-      "csp": {
-        "description": "Nonce-basierte Content Security Policy zur Neutralisierung von XSS-Angriffen",
-        "title": "Striktes CSP"
-      },
-      "rendering": {
-        "description": "Erzwingen der DOMPurify-Bereinigung für dynamische Inhalte",
-        "title": "Sicheres Rendering"
-      },
-      "rsc": {
-        "description": "React Server Components, um Geheimnisse vom Client-Bundle fernzuhalten",
-        "title": "RSC-Architektur"
-      }
-    },
-    "title": "Sicherheit durch Design"
-  },
   "Skills": {
-    "description": "React und Next.js in Produktion, mit Java Spring Boot und MySQL, plus Authentifizierung, Tests und Delivery-Werkzeuge aus dem Lebenslauf.",
+    "description": "React und Next.js in Produktion, mit Java Spring Boot und MySQL, plus Identität, Tests und Delivery-Werkzeuge aus dem Lebenslauf—einschließlich des Umgangs mit Sitzungen und Zugriffen.",
     "groups": {
       "backend": {
         "items": [
@@ -261,7 +237,7 @@
           "Cypress",
           "Microsoft Graph API"
         ],
-        "title": "Auth, Sicherheit & Qualität"
+        "title": "Zugriff & Qualität"
       }
     },
     "title": "Stack und Schwerpunkte"
