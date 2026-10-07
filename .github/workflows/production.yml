@@ -34,6 +34,12 @@ jobs:
       - name: ✨ Linting
         run: pnpm run lint
 
+      - name: Typecheck
+        run: pnpm exec tsc --noEmit
+
+      - name: Build
+        run: pnpm exec next build
+
   unit-tests:
     needs: audit-and-lint
     runs-on: ubuntu-latest
@@ -51,6 +57,12 @@ jobs:
           cache: 'pnpm'
 
       - run: pnpm install --frozen-lockfile
+
+      - name: Typecheck
+        run: pnpm exec tsc --noEmit
+
+      - name: Build
+        run: pnpm exec next build
 
       - name: 🧪 Unit Tests
         run: pnpm run test:unit
@@ -76,7 +88,7 @@ jobs:
       - run: pnpm install --frozen-lockfile
 
       - name: Install Vercel CLI
-        run: pnpm add -g vercel@latest
+        run: pnpm add -g vercel@62.7.0
 
       - name: Vercel Pull & Build
         run: |

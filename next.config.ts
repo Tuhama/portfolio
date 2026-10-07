@@ -4,7 +4,9 @@ import type {NextConfig} from "next";
 const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  outputFileTracingIncludes: {
+    "/\\[locale\\]/og": ["./src/assets/fonts/**/*"],
+  },
 };
 
 export default withNextIntl(nextConfig);

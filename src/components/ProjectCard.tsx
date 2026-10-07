@@ -50,7 +50,6 @@ export function ProjectCard({
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect
     setGithubIcon(
       resolvedTheme === "light"
         ? "/GitHub_Invertocat_Black.svg"
