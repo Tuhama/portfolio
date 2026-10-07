@@ -12,8 +12,8 @@ export function Projects() {
         <SectionHeading title={t("title")} description={t("description")} />
       </div>
       <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
-        {catalog.projects.map((project, index) => (
-          <div key={project.key} className={`reveal-up stagger-${index + 1}`}>
+        {catalog.projects.map((project) => (
+          <div key={project.key}>
             <ProjectCard
               title={t(`items.${project.key}.title`)}
               description={t(`items.${project.key}.description`)}

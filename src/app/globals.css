@@ -234,24 +234,84 @@
   }
 
   .reveal-up {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.8s ease-out, transform 0.8s var(--transition-standard);
-
-    @starting-style {
-      opacity: 0;
-      transform: translateY(30px);
-    }
+    animation: reveal-up 0.8s cubic-bezier(0.2, 1, 0.3, 1) both;
   }
 
   .reveal-scale {
-    opacity: 1;
-    transform: scale(1);
-    transition: opacity 0.6s ease-out, transform 0.6s var(--transition-springy);
+    animation: reveal-scale 0.6s cubic-bezier(0.3, 1.6, 0.6, 1) both;
+  }
 
-    @starting-style {
+  .reveal-up.stagger-1,
+  .reveal-scale.stagger-1 {
+    animation-delay: 100ms;
+  }
+
+  .reveal-up.stagger-2,
+  .reveal-scale.stagger-2 {
+    animation-delay: 200ms;
+  }
+
+  .reveal-up.stagger-3,
+  .reveal-scale.stagger-3 {
+    animation-delay: 300ms;
+  }
+
+  .reveal-up.stagger-4,
+  .reveal-scale.stagger-4 {
+    animation-delay: 400ms;
+  }
+
+  @keyframes reveal-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes reveal-scale {
+    from {
       opacity: 0;
       transform: scale(0.95);
+    }
+
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @supports (animation-timeline: view()) {
+    .reveal-up,
+    .reveal-scale {
+      animation-timeline: view();
+      animation-range: entry 0% cover 35%;
+      animation-delay: 0s;
+    }
+
+    .reveal-load {
+      animation-timeline: auto;
+      animation-range: normal;
+    }
+
+    .reveal-load.stagger-1 {
+      animation-delay: 100ms;
+    }
+
+    .reveal-load.stagger-2 {
+      animation-delay: 200ms;
+    }
+
+    .reveal-load.stagger-3 {
+      animation-delay: 300ms;
+    }
+
+    .reveal-load.stagger-4 {
+      animation-delay: 400ms;
     }
   }
 
