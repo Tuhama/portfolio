@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Tuhama Qlyshi – CV</title>
+<style>
+  @page { size: A4; margin: 12mm 14mm; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: Calibri, "Segoe UI", Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.32;
+    color: #1a1a1a;
+  }
+  a { color: inherit; text-decoration: none; border-bottom: 1px solid #7eb8c9; }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    border-bottom: 2.5px solid #2f6f82;
+    padding-bottom: 10px;
+    margin-bottom: 8px;
+  }
+  .identity { flex: 1; min-width: 0; }
+  h1 {
+    margin: 0;
+    font-size: 22pt;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #163944;
+  }
+  .headline {
+    margin: 2px 0 7px;
+    font-size: 11.5pt;
+    font-weight: 600;
+    color: #2f6f82;
+  }
+  .contact { margin: 0; color: #333; font-size: 9.4pt; line-height: 1.45; }
+  .photo {
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 18%;
+    border: 3px solid #2f6f82;
+    flex-shrink: 0;
+  }
+  h2 {
+    margin: 10px 0 4px;
+    font-size: 10.5pt;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #2f6f82;
+    border-bottom: 1px solid #c5dce3;
+    padding-bottom: 2px;
+    break-after: avoid;
+  }
+  p { margin: 0 0 4px; }
+  .skill {
+    margin: 0 0 1.5px;
+  }
+  .skill b { color: #163944; }
+  .job { margin-top: 7px; }
+  .job-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+  .role { font-weight: 700; color: #163944; font-size: 10.6pt; }
+  .period { white-space: nowrap; color: #2f6f82; font-weight: 700; font-size: 9.6pt; }
+  .org { color: #444; font-style: italic; margin-bottom: 2px; }
+  ul { margin: 2px 0 0; padding-left: 16px; }
+  li { margin-bottom: 2px; }
+  .muted { color: #555; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="identity">
+    <h1>Tuhama Qlyshi</h1>
+    <p class="headline">Senior Frontend Engineer | React · Next.js · TypeScript</p>
+    <p class="contact">
+      Mathilde-Rösch-Straße, 63263 Neu-Isenburg (Zeppelinheim), Germany<br>
+      +49 163 1955206 · <a href="mailto:tuhama.gh.qlyshi@gmail.com">tuhama.gh.qlyshi@gmail.com</a><br>
+      <a href="https://tuhama.vercel.app/">Portfolio</a> ·
+      <a href="https://www.linkedin.com/in/tuhama-ql">LinkedIn</a> ·
+      <a href="https://github.com/Tuhama">GitHub</a>
+    </p>
+  </div>
+  <img class="photo" src="portrait.jpg" width="118" height="118" alt="Portrait of Tuhama Qlyshi">
+</header>
+
+<h2>Profile</h2>
+<p>
+  Senior Frontend Engineer with 15+ years in software engineering, specializing in React, Next.js, and TypeScript,
+  with hands-on backend experience in Java (Spring Boot, Java EE) and MySQL. For more than four years I was the
+  frontend lead and architect of an enterprise ERP: a 150,000-line React and TypeScript codebase across 12 business
+  modules, where I set the architecture and coding standards, reviewed every pull request, and mentored four junior
+  developers. Master's thesis on client-side web application security; creator of an open-source i18n tool for
+  multilingual React apps. Based in Germany on a Chancenkarte, available immediately and eligible to switch to an
+  EU Blue Card in-country upon hire.
+</p>
+
+<h2>Core skills</h2>
+<p class="skill"><b>Frontend:</b> React, Next.js (App Router), TypeScript, JavaScript, HTML5, CSS3, responsive and accessible UI, right-to-left (RTL) layouts</p>
+<p class="skill"><b>State &amp; data:</b> Redux Toolkit, RTK Query, Zustand, Dexie.js, REST APIs, Microsoft Graph API</p>
+<p class="skill"><b>Performance:</b> Code splitting with lazy loading and dynamic imports, list virtualization, pagination, React DevTools profiling</p>
+<p class="skill"><b>i18n:</b> next-intl, i18next, English, Arabic, and German interfaces, AI-assisted translation workflows</p>
+<p class="skill"><b>UI &amp; styling:</b> Tailwind CSS, Ant Design, shadcn/ui, Framer Motion, Sass</p>
+<p class="skill"><b>Auth &amp; security:</b> MSAL (@azure/msal-react), Microsoft Entra ID, role-based access control (RBAC), Content Security Policy, JWT, OWASP</p>
+<p class="skill"><b>Reporting:</b> jsPDF, custom PDF report generation</p>
+<p class="skill"><b>Backend:</b> Java Spring Boot, Java EE (servlets, JSP, JPA), MySQL</p>
+<p class="skill"><b>Testing &amp; quality:</b> Vitest, Testing Library, Cypress, ESLint, code reviews</p>
+<p class="skill"><b>DevOps &amp; tooling:</b> Git, GitHub Actions, Jenkins, Gitee, Docker, Vercel, pnpm, CI/CD</p>
+<p class="skill"><b>AI tooling:</b> Model Context Protocol (MCP), LM Studio, AI-assisted development with Cursor</p>
+<p class="skill"><b>Leadership:</b> Frontend architecture, coding standards, code review, mentoring, user training, project planning</p>
+
+<h2>Professional experience</h2>
+
+<div class="job">
+  <div class="job-head"><span class="role">Freelance Frontend Engineer</span><span class="period">09/2025 – present</span></div>
+  <div class="org">Self-employed · Remote</div>
+  <ul>
+    <li>Built and published <a href="https://www.npmjs.com/package/@tuhama/translation-manager">@tuhama/translation-manager</a>,
+      an open-source npm CLI and local UI that scans React code for translation keys and sends the surrounding code to
+      OpenAI, Gemini, or Google Translate for context-aware translations.</li>
+    <li>Contributed to a case management system for a Qatari law firm, now in production testing: built its SharePoint
+      document management in React with @azure/msal-react and the Microsoft Graph API (Microsoft Entra ID sign-in),
+      plus the filterable, resizable data tables.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head"><span class="role">Senior Frontend Developer</span><span class="period">02/2021 – 08/2025</span></div>
+  <div class="org">BPro ERP · Remote · held alongside the government role</div>
+  <ul>
+    <li>Frontend lead and architect of an enterprise ERP aimed at large companies in the Gulf region: a 150,000-line
+      React and TypeScript codebase. Designed the architecture, wrote the coding guidelines and lint rules, and reviewed
+      and approved every pull request.</li>
+    <li>Mentored four junior developers, two at a time, on UI architecture, performance, and maintainability.</li>
+    <li>Designed the shared page templates and component library that more than half of the 1,300+ module files build on,
+      across 12 ERP modules including Sales, Purchase, Inventory, Finance, and HR.</li>
+    <li>Built the granular role-based access control (RBAC) system, from permission management screens to
+      permission-filtered routes and navigation.</li>
+    <li>Designed and built a custom PDF report engine on jsPDF, with page bands, data fields, an expression evaluator,
+      and drawing for rich text, images, and barcodes.</li>
+    <li>Kept large reports responsive with pagination and list virtualization, cut initial load with lazy loading and
+      dynamic imports, and tracked down unnecessary re-renders with React DevTools.</li>
+    <li>Integrated frontend workflows into Jenkins CI/CD with Gitee, working with backend and DevOps teams on automated
+      branch deployments.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head"><span class="role">Head of Analysis and Software Division, IT Department</span><span class="period">07/2008 – 05/2025</span></div>
+  <div class="org">Directorate of Finance (government agency) · Homs, Syria</div>
+  <ul>
+    <li>Led a division of up to four engineers in systems analysis and internal software development.</li>
+    <li>Trained finance staff on nationwide tax systems procured from software vendors and used across Syria, where
+      processing errors carry legal liability.</li>
+    <li>Designed and built two internal prototypes: a Personnel Portal in Java EE (servlets, JSP, JPA) on MySQL, and a
+      Warehouse Management System with a Spring Boot REST API secured by JWT and a React and Ant Design frontend.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head"><span class="role">Java Applets Programmer</span><span class="period">08/2007 – 05/2008</span></div>
+  <div class="org"><a href="https://www.miditec.de/">MIDITEC</a> · Damascus, Syria</div>
+  <ul>
+    <li>Trained and worked as a Java programmer on MTZ Web, MIDITEC's ERP product, directly after graduation.</li>
+  </ul>
+</div>
+
+<h2>Education</h2>
+<div class="job">
+  <div class="job-head"><span class="role">Master of Software Engineering</span><span class="period">2014 – 2020</span></div>
+  <div class="org">Al Baath University, Syria</div>
+  <p>Thesis: Client-side web application security</p>
+</div>
+<div class="job">
+  <div class="job-head"><span class="role">Bachelor of Software Engineering</span><span class="period">09/2002 – 07/2007</span></div>
+  <div class="org">Al Baath University, Syria</div>
+</div>
+
+<h2>Certificates</h2>
+<ul>
+  <li><strong>IBM DevOps and Software Engineering</strong> (Coursera specialization) ·
+    <a href="https://www.coursera.org/account/accomplishments/specialization/6VESQVX9MOHE">View credential</a><br>
+    <span class="muted">CI/CD, DevOps, cloud deployment, OWASP application security, Bash scripting, and the software development life cycle.</span></li>
+  <li><strong>Model Context Protocol (MCP) Mastery</strong> (Coursera) ·
+    <a href="https://coursera.org/share/adb1e76eb6e4ba288df1e0ff76492be7">View credential</a></li>
+  <li><strong>Advanced Styling with Responsive Design</strong> (Coursera) ·
+    <a href="https://coursera.org/share/5e6564fa4885e2cc47b3a063dd4ed231">View credential</a></li>
+</ul>
+
+<h2>Languages</h2>
+<p>Arabic: native · English: C1 (fluent) · German: A2, currently studying</p>
+
+</body>
+</html>
