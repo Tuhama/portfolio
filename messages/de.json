@@ -58,7 +58,7 @@
         "description": "Open-Source-i18n-Tooling und SharePoint-Dokumentenverwaltung für ein Kanzleisystem.",
         "highlights": [
           "Entwicklung und Veröffentlichung von @tuhama/translation-manager, einem Open-Source-npm-Paket mit i18n-Verwaltungsoberfläche, KI-gestützter Übersetzung und Extraktion von Code-Kontext.",
-          "GLC (Kanzleiverwaltung): SharePoint-Dokumentenverwaltung in React mit @azure/msal-react und der Microsoft Graph API, inklusive Authentifizierung über Microsoft Entra ID."
+          "Mitarbeit an einem Fallverwaltungssystem für eine katarische Anwaltskanzlei, derzeit im Produktionstest: SharePoint-Dokumentenverwaltung in React mit @azure/msal-react und der Microsoft Graph API (Anmeldung über Microsoft Entra ID) sowie filterbare, anpassbare Datentabellen umgesetzt."
         ],
         "tags": [
           "Next.js",
@@ -74,15 +74,19 @@
         "role": "Senior Frontend Developer",
         "company": "BPro ERP · Remote",
         "period": "02/2021 – 08/2025",
-        "description": "Leitung der Frontend-Entwicklung eines großen Enterprise-ERP, parallel zur staatlichen Tätigkeit.",
+        "description": "Leitung der Frontend-Entwicklung eines Enterprise-ERP für große Unternehmen in der Golfregion: eine Codebasis mit 150.000 Zeilen React und TypeScript, parallel zur staatlichen Tätigkeit.",
         "highlights": [
-          "Leitung der Frontend-Entwicklung über mehr als 4 Jahre, inklusive Code-Reviews und Mentoring von Junior Engineers zu UI-Architektur, Performance und Wartbarkeit.",
-          "Modulare UI für Vertrieb, Lager und Ressourcenmanagement sowie ein feingranulares RBAC-Berechtigungssystem.",
+          "Frontend-Lead und Architekt über mehr als 4 Jahre: Architektur entworfen, Coding-Guidelines und Lint-Regeln definiert, alle Pull Requests geprüft und freigegeben sowie vier Junior-Entwickler betreut, jeweils zwei gleichzeitig.",
+          "Gemeinsame Seitenvorlagen und Komponentenbibliothek entworfen, auf denen mehr als die Hälfte der über 1.300 Moduldateien aufbaut, in 12 ERP-Modulen wie Vertrieb, Einkauf, Lager, Finanzen und Personal.",
+          "Feingranulares RBAC-Berechtigungssystem umgesetzt, von der Berechtigungsverwaltung bis zu berechtigungsgefilterten Routen und Navigation.",
+          "Eigene PDF-Report-Engine auf Basis von jsPDF entworfen und umgesetzt, mit Seitenbändern, Datenfeldern, einem Ausdrucksauswerter und Rendering von Rich Text, Bildern und Barcodes.",
+          "Große Berichte durch Paginierung und Listen-Virtualisierung performant gehalten, die initiale Ladezeit mit Lazy Loading und dynamischen Imports reduziert und unnötige Re-Renders mit den React DevTools aufgespürt.",
           "Anbindung der Frontend-Workflows an Jenkins-CI/CD mit Gitee, gemeinsam mit Backend- und DevOps-Teams für automatisierte Branch-Deployments."
         ],
         "tags": [
           "React",
           "TypeScript",
+          "Redux Toolkit",
           "RBAC",
           "Jenkins",
           "Gitee",
@@ -93,17 +97,19 @@
         "role": "Leiter der Abteilung Analyse und Software, IT",
         "company": "Finanzdirektion · Homs, Syrien",
         "period": "07/2008 – 05/2025",
-        "description": "Leitung der Softwareabteilung: Analyse, Entwurf und Umsetzungsstrategie.",
+        "description": "Leitung der Softwareabteilung einer regionalen Finanzdirektion: Systemanalyse, Schulung der Mitarbeitenden in landesweiten Steuersystemen und interne Software-Prototypen.",
         "highlights": [
-          "Leitung der Softwareabteilung sowie der Strategie für Analyse, Entwurf und Umsetzung.",
-          "Entwurf und Entwicklung interner Systeme mit Java Spring Boot, MySQL und React.",
-          "Schlüsselprojekte: Lagerverwaltungssystem und Personalportal."
+          "Leitung einer Abteilung mit bis zu vier Ingenieuren für Systemanalyse und interne Softwareentwicklung.",
+          "Schulung von Finanzmitarbeitenden in landesweit eingesetzten Steuersystemen externer Softwareanbieter, bei denen Verarbeitungsfehler rechtliche Haftung nach sich ziehen.",
+          "Zwei interne Prototypen entworfen und entwickelt: ein Personalportal in Java EE (Servlets, JSP, JPA) mit MySQL und ein Lagerverwaltungssystem mit einer Spring-Boot-REST-API mit JWT-Absicherung und einem Frontend in React und Ant Design."
         ],
         "tags": [
           "Java Spring Boot",
+          "Java EE",
           "MySQL",
           "React",
-          "Systemanalyse"
+          "Systemanalyse",
+          "Anwenderschulung"
         ]
       },
       "miditec": {
@@ -147,19 +153,19 @@
     "description": "Enterprise-ERP, ein Kanzleisystem mit SharePoint-Dokumentenverwaltung und ein Open-Source-i18n-Werkzeug für mehrsprachige React-Anwendungen.",
     "items": {
       "bpro": {
-        "description": "Frontend eines großen Enterprise-ERP für Vertrieb, Lager und Ressourcenmanagement, mit einem feingranularen RBAC-Berechtigungssystem.",
+        "description": "Enterprise-ERP für große Unternehmen in der Golfregion. Frontend-Architektur verantwortet: 12 Module auf einem gemeinsamen Vorlagensystem, feingranulare RBAC-Berechtigungen und eine eigene PDF-Report-Engine.",
         "tags": [
           "React",
           "TypeScript",
+          "Redux Toolkit",
+          "Ant Design",
           "RBAC",
-          "Vertrieb",
-          "Lager",
-          "Ressourcenmanagement"
+          "jsPDF"
         ],
         "title": "BPro ERP"
       },
       "glc": {
-        "description": "Kanzleiverwaltung mit SharePoint-Dokumentenmanagement in React, über @azure/msal-react und die Microsoft Graph API, mit Authentifizierung über Microsoft Entra ID.",
+        "description": "Fallverwaltung für eine katarische Anwaltskanzlei, im Produktionstest. Ich habe das SharePoint-Dokumentenmanagement (Entra-ID-Anmeldung, Microsoft Graph) und filterbare Datentabellen umgesetzt.",
         "tags": [
           "React",
           "MSAL",
@@ -167,7 +173,7 @@
           "Entra ID",
           "SharePoint"
         ],
-        "title": "GLC"
+        "title": "Fallverwaltung für Kanzleien"
       },
       "translationManager": {
         "description": "npm-CLI mit lokaler UI. Scannt React nach i18n-Schlüsseln und übergibt den umgebenden Code an OpenAI, Gemini oder Google Translate.",

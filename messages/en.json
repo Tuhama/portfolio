@@ -58,7 +58,7 @@
         "description": "Open-source i18n tooling and SharePoint document management for a law-office system.",
         "highlights": [
           "Built and published @tuhama/translation-manager, an open-source npm package with an i18n management UI, AI-assisted translation, and code-context extraction.",
-          "GLC (law office management): enterprise SharePoint document management in React with @azure/msal-react and the Microsoft Graph API, including Microsoft Entra ID authentication."
+          "Contributed to a case management system for a Qatari law firm, now in production testing: built its SharePoint document management in React with @azure/msal-react and the Microsoft Graph API (Microsoft Entra ID sign-in), plus the filterable, resizable data tables."
         ],
         "tags": [
           "Next.js",
@@ -74,15 +74,19 @@
         "role": "Senior Frontend Developer",
         "company": "BPro ERP · Remote",
         "period": "02/2021 – 08/2025",
-        "description": "Led frontend development of a large-scale enterprise ERP, held alongside the government role.",
+        "description": "Led frontend development of an enterprise ERP aimed at large companies in the Gulf region: a 150,000-line React and TypeScript codebase, held alongside the government role.",
         "highlights": [
-          "Led frontend development for 4+ years, running code reviews and mentoring junior engineers on UI architecture, performance, and maintainability.",
-          "Architected modular UI for Sales, Inventory, and Resource Management, plus a granular role-based access control (RBAC) permission system.",
+          "Frontend lead and architect for 4+ years: designed the architecture, wrote the coding guidelines and lint rules, reviewed and approved every pull request, and mentored four junior developers, two at a time.",
+          "Designed the shared page templates and component library that more than half of the 1,300+ module files build on, across 12 ERP modules including Sales, Purchase, Inventory, Finance, and HR.",
+          "Built the granular role-based access control (RBAC) system, from permission management screens to permission-filtered routes and navigation.",
+          "Designed and built a custom PDF report engine on jsPDF, with page bands, data fields, an expression evaluator, and drawing for rich text, images, and barcodes.",
+          "Kept large reports responsive with pagination and list virtualization, cut initial load with lazy loading and dynamic imports, and tracked down unnecessary re-renders with React DevTools.",
           "Integrated frontend workflows into Jenkins CI/CD with Gitee, working with backend and DevOps teams on automated branch deployments."
         ],
         "tags": [
           "React",
           "TypeScript",
+          "Redux Toolkit",
           "RBAC",
           "Jenkins",
           "Gitee",
@@ -93,17 +97,19 @@
         "role": "Head of Analysis and Software Division, IT Department",
         "company": "Directorate of Finance · Homs, Syria",
         "period": "07/2008 – 05/2025",
-        "description": "Directed the software division, covering analysis, design, and implementation strategy.",
+        "description": "Headed the software division of a regional finance directorate, covering systems analysis, staff training on national tax systems, and internal software prototypes.",
         "highlights": [
-          "Directed the software division and its analysis, design, and implementation strategy.",
-          "Designed and built internal systems with Java Spring Boot, MySQL, and React.",
-          "Key projects: Warehouse Management System and Personnel Portal."
+          "Led a division of up to four engineers in systems analysis and internal software development.",
+          "Trained finance staff on nationwide tax systems procured from software vendors and used across Syria, where processing errors carry legal liability.",
+          "Designed and built two internal prototypes: a Personnel Portal in Java EE (servlets, JSP, JPA) on MySQL, and a Warehouse Management System with a Spring Boot REST API secured by JWT and a React and Ant Design frontend."
         ],
         "tags": [
           "Java Spring Boot",
+          "Java EE",
           "MySQL",
           "React",
-          "System Analysis"
+          "System Analysis",
+          "User Training"
         ]
       },
       "miditec": {
@@ -147,19 +153,19 @@
     "description": "Enterprise ERP, a law-office system with SharePoint document management, and an open-source i18n tool for multilingual React apps.",
     "items": {
       "bpro": {
-        "description": "Large-scale enterprise ERP frontend covering Sales, Inventory, and Resource Management, with a granular role-based access control (RBAC) permission system.",
+        "description": "Enterprise ERP for large Gulf companies. I architected the frontend: 12 modules on a shared template system, granular RBAC permissions, and a custom PDF report engine.",
         "tags": [
           "React",
           "TypeScript",
+          "Redux Toolkit",
+          "Ant Design",
           "RBAC",
-          "Sales",
-          "Inventory",
-          "Resource Management"
+          "jsPDF"
         ],
         "title": "BPro ERP"
       },
       "glc": {
-        "description": "Law office management system with enterprise SharePoint document management in React, using @azure/msal-react and the Microsoft Graph API, with Microsoft Entra ID authentication.",
+        "description": "Case management system for a Qatari law firm, in production testing. I built its SharePoint document management (Entra ID sign-in, Microsoft Graph) and filterable data tables.",
         "tags": [
           "React",
           "MSAL",
@@ -167,7 +173,7 @@
           "Entra ID",
           "SharePoint"
         ],
-        "title": "GLC"
+        "title": "Law Firm Case Management"
       },
       "translationManager": {
         "description": "Published npm CLI and local UI. Scans React for translation keys and passes the surrounding code to OpenAI, Gemini, or Google Translate.",

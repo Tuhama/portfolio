@@ -60,7 +60,6 @@ const projects = complete<ProjectEntry>()([
   {
     key: "glc",
     image: "/assets/projects/GLC.png",
-    links: { live: "https://system.glc-qa.com" },
   },
 ]);
 
