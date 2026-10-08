@@ -23,8 +23,8 @@ export function Header() {
               </div>
             </div>
             <span className="hidden text-xl font-black tracking-tighter sm:inline-block">
-              {SITE.brand.replace(".dev", "")}
-              <span className="text-primary">.</span>dev
+              {SITE.brand}
+              <span className="text-primary">.</span>
             </span>
           </Link>
           <nav className="hidden items-center gap-8 text-sm font-bold lg:flex">

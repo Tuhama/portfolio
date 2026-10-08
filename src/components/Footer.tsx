@@ -8,6 +8,7 @@ export function Footer() {
   const t = useTranslations("Footer");
   const tNav = useTranslations("Navigation");
   const tContact = useTranslations("Contact");
+  const tHero = useTranslations("Hero");
 
   return (
     <footer className="w-full border-t border-border/50 bg-surface-1/60">
@@ -15,10 +16,10 @@ export function Footer() {
         <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
           <div className="space-y-2">
             <p className="text-xl font-black tracking-tighter">
-              {SITE.brand.replace(".dev", "")}
-              <span className="text-primary">.</span>dev
+              {SITE.brand}
+              <span className="text-primary">.</span>
             </p>
-            <p className="text-sm text-muted-foreground">{SITE.name}</p>
+            <p className="text-sm text-muted-foreground">{tHero("subtitle")}</p>
             <div className="flex flex-wrap gap-x-4 gap-y-2 pt-2 text-sm font-bold">
               <a
                 href={`mailto:${SITE.email}`}

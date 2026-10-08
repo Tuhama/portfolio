@@ -1,17 +1,4 @@
 {
-  "ADR": {
-    "decision": "Decision: Accepted",
-    "description": "Documenting the \"Why\" behind the architecture.",
-    "records": {
-      "001": {
-        "title": "001. Adoption of Next.js 16 App Router"
-      },
-      "002": {
-        "title": "002. Tailwind CSS v4 CSS-First Approach"
-      }
-    },
-    "title": "Architecture Decision Records"
-  },
   "A11y": {
     "close": "Close",
     "closeMenu": "Close menu",
@@ -68,10 +55,9 @@
         "role": "Freelance Frontend Engineer",
         "company": "Self-employed · Syria (remote)",
         "period": "09/2025 – Present",
-        "description": "Open-source i18n tooling, a Next.js portfolio, and SharePoint document management for a law-office system.",
+        "description": "Open-source i18n tooling and SharePoint document management for a law-office system.",
         "highlights": [
           "Built and published @tuhama/translation-manager, an open-source npm package with an i18n management UI, AI-assisted translation, and code-context extraction.",
-          "Built this accessible portfolio in Next.js 16 with TypeScript, Tailwind CSS, and next-intl for English, Arabic, and German, tested with Vitest and deployed through GitHub Actions.",
           "GLC (law office management): enterprise SharePoint document management in React with @azure/msal-react and the Microsoft Graph API, including Microsoft Entra ID authentication."
         ],
         "tags": [
@@ -137,7 +123,7 @@
   },
   "Hero": {
     "actions": {
-      "consultation": "Request Consultation",
+      "contact": "Get in touch",
       "cv": "Download CV"
     },
     "badge": "Available immediately · Germany",

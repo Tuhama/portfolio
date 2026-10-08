@@ -58,7 +58,7 @@ export function Hero() {
           >
             <a href={`mailto:${SITE.email}`}>
               <MessageSquare className="h-5 w-5" />
-              {t("actions.consultation")}
+              {t("actions.contact")}
             </a>
           </Button>
         </div>

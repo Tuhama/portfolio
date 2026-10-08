@@ -4,7 +4,7 @@ export const SITE = {
   name: "Tuhama Qlyshi",
   givenName: "Tuhama",
   familyName: "Qlyshi",
-  brand: "Tuhama.dev",
+  brand: "Tuhama Qlyshi",
   email: "tuhama.gh.qlyshi@gmail.com",
   github: "https://github.com/Tuhama",
   linkedin: "https://www.linkedin.com/in/tuhama-ql",
