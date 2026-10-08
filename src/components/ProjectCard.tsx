@@ -12,8 +12,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { useTranslations } from "next-intl";
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
   Dialog,
   DialogContent,
@@ -45,17 +44,7 @@ export function ProjectCard({
 }: ProjectCardProps) {
   const t = useTranslations("Projects");
   const tA11y = useTranslations("A11y");
-  const { resolvedTheme } = useTheme();
-  const [githubIcon, setGithubIcon] = useState("/GitHub_Invertocat_Black.svg");
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
-
-  useEffect(() => {
-    setGithubIcon(
-      resolvedTheme === "light"
-        ? "/GitHub_Invertocat_Black.svg"
-        : "/GitHub_Invertocat_White.svg",
-    );
-  }, [resolvedTheme]);
 
   return (
     <div className="scroll-reveal h-full">
@@ -143,8 +132,15 @@ export function ProjectCard({
               <a href={links.github} target="_blank" rel="noopener noreferrer">
                 <Image
                   alt=""
-                  src={githubIcon}
-                  className="h-5 w-5 transition-transform group-hover:scale-110"
+                  src="/GitHub_Invertocat_Black.svg"
+                  className="h-5 w-5 transition-transform group-hover:scale-110 dark:hidden"
+                  width={20}
+                  height={20}
+                />
+                <Image
+                  alt=""
+                  src="/GitHub_Invertocat_White.svg"
+                  className="hidden h-5 w-5 transition-transform group-hover:scale-110 dark:block"
                   width={20}
                   height={20}
                 />
