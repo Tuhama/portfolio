@@ -6,7 +6,7 @@ import { renderWithIntl } from "@/test/render";
 describe("Header", () => {
   it("renders the site name link", () => {
     renderWithIntl(<Header />);
-    expect(screen.getByRole("link", { name: /tuhama\.dev/i })).toBeDefined();
+    expect(screen.getByRole("link", { name: /tuhama qlyshi/i })).toBeDefined();
   });
 
   it("renders navigation links via translations using accessible roles", () => {
