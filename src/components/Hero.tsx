@@ -7,13 +7,8 @@ export function Hero() {
   const t = useTranslations("Hero");
 
   return (
-    <section className="noise-overlay relative flex min-h-[calc(100dvh-5rem)] w-full flex-col items-center justify-center overflow-hidden px-4 text-center">
-      <div className="absolute inset-0 -z-10 h-full w-full overflow-hidden bg-background">
-        <div className="absolute -start-[10%] -top-[10%] h-[60%] w-[60%] rounded-full bg-primary/10 blur-[130px] mix-blend-soft-light motion-safe:animate-pulse"></div>
-        <div
-          className="absolute -end-[10%] -bottom-[10%] h-[60%] w-[60%] rounded-full bg-primary/20 blur-[130px] mix-blend-soft-light motion-safe:animate-pulse"
-          style={{ animationDelay: "3s" }}
-        ></div>
+    <section className="relative flex min-h-[calc(100dvh-5rem)] w-full flex-col items-center justify-center overflow-hidden px-4 text-center">
+      <div className="hero-glow absolute inset-0 -z-10 h-full w-full overflow-hidden bg-background">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:radial-gradient(ellipse_80%_60%_at_50%_50%,#000_60%,transparent_100%)] opacity-30"></div>
       </div>
 

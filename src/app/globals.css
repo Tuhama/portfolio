@@ -217,18 +217,19 @@
     @apply bg-gradient-to-br from-foreground via-foreground/90 to-primary/80 bg-clip-text text-transparent;
   }
 
-  .noise-overlay {
-    position: relative;
-  }
-
-  .noise-overlay::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: 50;
-    opacity: 0.03;
-    pointer-events: none;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  .hero-glow {
+    background-color: var(--background);
+    background-image:
+      radial-gradient(
+        ellipse 55% 45% at 8% 0%,
+        color-mix(in srgb, var(--primary) 16%, transparent),
+        transparent 70%
+      ),
+      radial-gradient(
+        ellipse 50% 45% at 100% 100%,
+        color-mix(in srgb, var(--primary) 26%, transparent),
+        transparent 68%
+      );
   }
 
   .skip-link {
