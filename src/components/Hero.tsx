@@ -18,16 +18,16 @@ export function Hero() {
       </div>
 
       <div className="relative z-10 max-w-5xl space-y-10">
-        <div className="reveal-load reveal-scale stagger-1 inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-5 py-2 text-sm font-bold tracking-wide text-primary backdrop-blur-md">
+        <div className="enter-scale stagger-1 inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-5 py-2 text-sm font-bold tracking-wide text-primary backdrop-blur-md">
           <span className="me-3 flex h-2 w-2 rounded-full bg-primary motion-safe:animate-ping"></span>
           {t("badge")}
         </div>
 
-        <h1 className="reveal-load reveal-up stagger-2 text-5xl font-black tracking-tighter sm:text-7xl lg:text-8xl">
+        <h1 className="text-5xl font-black tracking-tighter sm:text-7xl lg:text-8xl">
           <span className="text-gradient">{t("title")}</span>
         </h1>
 
-        <div className="reveal-load reveal-up stagger-3 mx-auto max-w-3xl space-y-8">
+        <div className="mx-auto max-w-3xl space-y-8">
           <p className="text-xl font-medium leading-relaxed text-muted-foreground sm:text-2xl">
             {t("subtitle")}
           </p>
@@ -38,7 +38,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="reveal-load reveal-up stagger-4 flex flex-col items-center justify-center gap-4 pt-8 sm:flex-row">
+        <div className="enter-up stagger-4 flex flex-col items-center justify-center gap-4 pt-8 sm:flex-row">
           <Button
             size="lg"
             variant="outline"
