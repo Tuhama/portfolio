@@ -21,8 +21,9 @@ const inter = Inter({
 
 const notoSansArabic = Noto_Sans_Arabic({
   subsets: ["arabic"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["400", "700"],
   variable: "--font-noto-arabic",
+  preload: false,
 });
 
 export function generateStaticParams() {
@@ -86,15 +87,16 @@ export default async function LocaleLayout({
   const messages = await getMessages();
   const tA11y = await getTranslations({ locale, namespace: "A11y" });
   const nonce = (await headers()).get("x-nonce") ?? undefined;
+  const isArabic = locale === Locale.Arabic;
 
   return (
     <html
       lang={locale}
-      dir={locale === Locale.Arabic ? "rtl" : "ltr"}
+      dir={isArabic ? "rtl" : "ltr"}
       suppressHydrationWarning
     >
       <body
-        className={`${inter.variable} ${notoSansArabic.variable} ${inter.className} min-h-screen bg-background text-foreground`}
+        className={`${inter.variable} ${isArabic ? notoSansArabic.variable : ""} ${inter.className} min-h-screen bg-background text-foreground`}
       >
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider
