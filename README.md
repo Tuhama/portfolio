@@ -38,3 +38,5 @@ Open [http://localhost:3000](http://localhost:3000). Arabic is at `/ar` and Germ
 ## Site URL
 
 Canonical links default to `https://tuhama.vercel.app`. Set `NEXT_PUBLIC_SITE_URL` to override that (for example in a preview). On Vercel production, `VERCEL_PROJECT_PRODUCTION_URL` is used when the public URL is unset.
+
+![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/Tuhama/portfolio?utm_source=oss&utm_medium=github&utm_campaign=Tuhama%2Fportfolio&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
