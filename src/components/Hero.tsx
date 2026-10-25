@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -11,11 +12,21 @@ export function Hero() {
 
   return (
     <section className="w-full space-y-6 py-16 text-start md:py-24">
-      <div className="max-w-3xl space-y-3">
-        <h1 className="text-foreground">{t("title")}</h1>
-        <div className="flex flex-wrap items-baseline gap-x-6 gap-y-1">
-          <p className="text-xl text-foreground sm:text-2xl">{t("subtitle")}</p>
-          <p className="text-xl text-foreground sm:text-2xl">{t("badge")}</p>
+      <div className="flex max-w-3xl items-center gap-5">
+        <Image
+          src="/assets/portrait.jpg"
+          alt={t("title")}
+          width={96}
+          height={96}
+          priority
+          className="size-24 shrink-0 rounded-full border border-border object-cover"
+        />
+        <div className="min-w-0 space-y-3">
+          <h1 className="text-foreground">{t("title")}</h1>
+          <div className="flex flex-wrap items-baseline gap-x-6 gap-y-1">
+            <p className="text-xl text-foreground sm:text-2xl">{t("subtitle")}</p>
+            <p className="text-xl text-foreground sm:text-2xl">{t("badge")}</p>
+          </div>
         </div>
       </div>
       <p className="max-w-2xl text-base leading-relaxed text-muted-foreground">
