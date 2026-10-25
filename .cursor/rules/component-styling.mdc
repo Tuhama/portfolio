@@ -1,0 +1,31 @@
+---
+description: How section components consume UI primitives. Layout classes only; variants live in src/components/ui.
+globs: src/components/**/*.tsx
+alwaysApply: false
+---
+
+# Component styling
+
+Section files stay `Hero`, `Experience`, `Skills`, `Projects`, `Contact`, `Header`, and `Footer`. Add a file only when a pattern is used twice.
+
+## Primitives
+
+Visual variants go on `cva` in `src/components/ui`. A `className` on `Button` or `Card` is layout only (`w-full`, `gap`).
+
+```tsx
+// Bad — a second button style on the call site
+<Button variant="premium" className="h-16 rounded-full bg-primary/5 backdrop-blur-md">
+
+// Good — layout at the call site, look on the variant
+<Button variant="default" className="w-full sm:w-auto">
+```
+
+## Structure
+
+- No decorative wrappers: absolute blurs, gradient overlays, or mask divs.
+- Styling does not add `"use client"`.
+- Use logical utilities so Arabic mirrors: `ms`, `me`, `ps`, `pe`, `start`, `end`, `text-start`.
+
+## Out of scope while restyling
+
+Do not edit `messages/`, `src/lib/catalog.ts`, `src/lib/site.ts`, metadata, or JSON-LD.

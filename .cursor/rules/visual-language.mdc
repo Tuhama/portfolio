@@ -1,0 +1,42 @@
+---
+description: Quiet editorial visual language. Sets type, surfaces, accent, and motion limits for the portfolio.
+alwaysApply: true
+---
+
+# Visual language
+
+Quiet editorial page: generous type, little chrome, set like a résumé. Light and dark are both finished. Define every color in both themes together.
+
+## Type
+
+- Latin `h1–h6`: Source Serif 4, weight 600, solid `text-foreground`, normal tracking. Load the face in `src/app/[locale]/layout.tsx` when restyling.
+- `html[lang="ar"] h1–h6`: Noto Sans Arabic, weight 700.
+- Body and UI: Inter. Arabic body stays Noto Sans Arabic.
+
+## Layout
+
+- Experience, Skills, Projects, and Contact share one vertical padding. Headings and body in those sections are `text-start`.
+- The hero name block is the only centered region.
+
+## Color and surface
+
+- One accent: a near-foreground ink, not a saturated violet. Use it for links, focus, and one primary action.
+- Surfaces are solid `bg-background` or `bg-card` with a 1px `border-border`. Light is paper. Dark is near-black.
+- Tags, dates, and skill names are plain text or a neutral border.
+
+## Motion
+
+- Animate color and opacity only, at most 200ms.
+- Keep the `prefers-reduced-motion` block in `src/app/globals.css`.
+
+## Banned treatments
+
+Gradient text, glass, backdrop blur, radial glows, grid masks, blur orbs, `font-black`, `tracking-tighter`, primary-tinted pills, hover scale, ping dots, spring easings, and scroll-reveal on every block.
+
+```tsx
+// Bad
+<h2 className="text-gradient font-black tracking-tighter">
+
+// Good
+<h2 className="font-serif text-foreground">
+```
