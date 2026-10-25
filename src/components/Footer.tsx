@@ -11,19 +11,16 @@ export function Footer() {
   const tHero = useTranslations("Hero");
 
   return (
-    <footer className="w-full border-t border-border/50 bg-surface-1/60">
+    <footer className="w-full border-t border-border bg-background">
       <div className="mx-auto flex max-w-7xl flex-col gap-10 px-4 py-12 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
           <div className="space-y-2">
-            <p className="text-xl font-black tracking-tighter">
-              {SITE.brand}
-              <span className="text-primary">.</span>
-            </p>
+            <p className="text-lg text-foreground">{SITE.brand}</p>
             <p className="text-sm text-muted-foreground">{tHero("subtitle")}</p>
-            <div className="flex flex-wrap gap-x-4 gap-y-2 pt-2 text-sm font-bold">
+            <div className="flex flex-wrap gap-x-4 gap-y-2 pt-2 text-sm">
               <a
                 href={`mailto:${SITE.email}`}
-                className="text-foreground/60 transition-colors hover:text-primary focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                className="text-primary underline decoration-primary/40 underline-offset-4 hover:decoration-primary focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
               >
                 {SITE.email}
               </a>
@@ -31,7 +28,7 @@ export function Footer() {
                 href={SITE.linkedin}
                 target="_blank"
                 rel="me noopener noreferrer"
-                className="text-foreground/60 transition-colors hover:text-primary focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                className="text-primary underline decoration-primary/40 underline-offset-4 hover:decoration-primary focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
               >
                 {tContact("linkedin")}
               </a>
@@ -39,18 +36,18 @@ export function Footer() {
                 href={SITE.github}
                 target="_blank"
                 rel="me noopener noreferrer"
-                className="text-foreground/60 transition-colors hover:text-primary focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                className="text-primary underline decoration-primary/40 underline-offset-4 hover:decoration-primary focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
               >
                 {tContact("github")}
               </a>
             </div>
           </div>
-          <nav className="flex flex-wrap gap-x-6 gap-y-3 text-sm font-bold">
+          <nav className="flex flex-wrap gap-x-6 gap-y-3 text-sm">
             {SECTION_LINKS.map((link) => (
               <Link
                 key={link.key}
                 href={link.href}
-                className="text-foreground/60 transition-colors hover:text-primary focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                className="text-primary underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
               >
                 {tNav(link.key)}
               </Link>

@@ -8,39 +8,31 @@ import { MobileNav } from "./MobileNav";
 import { SECTION_LINKS } from "@/lib/nav";
 import { SITE } from "@/lib/site";
 
+const navLinkClass =
+  "py-2 text-primary underline-offset-4 transition-colors hover:underline focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background";
+
 export function Header() {
   const t = useTranslations("Navigation");
 
   return (
-    <header className="sticky top-0 z-40 w-full">
-      <div className="absolute inset-0 border-b border-border/50 bg-background" />
-      <div className="relative mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6">
-        <div className="flex items-center gap-10">
-          <Link href="/" className="group flex items-center gap-3">
-            <div className="h-8 w-8 rounded-xl bg-gradient-to-br from-primary to-primary/60 p-[2px] shadow-premium">
-              <div className="flex h-full w-full items-center justify-center rounded-[10px] bg-background text-xs font-black text-primary transition-all duration-500 group-hover:bg-primary group-hover:text-background">
-                T
-              </div>
-            </div>
-            <span className="hidden text-xl font-black tracking-tighter sm:inline-block">
-              {SITE.brand}
-              <span className="text-primary">.</span>
-            </span>
+    <header className="sticky top-0 z-40 w-full border-b border-border bg-background">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
+        <div className="flex items-center gap-8">
+          <Link
+            href="/"
+            className="text-lg text-primary underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+          >
+            {SITE.brand}
           </Link>
-          <nav className="hidden items-center gap-8 text-sm font-bold lg:flex">
+          <nav className="hidden items-center gap-6 text-sm lg:flex">
             {SECTION_LINKS.map((link) => (
-              <Link
-                key={link.key}
-                href={link.href}
-                className="group relative py-2 text-foreground/60 transition-colors hover:text-primary focus-visible:rounded-sm focus-visible:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-              >
+              <Link key={link.key} href={link.href} className={navLinkClass}>
                 {t(link.key)}
-                <span className="absolute start-0 bottom-0 h-[2px] w-0 bg-primary transition-all duration-500 group-hover:w-full group-focus-visible:w-full" />
               </Link>
             ))}
           </nav>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2">
           <ThemeSwitcher />
           <LanguageSwitcher />
           <MobileNav />

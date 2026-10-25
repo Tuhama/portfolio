@@ -33,20 +33,20 @@ export function LanguageSwitcher() {
           variant="ghost"
           size="icon"
           aria-label={tA11y("switchLanguage")}
-          className="group h-10 w-10 rounded-2xl border border-border/50 bg-surface-2/50 shadow-inner backdrop-blur-md transition-all duration-300 hover:border-primary/30 hover:bg-surface-1 active:scale-95"
+          className="border border-border bg-background"
         >
           <Globe className="h-5 w-5 text-muted-foreground transition-colors group-hover:text-primary" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent
         align="end"
-        className="glass-morphism mt-2 min-w-[140px] rounded-2xl border-border/50 p-2 shadow-premium"
+        className="mt-2 min-w-[140px] border-border bg-card p-1 shadow-sm"
       >
         {languages.map((lang) => (
           <DropdownMenuItem
             key={lang.code}
             onClick={() => handleSwitch(lang.code)}
-            className="mb-1 cursor-pointer rounded-xl px-4 py-2.5 text-sm font-bold transition-all duration-300 last:mb-0 hover:bg-primary/10 hover:text-primary focus:bg-primary/10 focus:text-primary active:scale-95"
+            className="cursor-pointer rounded-sm px-3 py-2 text-sm transition-colors duration-200 last:mb-0 hover:bg-muted hover:text-foreground focus:bg-muted focus:text-foreground"
           >
             {lang.label}
           </DropdownMenuItem>

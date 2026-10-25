@@ -1,26 +1,29 @@
 ---
-description: Quiet editorial visual language. Sets type, surfaces, accent, and motion limits for the portfolio.
+description: Professional brief visual language. Sets type, surfaces, accent, and motion limits for the portfolio.
 alwaysApply: true
 ---
 
 # Visual language
 
-Quiet editorial page: generous type, little chrome, set like a résumé. Light and dark are both finished. Define every color in both themes together.
+A clear professional brief for an HR reader. The first screen carries the name, role, availability, and one strong CV control. Light and dark are both finished. Define every color in both themes together.
 
 ## Type
 
-- Latin `h1–h6`: Source Serif 4, weight 600, solid `text-foreground`, normal tracking. Load the face in `src/app/[locale]/layout.tsx` when restyling.
+- Latin `h1–h6`: Source Serif 4, weight 600, solid `text-foreground`, normal tracking. The name is the large size. Load the face in `src/app/[locale]/layout.tsx` when restyling.
 - `html[lang="ar"] h1–h6`: Noto Sans Arabic, weight 700.
 - Body and UI: Inter. Arabic body stays Noto Sans Arabic.
 
 ## Layout
 
+- The first screen is `text-start`: the name, then the role and the availability line at the same size and color, then the CV button. The CV button is the strongest control on the page.
 - Experience, Skills, Projects, and Contact share one vertical padding. Headings and body in those sections are `text-start`.
-- The hero name block is the only centered region.
+- Experience is a list. Each entry shows the employer, the title, and the dates. It is not a timeline of cards.
+- Skills are plain words.
+- Projects are the image with a short caption.
 
 ## Color and surface
 
-- One accent: a near-foreground ink, not a saturated violet. Use it for links, focus, and one primary action.
+- One accent: a deep blue or a dark green, visibly different from the body text in both light and dark. Use it for links, focus, and the CV button only.
 - Surfaces are solid `bg-background` or `bg-card` with a 1px `border-border`. Light is paper. Dark is near-black.
 - Tags, dates, and skill names are plain text or a neutral border.
 

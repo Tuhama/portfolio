@@ -26,7 +26,7 @@ export function MobileNav() {
         <Button
           variant="ghost"
           size="icon"
-          className="h-10 w-10 rounded-2xl border border-border/50 lg:hidden"
+          className="border border-border lg:hidden"
           aria-label={tA11y("openMenu")}
         >
           <Menu className="h-5 w-5" />
@@ -34,10 +34,10 @@ export function MobileNav() {
       </DialogTrigger>
       <DialogContent
         closeLabel={tA11y("close")}
-        className="fixed inset-y-0 start-0 top-0 left-auto right-auto h-full w-[min(20rem,85vw)] max-w-none translate-x-0 translate-y-0 rounded-none border-border/50 p-6 sm:rounded-none"
+        className="fixed inset-y-0 start-0 top-0 left-auto right-auto h-full w-[min(20rem,85vw)] max-w-none translate-x-0 translate-y-0 content-start rounded-none border-border bg-background p-6 sm:rounded-none"
       >
         <DialogHeader className="text-start">
-          <DialogTitle className="text-lg font-black tracking-tight">
+          <DialogTitle className="text-lg text-foreground">
             {SITE.brand}
           </DialogTitle>
         </DialogHeader>
@@ -47,7 +47,7 @@ export function MobileNav() {
               key={link.key}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="rounded-xl px-4 py-3 text-base font-bold text-foreground/80 transition-colors hover:bg-primary/10 hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              className="rounded-md px-3 py-3 text-base text-primary underline-offset-4 transition-colors hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
             >
               {t(link.key)}
             </Link>
