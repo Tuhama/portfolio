@@ -18,7 +18,7 @@ const ThemeSwitcher = () => {
   // Return a structural "shell" during SSR
   if (!mounted) {
     return (
-      <div className="flex h-10 w-[104px] items-center rounded-2xl border border-border/50 bg-surface-2/50 p-1.5 backdrop-blur-md">
+      <div className="flex h-10 w-[104px] items-center rounded-md border border-border bg-muted p-1">
         <div className="w-8 h-8 flex-1" />
         <div className="w-8 h-8 flex-1" />
         <div className="w-8 h-8 flex-1" />
@@ -33,7 +33,7 @@ const ThemeSwitcher = () => {
   ];
 
   return (
-    <div className="relative flex h-10 w-[104px] items-center overflow-hidden rounded-2xl border border-border/50 bg-surface-2/50 p-1.5 shadow-inner backdrop-blur-md">
+    <div className="relative flex h-10 w-[104px] items-center overflow-hidden rounded-md border border-border bg-muted p-1">
       {options.map((opt) => (
         <button
           key={opt.name}
@@ -41,10 +41,10 @@ const ThemeSwitcher = () => {
           title={opt.tooltip}
           aria-label={opt.tooltip}
           className={`
-            relative z-10 p-2 rounded-xl transition-all duration-500 flex-1 flex items-center justify-center
+            relative z-10 flex flex-1 items-center justify-center rounded-sm p-2 transition-colors duration-200
             ${theme === opt.name
-              ? "text-primary shadow-premium bg-surface-1"
-              : "text-muted-foreground hover:text-foreground hover:bg-foreground/5"
+              ? "bg-background text-foreground"
+              : "text-muted-foreground hover:text-foreground"
             }
           `}
         >

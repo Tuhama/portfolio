@@ -1,18 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { ExternalLink } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
+import { Card } from "@/components/ui/card";
 import {
   Dialog,
   DialogContent,
@@ -34,6 +25,9 @@ interface ProjectCardProps {
   imageFit?: "cover" | "contain";
 }
 
+const linkClassName =
+  "text-sm text-primary underline decoration-primary/40 underline-offset-4 transition-colors hover:decoration-primary focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background";
+
 export function ProjectCard({
   title,
   description,
@@ -47,13 +41,13 @@ export function ProjectCard({
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
 
   return (
-    <div className="scroll-reveal h-full">
-      <Card className="group relative flex h-full flex-col overflow-hidden border-border/50 bg-white/5 glass-morphism transition-all duration-700 hover:border-primary/40 hover:shadow-premium motion-safe:active:scale-[0.98]">
+    <Card className="flex h-full flex-col overflow-hidden">
+      <figure className="flex h-full flex-col">
         <Dialog open={isPreviewOpen} onOpenChange={setIsPreviewOpen}>
           <DialogTrigger asChild>
             <button
               type="button"
-              className="relative aspect-[16/10] w-full cursor-zoom-in overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-inset"
+              className="relative aspect-[16/10] w-full cursor-zoom-in overflow-hidden border-b border-border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-inset"
               aria-label={`${title} — ${tA11y("imagePreview")}`}
             >
               <Image
@@ -61,10 +55,8 @@ export function ProjectCard({
                 alt={title}
                 fill
                 sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-                className={`${imageFit === "contain" ? "object-contain p-16" : "object-cover"} transition-transform duration-1000 ease-[cubic-bezier(0.2,1,0.3,1)] group-hover:scale-110`}
+                className={imageFit === "contain" ? "object-contain p-8" : "object-cover"}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-60 transition-opacity duration-700 group-hover:opacity-40" />
-              <div className="pointer-events-none absolute inset-0 border border-white/10 opacity-0 transition-opacity duration-700 group-hover:opacity-100" />
             </button>
           </DialogTrigger>
           <DialogContent
@@ -88,68 +80,42 @@ export function ProjectCard({
           </DialogContent>
         </Dialog>
 
-        <CardHeader className="space-y-3 pb-4">
-          <CardTitle className="text-2xl font-black tracking-tight transition-colors duration-500 group-hover:text-primary">
-            {title}
-          </CardTitle>
-          <CardDescription className="line-clamp-4 text-base font-medium leading-relaxed text-muted-foreground">
-            {description}
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="flex-grow pb-6">
-          <div className="flex flex-wrap gap-2.5">
+        <figcaption className="space-y-2 p-4 text-start">
+          <h3>{title}</h3>
+          <p className="text-sm leading-relaxed text-muted-foreground">{description}</p>
+          <ul className="flex flex-wrap gap-x-3 gap-y-1">
             {tags.map((tag) => (
-              <span
-                key={tag}
-                className="inline-flex items-center rounded-full border border-primary/10 bg-primary/5 px-3 py-1 text-xs font-black tracking-widest text-primary uppercase transition-all duration-500 group-hover:border-primary/30 group-hover:bg-primary/10"
-              >
+              <li key={tag} className="text-sm text-muted-foreground">
                 {tag}
-              </span>
+              </li>
             ))}
-          </div>
-        </CardContent>
-        <CardFooter className="gap-4 px-6 pt-4 pb-8">
-          {links?.live && (
-            <Button
-              variant="premium"
-              size="sm"
-              className="h-11 w-full gap-2.5 font-bold tracking-tight shadow-lg shadow-primary/10"
-              asChild
-            >
-              <a href={links.live} target="_blank" rel="noopener noreferrer">
-                <ExternalLink className="h-4 w-4" />
-                <span>{links.liveLabel ?? t("live_demo")}</span>
-              </a>
-            </Button>
-          )}
-          {links?.github && (
-            <Button
-              variant="outline"
-              size="sm"
-              className="glass-morphism h-11 px-5 border-border/50 transition-all hover:bg-primary/5"
-              asChild
-            >
-              <a href={links.github} target="_blank" rel="noopener noreferrer">
-                <Image
-                  alt=""
-                  src="/GitHub_Invertocat_Black.svg"
-                  className="h-5 w-5 transition-transform group-hover:scale-110 dark:hidden"
-                  width={20}
-                  height={20}
-                />
-                <Image
-                  alt=""
-                  src="/GitHub_Invertocat_White.svg"
-                  className="hidden h-5 w-5 transition-transform group-hover:scale-110 dark:block"
-                  width={20}
-                  height={20}
-                />
-                <span className="sr-only">{tA11y("github")}</span>
-              </a>
-            </Button>
-          )}
-        </CardFooter>
-      </Card>
-    </div>
+          </ul>
+          {links?.live || links?.github ? (
+            <div className="flex flex-wrap gap-x-4 gap-y-2 pt-1">
+              {links.live ? (
+                <a
+                  href={links.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={linkClassName}
+                >
+                  {links.liveLabel ?? t("live_demo")}
+                </a>
+              ) : null}
+              {links.github ? (
+                <a
+                  href={links.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={linkClassName}
+                >
+                  {tA11y("github")}
+                </a>
+              ) : null}
+            </div>
+          ) : null}
+        </figcaption>
+      </figure>
+    </Card>
   );
 }

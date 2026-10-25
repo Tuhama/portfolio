@@ -2,7 +2,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing, Locale } from "@/i18n/routing";
-import { Inter, Noto_Sans_Arabic } from "next/font/google";
+import { Inter, Noto_Sans_Arabic, Source_Serif_4 } from "next/font/google";
 import "@/app/globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -26,14 +26,21 @@ const notoSansArabic = Noto_Sans_Arabic({
   preload: false,
 });
 
+const sourceSerif = Source_Serif_4({
+  subsets: ["latin"],
+  weight: "600",
+  variable: "--font-source-serif",
+  preload: false,
+});
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f8fafc" },
-    { media: "(prefers-color-scheme: dark)", color: "#020817" },
+    { media: "(prefers-color-scheme: light)", color: "#fbfaf9" },
+    { media: "(prefers-color-scheme: dark)", color: "#0f1114" },
   ],
 };
 
@@ -96,7 +103,7 @@ export default async function LocaleLayout({
       suppressHydrationWarning
     >
       <body
-        className={`${inter.variable} ${isArabic ? notoSansArabic.variable : ""} ${inter.className} min-h-screen bg-background text-foreground`}
+        className={`${inter.variable} ${isArabic ? notoSansArabic.variable : `${sourceSerif.variable} ${inter.className}`} min-h-screen bg-background text-foreground`}
       >
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider

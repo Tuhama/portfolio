@@ -1,0 +1,30 @@
+---
+description: Where color, type, radius, shadow, and motion tokens live, and how UI primitives use them.
+globs: src/app/globals.css,src/components/ui/**/*.tsx
+alwaysApply: false
+---
+
+# Design tokens
+
+Color, type, radius, shadow, and duration live only in `@theme`, `:root`, and `.dark` in `src/app/globals.css`. A color change updates both themes.
+
+## Usage
+
+Components use semantic utilities: `bg-background`, `text-foreground`, `text-muted-foreground`, `border-border`, `bg-primary`, `ring-ring`. No raw hex, `hsl()`, or `oklch()` in TSX.
+
+One radius scale, one shadow scale, one duration token.
+
+- Button sizes live in `src/components/ui/button.tsx`. Sections do not override height or padding on a size variant.
+- Card border, radius, and hover live in `src/components/ui/card.tsx`. A hover style is on the primitive, or absent.
+
+## Effect utilities
+
+Remove these during a restyle. Do not rename them: `glass-morphism`, `premium-gradient`, `text-gradient`, `hero-glow`, `shadow-premium`, `enter-*`, `reveal-*`, `scroll-reveal`.
+
+```tsx
+// Bad — color invented in the component
+<div className="bg-[oklch(0.55_0.22_260)] shadow-[0_20px_50px_rgba(0,0,0,0.15)]">
+
+// Good — token from globals.css
+<div className="bg-card border border-border shadow-sm">
+```

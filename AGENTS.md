@@ -24,6 +24,13 @@ Personal site for Tuhama Qlyshi. One page per locale: English at `/`, Arabic at 
 - Page metadata goes through `pageMetadata` in `@/lib/metadata` and the `Metadata` message namespace.
 - New scripts must work with the Content-Security-Policy nonce set in `src/proxy.ts`.
 
+## Design
+
+- How the page may look: `.cursor/rules/visual-language.mdc`.
+- Where tokens live: `.cursor/rules/design-tokens.mdc`.
+- How sections use primitives: `.cursor/rules/component-styling.mdc`.
+- A restyle follows `.cursor/skills/restyle-portfolio/SKILL.md`.
+
 ## Checks
 
 - After a behavior change, run `pnpm test:unit`. Component tests render with `renderWithIntl` from `@/test/render`.
