@@ -12,14 +12,14 @@ export function Hero() {
 
   return (
     <section className="w-full space-y-6 py-16 text-start md:py-24">
-      <div className="flex max-w-3xl items-center gap-5">
+      <div className="flex max-w-3xl flex-col items-start gap-5 sm:flex-row sm:items-center sm:gap-6">
         <Image
           src="/assets/portrait.jpg"
           alt={t("title")}
-          width={96}
-          height={96}
+          width={128}
+          height={128}
           priority
-          className="size-24 shrink-0 rounded-full border border-border object-cover"
+          className="size-24 shrink-0 rounded-full border border-border object-cover sm:size-32"
         />
         <div className="min-w-0 space-y-3">
           <h1 className="text-foreground">{t("title")}</h1>
