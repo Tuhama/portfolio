@@ -36,6 +36,14 @@ Personal site for Tuhama Qlyshi. One page per locale: English at `/`, Arabic at 
 - After a behavior change, run `pnpm test:unit`. Component tests render with `renderWithIntl` from `@/test/render`.
 - Message key parity is already tested. A catalog or locale change should keep `pnpm test:unit` passing.
 
+## Commits
+
+- Commit messages and PR titles follow Conventional Commits: `type(scope): summary`.
+- Types: `feat`, `fix`, `refactor`, `perf`, `style`, `docs`, `test`, `build`, `ci`, `chore`, `revert`. Scope is optional and names the area, such as `hero`, `i18n`, `content`, `cv`.
+- Summary in imperative mood, lowercase after the colon, no trailing period, header at most 72 characters. Put details in the body.
+- `commitlint` enforces this in the `commit-msg` hook and in CI. Never bypass it with `--no-verify`.
+- `main` takes squash merges only; the PR title becomes the commit on `main`.
+
 <!-- BEGIN:nextjs-agent-rules -->
 
 # This is NOT the Next.js you know
