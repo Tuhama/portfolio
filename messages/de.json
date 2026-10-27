@@ -53,7 +53,7 @@
     "items": {
       "freelance": {
         "role": "Freelance Frontend Engineer",
-        "company": "Selbstständig · Syrien (Remote)",
+        "company": "Selbstständig · Remote",
         "period": "09/2025 – heute",
         "description": "Open-Source-i18n-Tooling und SharePoint-Dokumentenverwaltung für ein Kanzleisystem.",
         "highlights": [
@@ -81,7 +81,7 @@
           "Feingranulares RBAC-Berechtigungssystem umgesetzt, von der Berechtigungsverwaltung bis zu berechtigungsgefilterten Routen und Navigation.",
           "Eigene PDF-Report-Engine auf Basis von jsPDF entworfen und umgesetzt, mit Seitenbändern, Datenfeldern, einem Ausdrucksauswerter und Rendering von Rich Text, Bildern und Barcodes.",
           "Große Berichte durch Paginierung und Listen-Virtualisierung performant gehalten, die initiale Ladezeit mit Lazy Loading und dynamischen Imports reduziert und unnötige Re-Renders mit den React DevTools aufgespürt.",
-          "Anbindung der Frontend-Workflows an Jenkins-CI/CD mit Gitee, gemeinsam mit Backend- und DevOps-Teams für automatisierte Branch-Deployments."
+          "Anbindung der Frontend-Workflows an Jenkins-CI/CD mit Gitea, gemeinsam mit Backend- und DevOps-Teams für automatisierte Branch-Deployments."
         ],
         "tags": [
           "React",
@@ -89,7 +89,7 @@
           "Redux Toolkit",
           "RBAC",
           "Jenkins",
-          "Gitee",
+          "Gitea",
           "CI/CD"
         ]
       },
@@ -101,7 +101,7 @@
         "highlights": [
           "Leitung einer Abteilung mit bis zu vier Ingenieuren für Systemanalyse und interne Softwareentwicklung.",
           "Schulung von Finanzmitarbeitenden in landesweit eingesetzten Steuersystemen externer Softwareanbieter, bei denen Verarbeitungsfehler rechtliche Haftung nach sich ziehen.",
-          "Zwei interne Prototypen entworfen und entwickelt: ein Personalportal in Java EE (Servlets, JSP, JPA) mit MySQL und ein Lagerverwaltungssystem mit einer Spring-Boot-REST-API mit JWT-Absicherung und einem Frontend in React und Ant Design."
+          "Zwei interne Prototypen entworfen und entwickelt: ein Personalportal in Java EE (Servlets, JSP, JPA) mit MySQL und ab 2018 ein Lagerverwaltungssystem mit einer Spring-Boot-REST-API mit JWT-Absicherung und einem Frontend in React und Ant Design."
         ],
         "tags": [
           "Java Spring Boot",
@@ -112,13 +112,25 @@
           "Anwenderschulung"
         ]
       },
-      "miditec": {
-        "role": "Java-Applets-Programmierer",
-        "company": "MIDITEC · Damaskus, Syrien",
-        "period": "08/2007 – 05/2008",
-        "description": "Ausbildung und Tätigkeit als Java-Programmierer an MTZ Web, dem ERP-Produkt von MIDITEC, direkt nach dem Abschluss.",
+      "freelanceWeb": {
+        "role": "Freelance-Webentwickler",
+        "company": "Selbstständig · neben der Tätigkeit in der Finanzdirektion",
+        "period": "2018 – 2019",
+        "description": "Websites für Freelance-Kunden, entwickelt mit React.",
         "highlights": [
-          "Mitarbeit an MTZ Web unmittelbar nach dem Studium."
+          "Websites für Freelance-Kunden mit React.js entwickelt."
+        ],
+        "tags": [
+          "React"
+        ]
+      },
+      "miditec": {
+        "role": "Java-Entwickler",
+        "company": "MIDITEC · Damaskus, Syrien",
+        "period": "08/2007 – 06/2008",
+        "description": "Ausbildung und Tätigkeit als Java-Entwickler an MTZ Web, dem webbasierten ERP von MIDITEC, direkt nach dem Abschluss.",
+        "highlights": [
+          "Mitarbeit am Modul für Zeiterfassung und Zutrittskontrolle von MTZ Web."
         ],
         "tags": [
           "Java",
@@ -133,7 +145,7 @@
       "cv": "Lebenslauf herunterladen"
     },
     "badge": "Sofort verfügbar · Deutschland",
-    "description": "Über 15 Jahre Software-Engineering, spezialisiert auf React, Next.js und TypeScript, mit praktischer Backend-Erfahrung in Java Spring Boot und MySQL.",
+    "description": "Über 15 Jahre Software-Engineering und 8 Jahre React, spezialisiert auf React, Next.js und TypeScript. Frontend-Leitung eines ERP mit 150.000 Codezeilen in 12 Modulen, mit praktischer Backend-Erfahrung in Java Spring Boot.",
     "subtitle": "Senior Frontend Engineer",
     "title": "Tuhama Qlyshi"
   },
@@ -191,7 +203,7 @@
     "view_package": "Paket ansehen"
   },
   "Skills": {
-    "description": "React und Next.js in Produktion, mit Java Spring Boot und MySQL, plus Identität, Tests und Delivery-Werkzeuge aus dem Lebenslauf—einschließlich des Umgangs mit Sitzungen und Zugriffen.",
+    "description": "React und Next.js in Produktion, Java Spring Boot im Backend und ein klarer Fokus auf sicheren Zugriff (Entra ID, RBAC, CSP) und getestete Auslieferung.",
     "groups": {
       "backend": {
         "items": [
@@ -200,7 +212,7 @@
           "Docker",
           "Jenkins",
           "GitHub Actions",
-          "Gitee",
+          "Gitea",
           "CI/CD"
         ],
         "title": "Backend & DevOps"
@@ -226,8 +238,12 @@
           "Microsoft Entra ID",
           "RBAC",
           "OWASP",
+          "Vitest",
+          "Testing Library",
           "Cypress",
-          "Microsoft Graph API"
+          "Microsoft Graph API",
+          "Content Security Policy",
+          "Security Headers"
         ],
         "title": "Zugriff & Qualität"
       }
