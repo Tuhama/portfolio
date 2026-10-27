@@ -53,7 +53,7 @@
     "items": {
       "freelance": {
         "role": "مهندس واجهات أمامية مستقل",
-        "company": "عمل حر · سوريا (عن بُعد)",
+        "company": "عمل حر · عن بُعد",
         "period": "09/2025 – حتى الآن",
         "description": "أداة i18n مفتوحة المصدر، وإدارة مستندات SharePoint لنظام مكتب محاماة.",
         "highlights": [
@@ -81,7 +81,7 @@
           "بناء نظام صلاحيات دقيق (RBAC)، من شاشات إدارة الصلاحيات إلى المسارات والقوائم المفلترة حسب الصلاحيات.",
           "تصميم وبناء محرك تقارير PDF مخصص على jsPDF، يتضمن أشرطة الصفحات وحقول البيانات ومُقيّماً للتعابير ورسم النصوص المنسقة والصور والباركود.",
           "الحفاظ على سرعة التقارير الضخمة عبر التقسيم إلى صفحات (Pagination) والعرض الافتراضي للقوائم (Virtualization)، وتقليل زمن التحميل الأولي بالتحميل الكسول (Lazy Loading) والاستيراد الديناميكي، وتتبّع عمليات إعادة التصيير غير الضرورية باستخدام React DevTools.",
-          "دمج مسارات الواجهة في Jenkins CI/CD مع Gitee، بالتعاون مع فرق الخلفية و DevOps للنشر الآلي للفروع."
+          "دمج مسارات الواجهة في Jenkins CI/CD مع Gitea، بالتعاون مع فرق الخلفية و DevOps للنشر الآلي للفروع."
         ],
         "tags": [
           "React",
@@ -89,7 +89,7 @@
           "Redux Toolkit",
           "RBAC",
           "Jenkins",
-          "Gitee",
+          "Gitea",
           "CI/CD"
         ]
       },
@@ -101,7 +101,7 @@
         "highlights": [
           "قيادة قسم يضم حتى أربعة مهندسين في تحليل النظم وتطوير البرمجيات الداخلية.",
           "تدريب موظفي المالية على أنظمة ضريبية مشتراة من شركات برمجيات ومستخدمة في جميع أنحاء سوريا، حيث تترتب على أخطاء المعالجة مسؤولية قانونية.",
-          "تصميم وبناء نموذجين أوليين داخليين: بوابة شؤون الموظفين بـ Java EE (Servlets و JSP و JPA) مع MySQL، ونظام إدارة المستودعات بواجهة REST بـ Spring Boot محمية بـ JWT وواجهة أمامية بـ React و Ant Design."
+          "تصميم وبناء نموذجين أوليين داخليين: بوابة شؤون الموظفين بـ Java EE (Servlets و JSP و JPA) مع MySQL، ونظام إدارة المستودعات (منذ 2018) بواجهة REST بـ Spring Boot محمية بـ JWT وواجهة أمامية بـ React و Ant Design."
         ],
         "tags": [
           "Java Spring Boot",
@@ -112,13 +112,25 @@
           "تدريب المستخدمين"
         ]
       },
-      "miditec": {
-        "role": "مبرمج Java Applets",
-        "company": "MIDITEC · دمشق، سوريا",
-        "period": "08/2007 – 05/2008",
-        "description": "تدريب وعمل كمبرمج Java على MTZ Web، منتج ERP الخاص بـ MIDITEC، مباشرة بعد التخرج.",
+      "freelanceWeb": {
+        "role": "مطوّر ويب مستقل",
+        "company": "عمل حر · بالتوازي مع العمل الحكومي",
+        "period": "2018 – 2019",
+        "description": "مواقع ويب لعملاء مستقلين مبنية بـ React.",
         "highlights": [
-          "العمل على MTZ Web مباشرة بعد التخرج."
+          "بناء مواقع ويب لعملاء مستقلين باستخدام React.js."
+        ],
+        "tags": [
+          "React"
+        ]
+      },
+      "miditec": {
+        "role": "مطوّر Java",
+        "company": "MIDITEC · دمشق، سوريا",
+        "period": "08/2007 – 06/2008",
+        "description": "تدريب وعمل كمطوّر Java على MTZ Web، نظام ERP الويب الخاص بـ MIDITEC، مباشرة بعد التخرج.",
+        "highlights": [
+          "العمل على وحدة تسجيل الوقت والتحكم بالدخول في MTZ Web."
         ],
         "tags": [
           "Java",
@@ -133,7 +145,7 @@
       "cv": "تحميل السيرة الذاتية"
     },
     "badge": "متاح فوراً · ألمانيا",
-    "description": "أكثر من 15 عاماً في هندسة البرمجيات، متخصص في React و Next.js و TypeScript، مع خبرة عملية في Java Spring Boot و MySQL.",
+    "description": "أكثر من 15 عاماً في هندسة البرمجيات و8 سنوات مع React، متخصص في React و Next.js و TypeScript. قيادة الواجهة الأمامية لنظام ERP من 150,000 سطر عبر 12 وحدة، مع خبرة عملية في Java Spring Boot.",
     "subtitle": "مهندس واجهات أمامية أول",
     "title": "Tuhama Qlyshi"
   },
@@ -191,7 +203,7 @@
     "view_package": "عرض الحزمة"
   },
   "Skills": {
-    "description": "React و Next.js في الإنتاج، مع Java Spring Boot و MySQL، إضافة إلى الهوية والاختبار وأدوات التسليم المذكورة في السيرة، بما في ذلك التعامل مع الجلسات والوصول.",
+    "description": "React و Next.js في الإنتاج، و Java Spring Boot في الخلفية، مع تركيز واضح على الوصول الآمن (Entra ID و RBAC و CSP) والتسليم المختبَر.",
     "groups": {
       "backend": {
         "items": [
@@ -200,7 +212,7 @@
           "Docker",
           "Jenkins",
           "GitHub Actions",
-          "Gitee",
+          "Gitea",
           "CI/CD"
         ],
         "title": "الخلفية و DevOps"
@@ -226,6 +238,8 @@
           "Microsoft Entra ID",
           "RBAC",
           "OWASP",
+          "Vitest",
+          "Testing Library",
           "Cypress",
           "Microsoft Graph API",
           "Content Security Policy",

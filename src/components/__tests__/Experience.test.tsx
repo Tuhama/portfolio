@@ -18,7 +18,7 @@ describe("Experience", () => {
     expect(
       screen.getByText("Head of Analysis and Software Division, IT Department"),
     ).toBeDefined();
-    expect(screen.getByText("Java Applets Programmer")).toBeDefined();
+    expect(screen.getByText("Java Developer")).toBeDefined();
     expect(
       screen.getByText(/Built and published @tuhama\/translation-manager/),
     ).toBeDefined();

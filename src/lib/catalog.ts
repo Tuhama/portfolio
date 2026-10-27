@@ -3,6 +3,7 @@ import {
   Building2,
   Code2,
   Database,
+  Globe,
   ShieldCheck,
   Sparkles,
   type LucideIcon,
@@ -67,6 +68,7 @@ const roles = complete<RoleEntry>()([
   { key: "freelance", icon: Sparkles },
   { key: "bpro", icon: Briefcase },
   { key: "directorate", icon: Building2 },
+  { key: "freelanceWeb", icon: Globe },
   { key: "miditec", icon: Code2 },
 ]);
 
