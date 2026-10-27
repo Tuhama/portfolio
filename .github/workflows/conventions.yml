@@ -3,36 +3,46 @@ name: Commit & PR Conventions
 on:
   push:
     branches-ignore: [main]
-  pull_request:
+  # pull_request_target also works for PRs from forks. It is safe here because
+  # the job never checks out or runs code from the PR; it only reads the title.
+  # Note: it always runs the version of this file that is on main.
+  pull_request_target:
     types: [opened, edited, synchronize, reopened]
 
-permissions:
-  contents: read
-  pull-requests: read
+permissions: {}
 
 jobs:
   commit-messages:
     name: Commit messages
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
         with:
           fetch-depth: 0
-      - uses: pnpm/action-setup@v3
+          persist-credentials: false
+
+      - uses: pnpm/action-setup@a3252b78c470c02df07e9d59298aecedc3ccdd6d # v3.0.0
         with:
           version: 10
-      - uses: actions/setup-node@v4
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: 24
           cache: 'pnpm'
+
       - run: pnpm install --frozen-lockfile --ignore-scripts
+
       - name: Lint pushed commits
         env:
           BEFORE: ${{ github.event.before }}
           AFTER: ${{ github.event.after }}
         run: |
-          if [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+          ZERO="0000000000000000000000000000000000000000"
+          if [ "$BEFORE" = "$ZERO" ] || ! git cat-file -e "${BEFORE}^{commit}" 2>/dev/null; then
+            echo "No usable previous commit (new branch or force push); linting the latest commit only."
             pnpm exec commitlint --last --verbose
           else
             pnpm exec commitlint --from "$BEFORE" --to "$AFTER" --verbose
@@ -40,10 +50,12 @@ jobs:
 
   pr-title:
     name: PR title
-    if: github.event_name == 'pull_request'
+    if: github.event_name == 'pull_request_target'
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: read
     steps:
       # With squash merging, the PR title becomes the commit on main.
-      - uses: amannn/action-semantic-pull-request@v5
+      - uses: amannn/action-semantic-pull-request@0723387faaf9b38adef4775cd42cfd5155ed6017 # v5.5.3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
