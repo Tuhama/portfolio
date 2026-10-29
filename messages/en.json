@@ -58,12 +58,14 @@
         "description": "Open-source i18n tooling and SharePoint document management for a law-office system.",
         "highlights": [
           "Built and published @tuhama/translation-manager, an open-source npm package with an i18n management UI, AI-assisted translation, and code-context extraction.",
-          "Contributed to a case management system for a Qatari law firm, now in production testing: built its SharePoint document management in React with @azure/msal-react and the Microsoft Graph API (Microsoft Entra ID sign-in), plus the filterable, resizable data tables."
+          "Contributed to a case management system for a Qatari law firm, now in production testing: built its SharePoint document management in React with @azure/msal-react and the Microsoft Graph API (Microsoft Entra ID sign-in), plus the filterable, resizable data tables.",
+          "Work AI-first on production code: rule and skill files encode the project's structural decisions and coding standards, features are planned in Claude Code plan mode, AI reviews every change before it is committed, CodeRabbit and multiple agents review pull requests and critical code, and agents never get production credentials."
         ],
         "tags": [
           "Next.js",
           "React",
           "TypeScript",
+          "Claude Code",
           "MSAL",
           "Microsoft Graph",
           "Tailwind CSS",
