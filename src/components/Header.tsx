@@ -1,5 +1,6 @@
 "use client";
 
+import type { ReactNode } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import { LanguageSwitcher } from "./LanguageSwitcher";
@@ -11,7 +12,11 @@ import { SITE } from "@/lib/site";
 const navLinkClass =
   "py-2 text-primary underline-offset-4 transition-colors hover:underline focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background";
 
-export function Header() {
+interface HeaderProps {
+  actions?: ReactNode;
+}
+
+export function Header({ actions }: HeaderProps) {
   const t = useTranslations("Navigation");
 
   return (
@@ -33,6 +38,7 @@ export function Header() {
           </nav>
         </div>
         <div className="flex items-center gap-2">
+          {actions}
           <ThemeSwitcher />
           <LanguageSwitcher />
           <MobileNav />

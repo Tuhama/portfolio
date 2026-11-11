@@ -54,7 +54,11 @@ export function CommandMenu() {
 
   return (
     <>
-      <div className="fixed end-4 bottom-4 z-50 hidden items-center gap-2 rounded-md border bg-background px-3 py-1.5 text-xs text-muted-foreground shadow-sm md:flex">
+      <button
+        type="button"
+        onClick={() => setOpen(true)}
+        className="hidden h-10 items-center gap-2 rounded-md border border-border bg-background px-3 text-xs text-muted-foreground hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background md:inline-flex"
+      >
         {t.rich("hint", {
           shortcut: () => (
             <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium opacity-100">
@@ -62,7 +66,7 @@ export function CommandMenu() {
             </kbd>
           ),
         })}
-      </div>
+      </button>
       <CommandDialog open={open} onOpenChange={setOpen}>
         <DialogTitle className="sr-only">{t("title")}</DialogTitle>
         <CommandInput placeholder={t("placeholder")} />

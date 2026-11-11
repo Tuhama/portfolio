@@ -25,6 +25,7 @@ interface ProjectCardProps {
     liveLabel?: string;
   };
   imageFit?: "cover" | "contain";
+  featured?: boolean;
 }
 
 const linkClassName = cn("text-sm", textLinkClass);
@@ -36,26 +37,39 @@ export function ProjectCard({
   tags,
   links,
   imageFit = "cover",
+  featured = false,
 }: ProjectCardProps) {
   const t = useTranslations("Projects");
   const tA11y = useTranslations("A11y");
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
 
   return (
-    <Card className="flex h-full flex-col overflow-hidden">
-      <figure className="flex h-full flex-col">
+    <Card
+      className={cn(
+        "flex h-full flex-col overflow-hidden",
+        featured && "md:col-span-2",
+      )}
+    >
+      <figure className={cn("flex h-full flex-col", featured && "lg:flex-row")}>
         <Dialog open={isPreviewOpen} onOpenChange={setIsPreviewOpen}>
           <DialogTrigger asChild>
             <button
               type="button"
-              className="relative aspect-[16/10] w-full cursor-zoom-in overflow-hidden border-b border-border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-inset"
+              className={cn(
+                "relative aspect-[16/10] w-full cursor-zoom-in overflow-hidden border-b border-border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-inset",
+                featured && "lg:w-3/5 lg:shrink-0 lg:border-b-0 lg:border-e",
+              )}
               aria-label={`${title} — ${tA11y("imagePreview")}`}
             >
               <Image
                 src={image}
                 alt={title}
                 fill
-                sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                sizes={
+                  featured
+                    ? "(min-width: 1024px) 60vw, 100vw"
+                    : "(min-width: 768px) 50vw, 100vw"
+                }
                 className={imageFit === "contain" ? "object-contain p-8" : "object-cover"}
               />
             </button>
@@ -81,7 +95,12 @@ export function ProjectCard({
           </DialogContent>
         </Dialog>
 
-        <figcaption className="space-y-2 p-4 text-start">
+        <figcaption
+          className={cn(
+            "space-y-2 p-4 text-start",
+            featured && "lg:self-center lg:p-8",
+          )}
+        >
           <h3>{title}</h3>
           <p className="text-sm leading-relaxed text-muted-foreground">{description}</p>
           <ul className="flex flex-wrap gap-x-3 gap-y-1">
