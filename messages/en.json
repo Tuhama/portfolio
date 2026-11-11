@@ -52,19 +52,23 @@
     "description": "15+ years in software engineering: enterprise ERP frontend leadership, a government software division, and open-source i18n tooling.",
     "items": {
       "freelance": {
-        "role": "Freelance Frontend Engineer",
+        "role": "Senior Frontend Engineer (Freelance)",
         "company": "Self-employed · Remote",
         "period": "09/2025 – Present",
-        "description": "Open-source i18n tooling and SharePoint document management for a law-office system.",
+        "description": "Open-source i18n tooling, SharePoint document management for a law-firm system, this portfolio, and an open-source dashboard of Germany’s electricity market.",
         "highlights": [
-          "Built and published @tuhama/translation-manager, an open-source npm package with an i18n management UI, AI-assisted translation, and code-context extraction.",
-          "Contributed to a case management system for a Qatari law firm, now in production testing: built its SharePoint document management in React with @azure/msal-react and the Microsoft Graph API (Microsoft Entra ID sign-in), plus the filterable, resizable data tables.",
+          "Built and published @tuhama/translation-manager, an open-source npm package (monorepo) with an i18n management UI, AI-assisted translation, and code-context extraction that speeds up localization in multilingual projects.",
+          "Built this portfolio in Next.js 16 with TypeScript and Tailwind CSS, in English, Arabic, and German (next-intl), tested with Vitest and deployed to Vercel through GitHub Actions.",
+          "Contributed to a case management system for a Qatari law firm, now in production testing: built its SharePoint document management in React, Vite, Redux Toolkit, and TanStack Query with @azure/msal-react and the Microsoft Graph API (Microsoft Entra ID sign-in), plus the filterable, resizable data tables.",
+          "Building Stromblick (in progress), an open-source dashboard of Germany’s electricity market on the Bundesnetzagentur’s SMARD open data: a TypeScript monorepo (pnpm, Turborepo) with a React 19 and Vite web app, an Express and Prisma REST API on PostgreSQL, shared Zod schemas, Vitest tests, Docker, and GitHub Actions CI/CD.",
           "Work AI-first on production code: rule and skill files encode the project's structural decisions and coding standards, features are planned in Claude Code plan mode, AI reviews every change before it is committed, CodeRabbit and multiple agents review pull requests and critical code, and agents never get production credentials."
         ],
         "tags": [
           "Next.js",
           "React",
           "TypeScript",
+          "TanStack Query",
+          "PostgreSQL",
           "Claude Code",
           "MSAL",
           "Microsoft Graph",
@@ -78,18 +82,22 @@
         "period": "02/2021 – 08/2025",
         "description": "Led frontend development of an enterprise ERP aimed at large companies in the Gulf region: a 150,000-line React and TypeScript codebase, held alongside the government role.",
         "highlights": [
-          "Frontend lead and architect for 4+ years: designed the architecture, wrote the coding guidelines and lint rules, reviewed and approved every pull request, and mentored four junior developers, two at a time.",
-          "Designed the shared page templates and component library that more than half of the 1,300+ module files build on, across 12 ERP modules including Sales, Purchase, Inventory, Finance, and HR.",
+          "Frontend lead and architect for 4+ years: designed the architecture, wrote the coding guidelines and ESLint rules, reviewed and approved every pull request, mentored four junior developers, two at a time, and interviewed candidates for junior positions.",
+          "Designed the design system (shared page templates and a reusable component library) that more than half of the 1,300+ module files build on, across 12 ERP modules including Sales, Purchase, Inventory, Finance, and HR.",
+          "Built the data layer with Redux Toolkit and TanStack Query on a Vite build, and covered critical flows with Jest unit and integration tests and Cypress end-to-end (E2E) tests.",
           "Built the granular role-based access control (RBAC) system, from permission management screens to permission-filtered routes and navigation.",
-          "Designed and built a custom PDF report engine on jsPDF, with page bands, data fields, an expression evaluator, and drawing for rich text, images, and barcodes.",
-          "Kept large reports responsive with pagination and list virtualization, cut initial load with lazy loading and dynamic imports, and tracked down unnecessary re-renders with React DevTools.",
-          "Integrated frontend workflows into Jenkins CI/CD with Gitea, working with backend and DevOps teams on automated branch deployments."
+          "Designed and built a custom PDF report engine on jsPDF that renders QtRPT XML report templates, with page bands, data fields, an expression evaluator, and drawing for rich text, images, and barcodes.",
+          "Cut rendering time of 10,000-row reports by 80% with pagination and list virtualization, reduced initial load with code splitting (lazy loading and dynamic imports), and tracked down unnecessary re-renders with React DevTools.",
+          "Integrated frontend workflows into Jenkins CI/CD with Gitea, working cross-functionally with backend and DevOps teams on automated branch deployments in a Scrum team using Jira."
         ],
         "tags": [
           "React",
           "TypeScript",
           "Redux Toolkit",
+          "TanStack Query",
           "RBAC",
+          "Jest",
+          "Cypress",
           "Jenkins",
           "Gitea",
           "CI/CD"
@@ -97,11 +105,11 @@
       },
       "directorate": {
         "role": "Head of Analysis and Software Division, IT Department",
-        "company": "Directorate of Finance · Homs, Syria",
+        "company": "Directorate of Finance (government agency) · Homs, Syria",
         "period": "07/2008 – 05/2025",
-        "description": "Headed the software division of a regional finance directorate, covering systems analysis, staff training on national tax systems, and internal software prototypes.",
+        "description": "Software engineer in the IT department from 07/2008 and head of its analysis and software division from 2018, covering systems analysis, staff training on national tax systems, and internal software prototypes.",
         "highlights": [
-          "Led a division of up to four engineers in systems analysis and internal software development.",
+          "As head from 2018, led up to four engineers in systems analysis, staff training, and software development.",
           "Trained finance staff on nationwide tax systems procured from software vendors and used across Syria, where processing errors carry legal liability.",
           "Designed and built two internal prototypes: a Personnel Portal in Java EE (servlets, JSP, JPA) on MySQL, and, from 2018, a Warehouse Management System with a Spring Boot REST API secured by JWT and a React and Ant Design frontend."
         ],
@@ -147,12 +155,12 @@
       "cv": "Download CV"
     },
     "badge": "Available immediately · Germany",
-    "description": "15+ years in software engineering and 8 years of React, specializing in React, Next.js, and TypeScript. Led the frontend of a 150,000-line ERP across 12 modules, with hands-on backend experience in Java Spring Boot.",
+    "description": "15+ years in software engineering and 8 years of React, specializing in React, Next.js, and TypeScript. Led the frontend of a 150,000-line ERP across 12 modules, with hands-on backend experience in Java Spring Boot and Node.js.",
     "subtitle": "Senior Frontend Engineer",
     "title": "Tuhama Qlyshi"
   },
   "Metadata": {
-    "description": "Senior Frontend Engineer specializing in React, Next.js, and TypeScript, with backend experience in Java Spring Boot and MySQL. Based in Germany and available immediately.",
+    "description": "Senior Frontend Engineer specializing in React, Next.js, and TypeScript, with backend experience in Java Spring Boot and Node.js. Based in Germany and available immediately.",
     "title": "Tuhama Qlyshi — Senior Frontend Engineer"
   },
   "Navigation": {
@@ -205,12 +213,14 @@
     "view_package": "View package"
   },
   "Skills": {
-    "description": "React and Next.js in production, Java Spring Boot on the backend, and a strong focus on secure access (Entra ID, RBAC, CSP) and tested delivery.",
+    "description": "React and Next.js in production, Java Spring Boot and Node.js on the backend, and a strong focus on secure access (Entra ID, RBAC, CSP) and tested delivery.",
     "groups": {
       "backend": {
         "items": [
+          "Node.js",
           "Java Spring Boot",
           "MySQL",
+          "PostgreSQL",
           "Docker",
           "Jenkins",
           "GitHub Actions",
@@ -225,12 +235,15 @@
           "Next.js",
           "TypeScript",
           "Redux Toolkit",
+          "TanStack Query",
           "Zustand",
+          "Zod",
           "Tailwind CSS",
           "Ant Design",
           "shadcn/ui",
           "Framer Motion",
-          "i18next"
+          "i18next",
+          "next-intl"
         ],
         "title": "Frontend"
       },
@@ -240,6 +253,7 @@
           "Microsoft Entra ID",
           "RBAC",
           "OWASP",
+          "Jest",
           "Vitest",
           "Testing Library",
           "Cypress",

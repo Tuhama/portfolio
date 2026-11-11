@@ -13,7 +13,7 @@ describe("Experience", () => {
 
   it("renders milestone roles, highlights, and tags", () => {
     renderWithIntl(<Experience />);
-    expect(screen.getByText("Freelance Frontend Engineer")).toBeDefined();
+    expect(screen.getByText("Senior Frontend Engineer (Freelance)")).toBeDefined();
     expect(screen.getByText("Senior Frontend Developer")).toBeDefined();
     expect(
       screen.getByText("Head of Analysis and Software Division, IT Department"),
