@@ -52,19 +52,23 @@
     "description": "Über 15 Jahre Software-Engineering: Frontend-Leitung eines Enterprise-ERP, Leitung einer staatlichen Softwareabteilung und Open-Source-i18n-Tooling.",
     "items": {
       "freelance": {
-        "role": "Freelance Frontend Engineer",
+        "role": "Senior Frontend Engineer (Freelance)",
         "company": "Selbstständig · Remote",
         "period": "09/2025 – heute",
-        "description": "Open-Source-i18n-Tooling und SharePoint-Dokumentenverwaltung für ein Kanzleisystem.",
+        "description": "Open-Source-i18n-Tooling, SharePoint-Dokumentenverwaltung für ein Kanzleisystem, dieses Portfolio und ein Open-Source-Dashboard zum deutschen Strommarkt.",
         "highlights": [
-          "Entwicklung und Veröffentlichung von @tuhama/translation-manager, einem Open-Source-npm-Paket mit i18n-Verwaltungsoberfläche, KI-gestützter Übersetzung und Extraktion von Code-Kontext.",
-          "Mitarbeit an einem Fallverwaltungssystem für eine katarische Anwaltskanzlei, derzeit im Produktionstest: SharePoint-Dokumentenverwaltung in React mit @azure/msal-react und der Microsoft Graph API (Anmeldung über Microsoft Entra ID) sowie filterbare, anpassbare Datentabellen umgesetzt.",
+          "Entwicklung und Veröffentlichung von @tuhama/translation-manager, einem Open-Source-npm-Paket (Monorepo) mit i18n-Verwaltungsoberfläche, KI-gestützter Übersetzung und Extraktion von Code-Kontext, das die Lokalisierung mehrsprachiger Projekte beschleunigt.",
+          "Dieses Portfolio mit Next.js 16, TypeScript und Tailwind CSS entwickelt, auf Englisch, Arabisch und Deutsch (next-intl), mit Vitest getestet und über GitHub Actions auf Vercel deployt.",
+          "Mitarbeit an einem Fallverwaltungssystem für eine katarische Anwaltskanzlei, derzeit im Produktionstest: SharePoint-Dokumentenverwaltung in React, Vite, Redux Toolkit und TanStack Query mit @azure/msal-react und der Microsoft Graph API (Anmeldung über Microsoft Entra ID) sowie filterbare, anpassbare Datentabellen umgesetzt.",
+          "Entwicklung von Stromblick (in Arbeit), einem Open-Source-Dashboard zum deutschen Strommarkt auf Basis der offenen SMARD-Daten der Bundesnetzagentur: ein TypeScript-Monorepo (pnpm, Turborepo) mit einer Web-App in React 19 und Vite, einer REST-API mit Express und Prisma auf PostgreSQL, gemeinsamen Zod-Schemas, Vitest-Tests, Docker und CI/CD mit GitHub Actions.",
           "KI-first-Arbeitsweise im Produktionseinsatz: Rule- und Skill-Dateien legen strukturelle Entscheidungen und Coding-Standards fest, Features werden im Plan Mode von Claude Code geplant, jede Änderung wird vor dem Commit von KI geprüft, CodeRabbit und mehrere Agenten prüfen Pull Requests und kritischen Code, und Produktionszugangsdaten bleiben für Agenten tabu."
         ],
         "tags": [
           "Next.js",
           "React",
           "TypeScript",
+          "TanStack Query",
+          "PostgreSQL",
           "Claude Code",
           "MSAL",
           "Microsoft Graph",
@@ -78,18 +82,22 @@
         "period": "02/2021 – 08/2025",
         "description": "Leitung der Frontend-Entwicklung eines Enterprise-ERP für große Unternehmen in der Golfregion: eine Codebasis mit 150.000 Zeilen React und TypeScript, parallel zur staatlichen Tätigkeit.",
         "highlights": [
-          "Frontend-Lead und Architekt über mehr als 4 Jahre: Architektur entworfen, Coding-Guidelines und Lint-Regeln definiert, alle Pull Requests geprüft und freigegeben sowie vier Junior-Entwickler betreut, jeweils zwei gleichzeitig.",
-          "Gemeinsame Seitenvorlagen und Komponentenbibliothek entworfen, auf denen mehr als die Hälfte der über 1.300 Moduldateien aufbaut, in 12 ERP-Modulen wie Vertrieb, Einkauf, Lager, Finanzen und Personal.",
+          "Frontend-Lead und Architekt über mehr als 4 Jahre: Architektur entworfen, Coding-Guidelines und ESLint-Regeln definiert, alle Pull Requests geprüft und freigegeben, vier Junior-Entwickler betreut, jeweils zwei gleichzeitig, und Bewerbungsgespräche für Junior-Stellen geführt.",
+          "Das Designsystem (gemeinsame Seitenvorlagen und eine wiederverwendbare Komponentenbibliothek) entworfen, auf dem mehr als die Hälfte der über 1.300 Moduldateien aufbaut, in 12 ERP-Modulen wie Vertrieb, Einkauf, Lager, Finanzen und Personal.",
+          "Die Datenschicht mit Redux Toolkit und TanStack Query auf einem Vite-Build aufgebaut und kritische Abläufe mit Jest-Unit- und Integrationstests sowie Cypress-End-to-End-Tests (E2E) abgesichert.",
           "Feingranulares RBAC-Berechtigungssystem umgesetzt, von der Berechtigungsverwaltung bis zu berechtigungsgefilterten Routen und Navigation.",
-          "Eigene PDF-Report-Engine auf Basis von jsPDF entworfen und umgesetzt, mit Seitenbändern, Datenfeldern, einem Ausdrucksauswerter und Rendering von Rich Text, Bildern und Barcodes.",
-          "Große Berichte durch Paginierung und Listen-Virtualisierung performant gehalten, die initiale Ladezeit mit Lazy Loading und dynamischen Imports reduziert und unnötige Re-Renders mit den React DevTools aufgespürt.",
-          "Anbindung der Frontend-Workflows an Jenkins-CI/CD mit Gitea, gemeinsam mit Backend- und DevOps-Teams für automatisierte Branch-Deployments."
+          "Eigene PDF-Report-Engine auf Basis von jsPDF entworfen und umgesetzt, die QtRPT-XML-Berichtsvorlagen rendert, mit Seitenbändern, Datenfeldern, einem Ausdrucksauswerter und Rendering von Rich Text, Bildern und Barcodes.",
+          "Renderzeit von Berichten mit 10.000 Zeilen durch Paginierung und Listen-Virtualisierung um 80 % gesenkt, die initiale Ladezeit mit Code-Splitting (Lazy Loading und dynamische Imports) reduziert und unnötige Re-Renders mit den React DevTools aufgespürt.",
+          "Anbindung der Frontend-Workflows an Jenkins-CI/CD mit Gitea, teamübergreifend mit Backend- und DevOps-Teams für automatisierte Branch-Deployments, in einem Scrum-Team mit Jira."
         ],
         "tags": [
           "React",
           "TypeScript",
           "Redux Toolkit",
+          "TanStack Query",
           "RBAC",
+          "Jest",
+          "Cypress",
           "Jenkins",
           "Gitea",
           "CI/CD"
@@ -97,11 +105,11 @@
       },
       "directorate": {
         "role": "Leiter der Abteilung Analyse und Software, IT",
-        "company": "Finanzdirektion · Homs, Syrien",
+        "company": "Finanzdirektion (Behörde) · Homs, Syrien",
         "period": "07/2008 – 05/2025",
-        "description": "Leitung der Softwareabteilung einer regionalen Finanzdirektion: Systemanalyse, Schulung der Mitarbeitenden in landesweiten Steuersystemen und interne Software-Prototypen.",
+        "description": "Ab 07/2008 Software Engineer in der IT-Abteilung einer regionalen Finanzdirektion, ab 2018 Leitung der Abteilung Analyse und Software: Systemanalyse, Schulung der Mitarbeitenden in landesweiten Steuersystemen und interne Software-Prototypen.",
         "highlights": [
-          "Leitung einer Abteilung mit bis zu vier Ingenieuren für Systemanalyse und interne Softwareentwicklung.",
+          "Ab 2018 als Abteilungsleitung ein Team von bis zu vier Ingenieuren in Systemanalyse, Mitarbeiterschulung und Softwareentwicklung geführt.",
           "Schulung von Finanzmitarbeitenden in landesweit eingesetzten Steuersystemen externer Softwareanbieter, bei denen Verarbeitungsfehler rechtliche Haftung nach sich ziehen.",
           "Zwei interne Prototypen entworfen und entwickelt: ein Personalportal in Java EE (Servlets, JSP, JPA) mit MySQL und ab 2018 ein Lagerverwaltungssystem mit einer Spring-Boot-REST-API mit JWT-Absicherung und einem Frontend in React und Ant Design."
         ],
@@ -147,12 +155,12 @@
       "cv": "Lebenslauf herunterladen"
     },
     "badge": "Sofort verfügbar · Deutschland",
-    "description": "Über 15 Jahre Software-Engineering und 8 Jahre React, spezialisiert auf React, Next.js und TypeScript. Frontend-Leitung eines ERP mit 150.000 Codezeilen in 12 Modulen, mit praktischer Backend-Erfahrung in Java Spring Boot.",
+    "description": "Über 15 Jahre Software-Engineering und 8 Jahre React, spezialisiert auf React, Next.js und TypeScript. Frontend-Leitung eines ERP mit 150.000 Codezeilen in 12 Modulen, mit praktischer Backend-Erfahrung in Java Spring Boot und Node.js.",
     "subtitle": "Senior Frontend Engineer",
     "title": "Tuhama Qlyshi"
   },
   "Metadata": {
-    "description": "Senior Frontend Engineer mit Schwerpunkt React, Next.js und TypeScript sowie Backend-Erfahrung in Java Spring Boot und MySQL. Wohnhaft in Deutschland und sofort verfügbar.",
+    "description": "Senior Frontend Engineer mit Schwerpunkt React, Next.js und TypeScript sowie Backend-Erfahrung in Java Spring Boot und Node.js. Wohnhaft in Deutschland und sofort verfügbar.",
     "title": "Tuhama Qlyshi — Senior Frontend Engineer"
   },
   "Navigation": {
@@ -205,12 +213,14 @@
     "view_package": "Paket ansehen"
   },
   "Skills": {
-    "description": "React und Next.js in Produktion, Java Spring Boot im Backend und ein klarer Fokus auf sicheren Zugriff (Entra ID, RBAC, CSP) und getestete Auslieferung.",
+    "description": "React und Next.js in Produktion, Java Spring Boot und Node.js im Backend und ein klarer Fokus auf sicheren Zugriff (Entra ID, RBAC, CSP) und getestete Auslieferung.",
     "groups": {
       "backend": {
         "items": [
+          "Node.js",
           "Java Spring Boot",
           "MySQL",
+          "PostgreSQL",
           "Docker",
           "Jenkins",
           "GitHub Actions",
@@ -225,12 +235,15 @@
           "Next.js",
           "TypeScript",
           "Redux Toolkit",
+          "TanStack Query",
           "Zustand",
+          "Zod",
           "Tailwind CSS",
           "Ant Design",
           "shadcn/ui",
           "Framer Motion",
-          "i18next"
+          "i18next",
+          "next-intl"
         ],
         "title": "Frontend"
       },
@@ -240,6 +253,7 @@
           "Microsoft Entra ID",
           "RBAC",
           "OWASP",
+          "Jest",
           "Vitest",
           "Testing Library",
           "Cypress",
