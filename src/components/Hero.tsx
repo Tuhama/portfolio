@@ -2,13 +2,12 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { textLinkClass } from "@/components/ui/text-link";
 import { SITE } from "@/lib/site";
-
-const linkClassName =
-  "text-primary underline decoration-primary/40 underline-offset-4 transition-colors hover:decoration-primary focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background";
 
 export function Hero() {
   const t = useTranslations("Hero");
+  const tContact = useTranslations("Contact");
 
   return (
     <section className="w-full space-y-6 py-16 text-start md:py-24">
@@ -32,15 +31,31 @@ export function Hero() {
       <p className="max-w-2xl text-base leading-relaxed text-muted-foreground">
         {t("description")}
       </p>
-      <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
+      <div className="flex flex-col items-start gap-4 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-6">
         <Button size="lg" className="w-full gap-2 sm:w-auto" asChild>
           <a href={SITE.cvHref} download={SITE.cvFilename}>
             <Download className="h-4 w-4" />
             {t("actions.cv")}
           </a>
         </Button>
-        <a href={`mailto:${SITE.email}`} className={linkClassName}>
+        <a href={`mailto:${SITE.email}`} className={textLinkClass}>
           {t("actions.contact")}
+        </a>
+        <a
+          href={SITE.linkedin}
+          target="_blank"
+          rel="me noopener noreferrer"
+          className={textLinkClass}
+        >
+          {tContact("linkedin")}
+        </a>
+        <a
+          href={SITE.github}
+          target="_blank"
+          rel="me noopener noreferrer"
+          className={textLinkClass}
+        >
+          {tContact("github")}
         </a>
       </div>
     </section>

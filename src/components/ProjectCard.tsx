@@ -11,6 +11,8 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { textLinkClass } from "@/components/ui/text-link";
+import { cn } from "@/lib/utils";
 
 interface ProjectCardProps {
   title: string;
@@ -25,8 +27,7 @@ interface ProjectCardProps {
   imageFit?: "cover" | "contain";
 }
 
-const linkClassName =
-  "text-sm text-primary underline decoration-primary/40 underline-offset-4 transition-colors hover:decoration-primary focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background";
+const linkClassName = cn("text-sm", textLinkClass);
 
 export function ProjectCard({
   title,

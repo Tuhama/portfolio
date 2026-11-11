@@ -12,7 +12,7 @@ describe("Header", () => {
   it("renders navigation links via translations using accessible roles", () => {
     renderWithIntl(<Header />);
 
-    expect(screen.getAllByRole("link", { name: "About" }).length).toBeGreaterThan(
+    expect(screen.getAllByRole("link", { name: "Home" }).length).toBeGreaterThan(
       0,
     );
     expect(

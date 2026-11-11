@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import { BuildStatus } from "./BuildStatus";
+import { textLinkClass } from "@/components/ui/text-link";
 import { SECTION_LINKS } from "@/lib/nav";
 import { SITE } from "@/lib/site";
 
@@ -20,7 +21,7 @@ export function Footer() {
             <div className="flex flex-wrap gap-x-4 gap-y-2 pt-2 text-sm">
               <a
                 href={`mailto:${SITE.email}`}
-                className="text-primary underline decoration-primary/40 underline-offset-4 hover:decoration-primary focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                className={textLinkClass}
               >
                 {SITE.email}
               </a>
@@ -28,7 +29,7 @@ export function Footer() {
                 href={SITE.linkedin}
                 target="_blank"
                 rel="me noopener noreferrer"
-                className="text-primary underline decoration-primary/40 underline-offset-4 hover:decoration-primary focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                className={textLinkClass}
               >
                 {tContact("linkedin")}
               </a>
@@ -36,7 +37,7 @@ export function Footer() {
                 href={SITE.github}
                 target="_blank"
                 rel="me noopener noreferrer"
-                className="text-primary underline decoration-primary/40 underline-offset-4 hover:decoration-primary focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                className={textLinkClass}
               >
                 {tContact("github")}
               </a>
@@ -55,7 +56,10 @@ export function Footer() {
           </nav>
         </div>
         <div className="flex flex-col gap-4 border-t border-border/40 pt-6 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-sm text-muted-foreground">{t("copyright")}</p>
+          <p className="text-sm text-muted-foreground">{t("copyright", {
+              year: String(new Date().getFullYear()),
+              name: SITE.name,
+            })}</p>
           <BuildStatus />
         </div>
       </div>

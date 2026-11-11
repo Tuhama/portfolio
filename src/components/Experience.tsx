@@ -30,11 +30,13 @@ export function Experience() {
               <p className="mt-3 max-w-3xl text-base leading-relaxed text-muted-foreground">
                 {t(`items.${item.key}.description`)}
               </p>
-              <ul className="mt-3 max-w-3xl list-disc space-y-1 ps-5 text-sm leading-relaxed text-muted-foreground">
-                {highlights.map((highlight) => (
-                  <li key={highlight}>{highlight}</li>
-                ))}
-              </ul>
+              {highlights.length > 0 ? (
+                <ul className="mt-3 max-w-3xl list-disc space-y-1 ps-5 text-sm leading-relaxed text-muted-foreground">
+                  {highlights.map((highlight) => (
+                    <li key={highlight}>{highlight}</li>
+                  ))}
+                </ul>
+              ) : null}
               <ul className="mt-3 flex flex-wrap gap-x-3 gap-y-1">
                 {tags.map((tag) => (
                   <li key={tag} className="text-sm text-muted-foreground">

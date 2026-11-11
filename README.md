@@ -2,7 +2,7 @@
 
 Personal site for Tuhama Qlyshi, a senior frontend engineer. Live at [tuhama.vercel.app](https://tuhama.vercel.app).
 
-The site covers experience, skills, featured projects, and contact, in English, Arabic, and German.
+The site covers experience, skills, featured projects, education and languages, and contact, in English, Arabic, and German.
 
 ## Stack
 
@@ -34,6 +34,8 @@ Open [http://localhost:3000](http://localhost:3000). Arabic is at `/ar` and Germ
 | `pnpm test:unit` | Run unit tests once |
 | `pnpm test:watch` | Run unit tests in watch mode |
 | `pnpm test:coverage` | Run unit tests with coverage |
+| `pnpm arch:check` | Check import boundaries with dependency-cruiser |
+| `pnpm arch:graph` | Render the import graph to `public/architecture/dependency-graph.svg` |
 
 ## Site URL
 
