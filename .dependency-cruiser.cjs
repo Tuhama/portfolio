@@ -26,8 +26,11 @@ module.exports = {
       severity: "error",
       comment:
         "src/components/ui holds generic primitives. They must not know about page sections, routes or i18n; only other primitives and @/lib/utils.",
-      from: { path: "^src/components/ui/" },
-      to: { path: "^src/(app|i18n|components/(?!ui/))" },
+      from: { path: "^src/components/ui/", pathNot: TESTS },
+      to: {
+        path: "^src/",
+        pathNot: ["^src/components/ui/", "^src/lib/utils\\.tsx?$"],
+      },
     },
     {
       name: "components-do-not-import-app",
