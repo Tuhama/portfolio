@@ -1,18 +1,10 @@
-import {
-  Briefcase,
-  Building2,
-  Code2,
-  Database,
-  Globe,
-  ShieldCheck,
-  Sparkles,
-  type LucideIcon,
-} from "lucide-react";
 import type { Messages } from "next-intl";
 
 type ProjectKey = keyof Messages["Projects"]["items"];
 type RoleKey = keyof Messages["Experience"]["items"];
 type SkillKey = keyof Messages["Skills"]["groups"];
+type DegreeKey = keyof Messages["Education"]["degrees"];
+type LanguageKey = keyof Messages["Education"]["languages"];
 
 type ProjectLinks = {
   github?: string;
@@ -28,12 +20,19 @@ type ProjectEntry = {
 
 type RoleEntry = {
   key: RoleKey;
-  icon: LucideIcon;
 };
 
 type SkillEntry = {
   key: SkillKey;
-  icon: LucideIcon;
+};
+
+type DegreeEntry = {
+  key: DegreeKey;
+  thesis?: boolean;
+};
+
+type LanguageEntry = {
+  key: LanguageKey;
 };
 
 function complete<Entry extends { readonly key: string }>() {
@@ -65,17 +64,28 @@ const projects = complete<ProjectEntry>()([
 ]);
 
 const roles = complete<RoleEntry>()([
-  { key: "freelance", icon: Sparkles },
-  { key: "bpro", icon: Briefcase },
-  { key: "directorate", icon: Building2 },
-  { key: "freelanceWeb", icon: Globe },
-  { key: "miditec", icon: Code2 },
+  { key: "freelance" },
+  { key: "bpro" },
+  { key: "directorate" },
+  { key: "freelanceWeb" },
+  { key: "miditec" },
 ]);
 
 const skills = complete<SkillEntry>()([
-  { key: "backend", icon: Database },
-  { key: "frontend", icon: Code2 },
-  { key: "security", icon: ShieldCheck },
+  { key: "backend" },
+  { key: "frontend" },
+  { key: "security" },
 ]);
 
-export const catalog = { projects, roles, skills };
+const degrees = complete<DegreeEntry>()([
+  { key: "master", thesis: true },
+  { key: "bachelor" },
+]);
+
+const languages = complete<LanguageEntry>()([
+  { key: "arabic" },
+  { key: "english" },
+  { key: "german" },
+]);
+
+export const catalog = { projects, roles, skills, degrees, languages };

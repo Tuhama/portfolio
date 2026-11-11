@@ -1,13 +1,13 @@
 # Portfolio
 
-Personal site for Tuhama Qlyshi. One page per locale: English at `/`, Arabic at `/ar`, German at `/de`. Sections are `#experience`, `#skills`, `#projects`, and `#contact`.
+Personal site for Tuhama Qlyshi. One page per locale: English at `/`, Arabic at `/ar`, German at `/de`. Sections are `#experience`, `#skills`, `#projects`, `#education`, and `#contact`.
 
 ## Content
 
 - User-facing copy lives in `messages/en.json`, `messages/ar.json`, and `messages/de.json`. Add the same keys to all three. `en.json` is the source; do not leave a locale missing a key.
 - Do not hardcode names, job titles, project blurbs, or nav labels in components.
 - Identity and external URLs (`name`, email, GitHub, LinkedIn, CV) live in `src/lib/site.ts`.
-- Which projects, roles, and skill groups exist, plus their icons and images, lives in `src/lib/catalog.ts`. A new message key under `Projects.items`, `Experience.items`, or `Skills.groups` must be added to that catalog. The `complete()` helper fails the typecheck when a key is missing.
+- Which projects, roles, skill groups, degrees, and languages exist, plus project images and links, lives in `src/lib/catalog.ts`. A new message key under `Projects.items`, `Experience.items`, `Skills.groups`, `Education.degrees`, or `Education.languages` must be added to that catalog. The `complete()` helper fails the typecheck when a key is missing.
 - Do not invent biography, employers, or projects. Edit only copy the user supplied.
 
 ## i18n and layout

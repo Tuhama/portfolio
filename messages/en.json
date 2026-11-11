@@ -44,8 +44,41 @@
     "linkedin": "LinkedIn",
     "title": "Let's talk"
   },
+  "Education": {
+    "title": "Education & languages",
+    "description": "Master’s and bachelor’s degrees in software engineering, with a master’s thesis on client-side web application security.",
+    "degreesTitle": "Education",
+    "languagesTitle": "Languages",
+    "thesis": "Thesis: Client-side web application security",
+    "degrees": {
+      "master": {
+        "title": "Master of Software Engineering",
+        "school": "Al Baath University, Syria",
+        "year": "2020"
+      },
+      "bachelor": {
+        "title": "Bachelor of Software Engineering",
+        "school": "Al Baath University, Syria",
+        "year": "2007"
+      }
+    },
+    "languages": {
+      "arabic": {
+        "name": "Arabic",
+        "level": "Native"
+      },
+      "english": {
+        "name": "English",
+        "level": "C1 (fluent)"
+      },
+      "german": {
+        "name": "German",
+        "level": "A2 (B1 course in progress)"
+      }
+    }
+  },
   "Footer": {
-    "copyright": "© 2026 Tuhama Qlyshi"
+    "copyright": "© {year} {name}"
   },
   "Experience": {
     "title": "Experience",
@@ -57,11 +90,11 @@
         "period": "09/2025 – Present",
         "description": "Open-source i18n tooling, SharePoint document management for a law-firm system, this portfolio, and an open-source dashboard of Germany’s electricity market.",
         "highlights": [
-          "Built and published @tuhama/translation-manager, an open-source npm package (monorepo) with an i18n management UI, AI-assisted translation, and code-context extraction that speeds up localization in multilingual projects.",
-          "Built this portfolio in Next.js 16 with TypeScript and Tailwind CSS, in English, Arabic, and German (next-intl), tested with Vitest and deployed to Vercel through GitHub Actions.",
-          "Contributed to a case management system for a Qatari law firm, now in production testing: built its SharePoint document management in React, Vite, Redux Toolkit, and TanStack Query with @azure/msal-react and the Microsoft Graph API (Microsoft Entra ID sign-in), plus the filterable, resizable data tables.",
-          "Building Stromblick (in progress), an open-source dashboard of Germany’s electricity market on the Bundesnetzagentur’s SMARD open data: a TypeScript monorepo (pnpm, Turborepo) with a React 19 and Vite web app, an Express and Prisma REST API on PostgreSQL, shared Zod schemas, Vitest tests, Docker, and GitHub Actions CI/CD.",
-          "Work AI-first on production code: rule and skill files encode the project's structural decisions and coding standards, features are planned in Claude Code plan mode, AI reviews every change before it is committed, CodeRabbit and multiple agents review pull requests and critical code, and agents never get production credentials."
+          "Built and published @tuhama/translation-manager, an open-source npm package for managing i18n keys with AI-assisted translation.",
+          "Built this portfolio in Next.js 16 in English, Arabic, and German, tested with Vitest and deployed through GitHub Actions.",
+          "Built SharePoint document management (Entra ID sign-in, Microsoft Graph) and data tables for a Qatari law firm’s case management system, now in production testing.",
+          "Building Stromblick, an open-source dashboard of Germany’s electricity market: React 19, Express, Prisma, and PostgreSQL in a TypeScript monorepo.",
+          "Work AI-first: rule and skill files encode project standards, AI reviews every change, and agents never get production credentials."
         ],
         "tags": [
           "Next.js",
@@ -82,13 +115,13 @@
         "period": "02/2021 – 08/2025",
         "description": "Led frontend development of an enterprise ERP aimed at large companies in the Gulf region: a 150,000-line React and TypeScript codebase, held alongside the government role.",
         "highlights": [
-          "Frontend lead and architect for 4+ years: designed the architecture, wrote the coding guidelines and ESLint rules, reviewed and approved every pull request, mentored four junior developers, two at a time, and interviewed candidates for junior positions.",
-          "Designed the design system (shared page templates and a reusable component library) that more than half of the 1,300+ module files build on, across 12 ERP modules including Sales, Purchase, Inventory, Finance, and HR.",
-          "Built the data layer with Redux Toolkit and TanStack Query on a Vite build, and covered critical flows with Jest unit and integration tests and Cypress end-to-end (E2E) tests.",
-          "Built the granular role-based access control (RBAC) system, from permission management screens to permission-filtered routes and navigation.",
-          "Designed and built a custom PDF report engine on jsPDF that renders QtRPT XML report templates, with page bands, data fields, an expression evaluator, and drawing for rich text, images, and barcodes.",
-          "Cut rendering time of 10,000-row reports by 80% with pagination and list virtualization, reduced initial load with code splitting (lazy loading and dynamic imports), and tracked down unnecessary re-renders with React DevTools.",
-          "Integrated frontend workflows into Jenkins CI/CD with Gitea, working cross-functionally with backend and DevOps teams on automated branch deployments in a Scrum team using Jira."
+          "Frontend lead and architect for 4+ years: set the architecture and coding guidelines, reviewed every pull request, and mentored four junior developers.",
+          "Designed the design system that more than half of the 1,300+ module files build on, across 12 ERP modules.",
+          "Built the data layer with Redux Toolkit and TanStack Query, tested with Jest and Cypress.",
+          "Built granular role-based access control, from permission screens to filtered routes and navigation.",
+          "Built a custom PDF report engine on jsPDF that renders QtRPT XML report templates.",
+          "Cut rendering time of 10,000-row reports by 80% with pagination and list virtualization.",
+          "Integrated frontend builds into Jenkins CI/CD with Gitea for automated branch deployments."
         ],
         "tags": [
           "React",
@@ -127,9 +160,7 @@
         "company": "Self-employed · alongside government role",
         "period": "2018 – 2019",
         "description": "Websites for freelance clients, built with React.",
-        "highlights": [
-          "Built websites for freelance clients with React.js."
-        ],
+        "highlights": [],
         "tags": [
           "React"
         ]
@@ -164,9 +195,9 @@
     "title": "Tuhama Qlyshi — Senior Frontend Engineer"
   },
   "Navigation": {
-    "about": "About",
     "contact": "Contact",
     "experience": "Experience",
+    "home": "Home",
     "projects": "Projects",
     "skills": "Skills"
   },
