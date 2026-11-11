@@ -35,6 +35,8 @@ Personal site for Tuhama Qlyshi. One page per locale: English at `/`, Arabic at 
 
 - After a behavior change, run `pnpm test:unit`. Component tests render with `renderWithIntl` from `@/test/render`.
 - Message key parity is already tested. A catalog or locale change should keep `pnpm test:unit` passing.
+- Import boundaries are enforced by dependency-cruiser (`.dependency-cruiser.cjs`). After adding or moving imports, run `pnpm arch:check`. Fix the import rather than loosening a rule; a rule change needs a reason in its `comment`.
+- `pnpm build` and `pnpm dev` render the import graph to `public/architecture/dependency-graph.svg` (gitignored). `pnpm arch:graph` renders it on its own.
 
 ## Commits
 

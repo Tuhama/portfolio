@@ -37,8 +37,12 @@ jobs:
       - name: Typecheck
         run: pnpm exec tsc --noEmit
 
+      - name: 🏛️ Architecture Rules
+        run: pnpm run arch:check
+
       - name: Build
-        run: pnpm exec next build
+        # Also renders public/architecture/dependency-graph.svg
+        run: pnpm run build
 
   unit-tests:
     needs: audit-and-lint
