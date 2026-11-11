@@ -116,10 +116,9 @@ export default async function LocaleLayout({
             <a href="#main" className="skip-link">
               {tA11y("skip")}
             </a>
-            <Header />
+            <Header actions={<CommandMenu />} />
             {children}
             <Footer />
-            <CommandMenu />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

@@ -9,10 +9,11 @@ export function Projects() {
   return (
     <section id="projects" className="w-full space-y-10 py-16 text-start md:py-24">
       <SectionHeading title={t("title")} description={t("description")} />
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {catalog.projects.map((project) => (
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+        {catalog.projects.map((project, index) => (
           <ProjectCard
             key={project.key}
+            featured={index === 0}
             title={t(`items.${project.key}.title`)}
             description={t(`items.${project.key}.description`)}
             image={project.image}
