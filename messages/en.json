@@ -117,7 +117,7 @@
         "highlights": [
           "Frontend lead and architect for 4+ years: set the architecture and coding guidelines, reviewed every pull request, and mentored four junior developers.",
           "Designed the design system that more than half of the 1,300+ module files build on, across 12 ERP modules.",
-          "Built the data layer with Redux Toolkit and TanStack Query, tested with Jest and Cypress.",
+          "Built the data layer with Redux Toolkit and RTK Query, tested with Jest and Cypress.",
           "Built granular role-based access control, from permission screens to filtered routes and navigation.",
           "Built a custom PDF report engine on jsPDF that renders QtRPT XML report templates.",
           "Cut rendering time of 10,000-row reports by 80% with pagination and list virtualization.",
@@ -127,7 +127,7 @@
           "React",
           "TypeScript",
           "Redux Toolkit",
-          "TanStack Query",
+          "RTK Query",
           "RBAC",
           "Jest",
           "Cypress",
