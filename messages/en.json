@@ -73,7 +73,7 @@
       },
       "german": {
         "name": "German",
-        "level": "A2 (B1 course in progress)"
+        "level": "A2 (B1 exam 12/2026)"
       }
     }
   },
@@ -82,46 +82,39 @@
   },
   "Experience": {
     "title": "Experience",
-    "description": "15+ years in software engineering: enterprise ERP frontend leadership, a government software division, and open-source i18n tooling.",
+    "description": "18+ years in software development: ERP frontend leadership, a government software division, and client work.",
     "items": {
       "freelance": {
         "role": "Senior Frontend Engineer (Freelance)",
-        "company": "Self-employed · Remote",
+        "company": "Self-employed · Remote · part-time",
         "period": "09/2025 – Present",
-        "description": "Open-source i18n tooling, SharePoint document management for a law-firm system, this portfolio, and an open-source dashboard of Germany’s electricity market.",
+        "description": "Client work, alongside my open-source projects.",
         "highlights": [
-          "Built and published @tuhama/translation-manager, an open-source npm package for managing i18n keys with AI-assisted translation.",
-          "Built this portfolio in Next.js 16 in English, Arabic, and German, tested with Vitest and deployed through GitHub Actions.",
-          "Built SharePoint document management (Entra ID sign-in, Microsoft Graph) and data tables for a Qatari law firm’s case management system, now in production testing.",
-          "Building Stromblick, an open-source dashboard of Germany’s electricity market: React 19, Express, Prisma, and PostgreSQL in a TypeScript monorepo.",
-          "Work AI-first: rule and skill files encode project standards, AI reviews every change, and agents never get production credentials."
+          "Built SharePoint-based document management for a Qatari law firm’s case management system with React, Redux Toolkit, TanStack Query, the Microsoft Graph API, and Entra ID login (MSAL); live and used by about 100 staff."
         ],
         "tags": [
-          "Next.js",
           "React",
           "TypeScript",
+          "Redux Toolkit",
           "TanStack Query",
-          "PostgreSQL",
-          "Claude Code",
           "MSAL",
           "Microsoft Graph",
-          "Tailwind CSS",
-          "GitHub Actions"
+          "Entra ID"
         ]
       },
       "bpro": {
-        "role": "Senior Frontend Developer",
-        "company": "BPro ERP · Remote",
+        "role": "Senior Frontend Developer (Frontend Lead)",
+        "company": "BPro ERP · Remote · employee, 36 h/week",
         "period": "02/2021 – 08/2025",
-        "description": "Led frontend development of an enterprise ERP aimed at large companies in the Gulf region: a 150,000-line React and TypeScript codebase, held alongside the government role.",
+        "description": "Led the frontend of a 12-module React and TypeScript ERP (150,000 lines) for mid-sized companies in the Gulf region, in Arabic and English with right-to-left layouts. Held alongside the government role until 05/2025.",
         "highlights": [
-          "Frontend lead and architect for 4+ years: set the architecture and coding guidelines, reviewed every pull request, and mentored four junior developers.",
-          "Designed the design system that more than half of the 1,300+ module files build on, across 12 ERP modules.",
-          "Built the data layer with Redux Toolkit and RTK Query, tested with Jest and Cypress.",
-          "Built granular role-based access control, from permission screens to filtered routes and navigation.",
-          "Built a custom PDF report engine on jsPDF that renders QtRPT XML report templates.",
-          "Cut rendering time of 10,000-row reports by 80% with pagination and list virtualization.",
-          "Integrated frontend builds into Jenkins CI/CD with Gitea for automated branch deployments."
+          "Defined the frontend architecture, coding guidelines, and ESLint rules; final reviewer on all pull requests; mentored four junior developers and interviewed candidates.",
+          "Built the finance and payments module screens: chart of accounts, journal entries, tax filing, bank cheques, customer payments, and reconciliation.",
+          "Built page templates and a reusable component library adopted in over half of the 1,300+ module files.",
+          "Cut 10,000-row report rendering from about 20 seconds to under a second with pagination and list virtualization; reduced initial load with code splitting.",
+          "Built role-based access control (RBAC) end to end, from permission management screens to permission-filtered routes and navigation.",
+          "Built a PDF report engine on jsPDF that renders QtRPT XML templates with page bands, expressions, images, and barcodes.",
+          "Built the data layer with Redux Toolkit and RTK Query, tested with Jest and Cypress, and delivered through Jenkins CI/CD with Gitea in a Scrum team."
         ],
         "tags": [
           "React",
@@ -138,44 +131,33 @@
       },
       "directorate": {
         "role": "Head of Analysis and Software Division, IT Department",
-        "company": "Directorate of Finance (government agency) · Homs, Syria",
+        "company": "Directorate of Finance (public finance authority) · Homs, Syria",
         "period": "07/2008 – 05/2025",
-        "description": "Software engineer in the IT department from 07/2008 and head of its analysis and software division from 2018, covering systems analysis, staff training on national tax systems, and internal software prototypes.",
+        "description": "Software engineer in the IT department from 07/2008, and head of its analysis and software division from 10/2018.",
         "highlights": [
-          "As head from 2018, led up to four engineers in systems analysis, staff training, and software development.",
-          "Trained finance staff on nationwide tax systems procured from software vendors and used across Syria, where processing errors carry legal liability.",
-          "Designed and built two internal prototypes: a Personnel Portal in Java EE (servlets, JSP, JPA) on MySQL, and, from 2018, a Warehouse Management System with a Spring Boot REST API secured by JWT and a React and Ant Design frontend."
+          "Designed and built a Warehouse Management System as a software engineer, then led its further development as head (Spring Boot REST API with JWT, React, Ant Design); it replaced paper-based stock records.",
+          "Led up to four engineers in systems analysis and software development.",
+          "Trained dozens of employees each time the ministry rolled out new nationwide systems, including tax systems where processing errors carry legal liability."
         ],
         "tags": [
           "Java Spring Boot",
-          "Java EE",
-          "MySQL",
           "React",
+          "Ant Design",
+          "JWT",
           "System Analysis",
           "User Training"
-        ]
-      },
-      "freelanceWeb": {
-        "role": "Freelance Web Developer",
-        "company": "Self-employed · alongside government role",
-        "period": "2018 – 2019",
-        "description": "Websites for freelance clients, built with React.",
-        "highlights": [],
-        "tags": [
-          "React"
         ]
       },
       "miditec": {
         "role": "Java Developer",
         "company": "MIDITEC · Damascus, Syria",
         "period": "08/2007 – 06/2008",
-        "description": "Trained and worked as a Java developer on MTZ Web, MIDITEC’s web-based ERP, directly after graduation.",
+        "description": "Java development on MTZ Web, the web-based time, attendance, and access management suite of MIDITEC Datensysteme GmbH (Bremen, Germany).",
         "highlights": [
           "Worked on MTZ Web’s time recording and access control module."
         ],
         "tags": [
-          "Java",
-          "ERP"
+          "Java"
         ]
       }
     }
@@ -185,13 +167,13 @@
       "contact": "Get in touch",
       "cv": "Download CV"
     },
-    "badge": "Available immediately · Germany",
-    "description": "15+ years in software engineering and 8 years of React, specializing in React, Next.js, and TypeScript. Led the frontend of a 150,000-line ERP across 12 modules, with hands-on backend experience in Java Spring Boot and Node.js.",
+    "badge": "Available immediately · Frankfurt area",
+    "description": "18+ years in software development, 8 of them in React. Led the frontend of a 12-module ERP (150,000 lines of React and TypeScript) for 4+ years, and led a software team in a public finance authority for nearly seven years.",
     "subtitle": "Senior Frontend Engineer",
     "title": "Tuhama Qlyshi"
   },
   "Metadata": {
-    "description": "Senior Frontend Engineer specializing in React, Next.js, and TypeScript, with backend experience in Java Spring Boot and Node.js. Based in Germany and available immediately.",
+    "description": "Senior Frontend Engineer with 18+ years in software development and 8 in React and TypeScript: ERP and business applications, frontend architecture, and team leadership. Based near Frankfurt and available immediately.",
     "title": "Tuhama Qlyshi — Senior Frontend Engineer"
   },
   "Navigation": {
@@ -203,10 +185,10 @@
   },
   "Projects": {
     "title": "Featured Projects",
-    "description": "Enterprise ERP, a law-office system with SharePoint document management, and an open-source i18n tool for multilingual React apps.",
+    "description": "An ERP frontend, a live law-firm system, an energy-market dashboard with an AI assistant, and an open-source i18n tool.",
     "items": {
       "bpro": {
-        "description": "Enterprise ERP for large Gulf companies. I architected the frontend: 12 modules on a shared template system, granular RBAC permissions, and a custom PDF report engine.",
+        "description": "ERP for mid-sized companies in the Gulf region, in Arabic and English. I architected the frontend: 12 modules on a shared template system, granular RBAC permissions, finance and payments screens, and a custom PDF report engine.",
         "tags": [
           "React",
           "TypeScript",
@@ -218,7 +200,7 @@
         "title": "BPro ERP"
       },
       "glc": {
-        "description": "Case management system for a Qatari law firm, in production testing. I built its SharePoint document management (Entra ID sign-in, Microsoft Graph) and filterable data tables.",
+        "description": "Case management system for a Qatari law firm, live and used by about 100 staff. I built its SharePoint document management (Entra ID sign-in, Microsoft Graph) and filterable data tables.",
         "tags": [
           "React",
           "MSAL",
@@ -227,6 +209,18 @@
           "SharePoint"
         ],
         "title": "Law Firm Case Management"
+      },
+      "stromblick": {
+        "description": "Open-source dashboard of Germany’s electricity market on SMARD open data, with an AI assistant (Gemini, tool calling) that explains a day using the dashboard’s own data. React 19, Express, Prisma, and PostgreSQL in a TypeScript monorepo.",
+        "tags": [
+          "React",
+          "TypeScript",
+          "Express",
+          "Prisma",
+          "PostgreSQL",
+          "Gemini"
+        ],
+        "title": "Stromblick"
       },
       "translationManager": {
         "description": "Published npm CLI and local UI. Scans React for translation keys and passes the surrounding code to OpenAI, Gemini, or Google Translate.",
@@ -244,14 +238,17 @@
     "view_package": "View package"
   },
   "Skills": {
-    "description": "React and Next.js in production, Java Spring Boot and Node.js on the backend, and a strong focus on secure access (Entra ID, RBAC, CSP) and tested delivery.",
+    "description": "React and TypeScript in production, Java Spring Boot and Node.js on the backend, and a strong focus on secure access (Entra ID, RBAC, CSP) and tested delivery.",
     "groups": {
       "backend": {
         "items": [
           "Node.js",
+          "Express",
+          "Prisma",
           "Java Spring Boot",
           "MySQL",
           "PostgreSQL",
+          "Gemini API",
           "Docker",
           "Jenkins",
           "GitHub Actions",
@@ -288,6 +285,8 @@
           "Vitest",
           "Testing Library",
           "Cypress",
+          "Playwright",
+          "TDD",
           "Microsoft Graph API",
           "Content Security Policy",
           "Security Headers"

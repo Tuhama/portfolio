@@ -73,7 +73,7 @@
       },
       "german": {
         "name": "Deutsch",
-        "level": "A2 (B1-Kurs läuft)"
+        "level": "A2 (B1-Prüfung 12/2026)"
       }
     }
   },
@@ -82,46 +82,39 @@
   },
   "Experience": {
     "title": "Erfahrung",
-    "description": "Über 15 Jahre Software-Engineering: Frontend-Leitung eines Enterprise-ERP, Leitung einer staatlichen Softwareabteilung und Open-Source-i18n-Tooling.",
+    "description": "Über 18 Jahre Softwareentwicklung: Frontend-Leitung eines ERP, Leitung einer staatlichen Softwareabteilung und Kundenprojekte.",
     "items": {
       "freelance": {
         "role": "Senior Frontend Engineer (Freelance)",
-        "company": "Selbstständig · Remote",
+        "company": "Selbstständig · Remote · Teilzeit",
         "period": "09/2025 – heute",
-        "description": "Open-Source-i18n-Tooling, SharePoint-Dokumentenverwaltung für ein Kanzleisystem, dieses Portfolio und ein Open-Source-Dashboard zum deutschen Strommarkt.",
+        "description": "Kundenprojekte, neben meinen Open-Source-Projekten.",
         "highlights": [
-          "Entwicklung und Veröffentlichung von @tuhama/translation-manager, einem Open-Source-npm-Paket zur Verwaltung von i18n-Schlüsseln mit KI-gestützter Übersetzung.",
-          "Dieses Portfolio mit Next.js 16 auf Englisch, Arabisch und Deutsch entwickelt, mit Vitest getestet und über GitHub Actions deployt.",
-          "SharePoint-Dokumentenverwaltung (Anmeldung über Entra ID, Microsoft Graph) und Datentabellen für das Fallverwaltungssystem einer katarischen Anwaltskanzlei umgesetzt, derzeit im Produktionstest.",
-          "Entwicklung von Stromblick, einem Open-Source-Dashboard zum deutschen Strommarkt: React 19, Express, Prisma und PostgreSQL in einem TypeScript-Monorepo.",
-          "KI-first-Arbeitsweise: Rule- und Skill-Dateien legen die Projektstandards fest, jede Änderung wird von KI geprüft, und Agenten erhalten keine Produktionszugangsdaten."
+          "SharePoint-basierte Dokumentenverwaltung für das Fallverwaltungssystem einer katarischen Anwaltskanzlei umgesetzt, mit React, Redux Toolkit, TanStack Query, der Microsoft Graph API und Entra-ID-Anmeldung (MSAL); live und von rund 100 Mitarbeitenden genutzt."
         ],
         "tags": [
-          "Next.js",
           "React",
           "TypeScript",
+          "Redux Toolkit",
           "TanStack Query",
-          "PostgreSQL",
-          "Claude Code",
           "MSAL",
           "Microsoft Graph",
-          "Tailwind CSS",
-          "GitHub Actions"
+          "Entra ID"
         ]
       },
       "bpro": {
-        "role": "Senior Frontend Developer",
-        "company": "BPro ERP · Remote",
+        "role": "Senior Frontend Developer (Frontend Lead)",
+        "company": "BPro ERP · Remote · angestellt, 36 Std./Woche",
         "period": "02/2021 – 08/2025",
-        "description": "Leitung der Frontend-Entwicklung eines Enterprise-ERP für große Unternehmen in der Golfregion: eine Codebasis mit 150.000 Zeilen React und TypeScript, parallel zur staatlichen Tätigkeit.",
+        "description": "Frontend-Leitung eines ERP mit 12 Modulen (150.000 Zeilen React und TypeScript) für mittelständische Unternehmen in der Golfregion, auf Arabisch und Englisch mit Rechts-nach-links-Layouts. Bis 05/2025 parallel zur Tätigkeit in der Finanzdirektion.",
         "highlights": [
-          "Frontend-Lead und Architektin über mehr als 4 Jahre: Architektur und Coding-Guidelines festgelegt, alle Pull Requests geprüft und vier Junior-Entwickler betreut.",
-          "Das Designsystem entworfen, auf dem mehr als die Hälfte der über 1.300 Moduldateien aufbaut, in 12 ERP-Modulen.",
-          "Die Datenschicht mit Redux Toolkit und RTK Query aufgebaut, getestet mit Jest und Cypress.",
-          "Feingranulares RBAC-Berechtigungssystem umgesetzt, von der Berechtigungsverwaltung bis zu gefilterten Routen und Navigation.",
-          "Eigene PDF-Report-Engine auf Basis von jsPDF entwickelt, die QtRPT-XML-Berichtsvorlagen rendert.",
-          "Renderzeit von Berichten mit 10.000 Zeilen durch Paginierung und Listen-Virtualisierung um 80 % gesenkt.",
-          "Frontend-Builds in Jenkins-CI/CD mit Gitea eingebunden, für automatisierte Branch-Deployments."
+          "Frontend-Architektur, Coding-Guidelines und ESLint-Regeln festgelegt; finale Prüfung aller Pull Requests; vier Junior-Entwickler betreut und Bewerbungsgespräche geführt.",
+          "Die Oberflächen der Module Finanzen und Zahlungen umgesetzt: Kontenplan, Buchungssätze, Steuermeldungen, Bankschecks, Kundenzahlungen und Abstimmung.",
+          "Seitenvorlagen und eine wiederverwendbare Komponentenbibliothek entwickelt, die in mehr als der Hälfte der über 1.300 Moduldateien genutzt wird.",
+          "Renderzeit von Berichten mit 10.000 Zeilen durch Paginierung und Listen-Virtualisierung von rund 20 Sekunden auf unter eine Sekunde gesenkt; Initialladezeit durch Code-Splitting reduziert.",
+          "Rollenbasierte Zugriffskontrolle (RBAC) durchgängig umgesetzt, von der Berechtigungsverwaltung bis zu gefilterten Routen und Navigation.",
+          "Eine PDF-Report-Engine auf Basis von jsPDF entwickelt, die QtRPT-XML-Vorlagen mit Seitenbereichen, Ausdrücken, Bildern und Barcodes rendert.",
+          "Die Datenschicht mit Redux Toolkit und RTK Query aufgebaut, mit Jest und Cypress getestet und über Jenkins-CI/CD mit Gitea in einem Scrum-Team ausgeliefert."
         ],
         "tags": [
           "React",
@@ -138,44 +131,33 @@
       },
       "directorate": {
         "role": "Leiterin der Abteilung Analyse und Software, IT",
-        "company": "Finanzdirektion (Behörde) · Homs, Syrien",
+        "company": "Finanzdirektion (Finanzbehörde) · Homs, Syrien",
         "period": "07/2008 – 05/2025",
-        "description": "Ab 07/2008 Software Engineer in der IT-Abteilung einer regionalen Finanzdirektion, ab 2018 Leitung der Abteilung Analyse und Software: Systemanalyse, Schulung der Mitarbeitenden in landesweiten Steuersystemen und interne Software-Prototypen.",
+        "description": "Ab 07/2008 Software Engineer in der IT-Abteilung, ab 10/2018 Leitung der Abteilung Analyse und Software.",
         "highlights": [
-          "Ab 2018 als Abteilungsleitung ein Team von bis zu vier Ingenieuren in Systemanalyse, Mitarbeiterschulung und Softwareentwicklung geführt.",
-          "Schulung von Finanzmitarbeitenden in landesweit eingesetzten Steuersystemen externer Softwareanbieter, bei denen Verarbeitungsfehler rechtliche Haftung nach sich ziehen.",
-          "Zwei interne Prototypen entworfen und entwickelt: ein Personalportal in Java EE (Servlets, JSP, JPA) mit MySQL und ab 2018 ein Lagerverwaltungssystem mit einer Spring-Boot-REST-API mit JWT-Absicherung und einem Frontend in React und Ant Design."
+          "Als Software Engineer ein Lagerverwaltungssystem entworfen und entwickelt und es als Abteilungsleitung weiterentwickelt (Spring-Boot-REST-API mit JWT, React, Ant Design); es ersetzte die Bestandsführung auf Papier.",
+          "Ein Team von bis zu vier Ingenieuren in Systemanalyse und Softwareentwicklung geführt.",
+          "Bei jeder Einführung neuer landesweiter Systeme durch das Ministerium Dutzende Mitarbeitende geschult, darunter Steuersysteme, bei denen Verarbeitungsfehler rechtliche Haftung nach sich ziehen."
         ],
         "tags": [
           "Java Spring Boot",
-          "Java EE",
-          "MySQL",
           "React",
+          "Ant Design",
+          "JWT",
           "Systemanalyse",
           "Anwenderschulung"
-        ]
-      },
-      "freelanceWeb": {
-        "role": "Freelance-Webentwicklerin",
-        "company": "Selbstständig · neben der Tätigkeit in der Finanzdirektion",
-        "period": "2018 – 2019",
-        "description": "Websites für Freelance-Kunden, entwickelt mit React.",
-        "highlights": [],
-        "tags": [
-          "React"
         ]
       },
       "miditec": {
         "role": "Java-Entwicklerin",
         "company": "MIDITEC · Damaskus, Syrien",
         "period": "08/2007 – 06/2008",
-        "description": "Ausbildung und Tätigkeit als Java-Entwicklerin an MTZ Web, dem webbasierten ERP von MIDITEC, direkt nach dem Abschluss.",
+        "description": "Java-Entwicklung an MTZ Web, der webbasierten Suite für Zeiterfassung, Anwesenheit und Zutrittskontrolle der MIDITEC Datensysteme GmbH (Bremen).",
         "highlights": [
           "Mitarbeit am Modul für Zeiterfassung und Zutrittskontrolle von MTZ Web."
         ],
         "tags": [
-          "Java",
-          "ERP"
+          "Java"
         ]
       }
     }
@@ -185,13 +167,13 @@
       "contact": "Kontakt aufnehmen",
       "cv": "Lebenslauf herunterladen"
     },
-    "badge": "Sofort verfügbar · Deutschland",
-    "description": "Über 15 Jahre Software-Engineering und 8 Jahre React, spezialisiert auf React, Next.js und TypeScript. Frontend-Leitung eines ERP mit 150.000 Codezeilen in 12 Modulen, mit praktischer Backend-Erfahrung in Java Spring Boot und Node.js.",
+    "badge": "Sofort verfügbar · Raum Frankfurt",
+    "description": "Über 18 Jahre Softwareentwicklung, davon 8 Jahre React. Über 4 Jahre Frontend-Leitung eines ERP mit 12 Modulen (150.000 Zeilen React und TypeScript) und fast sieben Jahre Leitung eines Softwareteams in einer Finanzbehörde.",
     "subtitle": "Senior Frontend Engineer",
     "title": "Tuhama Qlyshi"
   },
   "Metadata": {
-    "description": "Senior Frontend Engineer mit Schwerpunkt React, Next.js und TypeScript sowie Backend-Erfahrung in Java Spring Boot und Node.js. Wohnhaft in Deutschland und sofort verfügbar.",
+    "description": "Senior Frontend Engineer mit über 18 Jahren Softwareentwicklung, davon 8 Jahre React und TypeScript: ERP- und Business-Anwendungen, Frontend-Architektur und Teamleitung. Wohnhaft im Raum Frankfurt und sofort verfügbar.",
     "title": "Tuhama Qlyshi — Senior Frontend Engineer"
   },
   "Navigation": {
@@ -203,10 +185,10 @@
   },
   "Projects": {
     "title": "Ausgewählte Projekte",
-    "description": "Enterprise-ERP, ein Kanzleisystem mit SharePoint-Dokumentenverwaltung und ein Open-Source-i18n-Werkzeug für mehrsprachige React-Anwendungen.",
+    "description": "Ein ERP-Frontend, ein produktives Kanzleisystem, ein Strommarkt-Dashboard mit KI-Assistent und ein Open-Source-i18n-Werkzeug.",
     "items": {
       "bpro": {
-        "description": "Enterprise-ERP für große Unternehmen in der Golfregion. Frontend-Architektur verantwortet: 12 Module auf einem gemeinsamen Vorlagensystem, feingranulare RBAC-Berechtigungen und eine eigene PDF-Report-Engine.",
+        "description": "ERP für mittelständische Unternehmen in der Golfregion, auf Arabisch und Englisch. Frontend-Architektur verantwortet: 12 Module auf einem gemeinsamen Vorlagensystem, feingranulare RBAC-Berechtigungen, Oberflächen für Finanzen und Zahlungen und eine eigene PDF-Report-Engine.",
         "tags": [
           "React",
           "TypeScript",
@@ -218,7 +200,7 @@
         "title": "BPro ERP"
       },
       "glc": {
-        "description": "Fallverwaltung für eine katarische Anwaltskanzlei, im Produktionstest. Ich habe das SharePoint-Dokumentenmanagement (Entra-ID-Anmeldung, Microsoft Graph) und filterbare Datentabellen umgesetzt.",
+        "description": "Fallverwaltung für eine katarische Anwaltskanzlei, live und von rund 100 Mitarbeitenden genutzt. Ich habe das SharePoint-Dokumentenmanagement (Entra-ID-Anmeldung, Microsoft Graph) und filterbare Datentabellen umgesetzt.",
         "tags": [
           "React",
           "MSAL",
@@ -227,6 +209,18 @@
           "SharePoint"
         ],
         "title": "Fallverwaltung für Kanzleien"
+      },
+      "stromblick": {
+        "description": "Open-Source-Dashboard zum deutschen Strommarkt auf Basis der SMARD-Daten, mit einem KI-Assistenten (Gemini, Tool Calling), der einen Tag anhand der Daten des Dashboards erklärt. React 19, Express, Prisma und PostgreSQL in einem TypeScript-Monorepo.",
+        "tags": [
+          "React",
+          "TypeScript",
+          "Express",
+          "Prisma",
+          "PostgreSQL",
+          "Gemini"
+        ],
+        "title": "Stromblick"
       },
       "translationManager": {
         "description": "Veröffentlichtes npm-CLI mit lokaler UI. Scannt React nach i18n-Schlüsseln und übergibt den umgebenden Code an OpenAI, Gemini oder Google Translate.",
@@ -244,14 +238,17 @@
     "view_package": "Paket ansehen"
   },
   "Skills": {
-    "description": "React und Next.js in Produktion, Java Spring Boot und Node.js im Backend und ein klarer Fokus auf sicheren Zugriff (Entra ID, RBAC, CSP) und getestete Auslieferung.",
+    "description": "React und TypeScript in Produktion, Java Spring Boot und Node.js im Backend und ein klarer Fokus auf sicheren Zugriff (Entra ID, RBAC, CSP) und getestete Auslieferung.",
     "groups": {
       "backend": {
         "items": [
           "Node.js",
+          "Express",
+          "Prisma",
           "Java Spring Boot",
           "MySQL",
           "PostgreSQL",
+          "Gemini API",
           "Docker",
           "Jenkins",
           "GitHub Actions",
@@ -288,6 +285,8 @@
           "Vitest",
           "Testing Library",
           "Cypress",
+          "Playwright",
+          "TDD",
           "Microsoft Graph API",
           "Content Security Policy",
           "Security Headers"

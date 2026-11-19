@@ -21,7 +21,7 @@ describe("Education", () => {
   it("renders each language with its level", () => {
     renderWithIntl(<Education />);
     expect(screen.getByText("German")).toBeDefined();
-    expect(screen.getByText(/A2 \(B1 course in progress\)/)).toBeDefined();
+    expect(screen.getByText(/A2 \(B1 exam 12\/2026\)/)).toBeDefined();
     expect(screen.getByText(/Native/)).toBeDefined();
   });
 });

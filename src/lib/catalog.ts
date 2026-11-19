@@ -61,13 +61,20 @@ const projects = complete<ProjectEntry>()([
     key: "glc",
     image: "/assets/projects/GLC.png",
   },
+  {
+    key: "stromblick",
+    image: "/assets/projects/Stromblick.png",
+    links: {
+      github: "https://github.com/Tuhama/stromblick",
+      live: "https://stromblick-de.vercel.app",
+    },
+  },
 ]);
 
 const roles = complete<RoleEntry>()([
   { key: "freelance" },
   { key: "bpro" },
   { key: "directorate" },
-  { key: "freelanceWeb" },
   { key: "miditec" },
 ]);
 
