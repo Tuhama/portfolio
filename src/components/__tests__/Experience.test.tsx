@@ -14,13 +14,15 @@ describe("Experience", () => {
   it("renders milestone roles, highlights, and tags", () => {
     renderWithIntl(<Experience />);
     expect(screen.getByText("Senior Frontend Engineer (Freelance)")).toBeDefined();
-    expect(screen.getByText("Senior Frontend Developer")).toBeDefined();
+    expect(
+      screen.getByText("Senior Frontend Developer (Frontend Lead)"),
+    ).toBeDefined();
     expect(
       screen.getByText("Head of Analysis and Software Division, IT Department"),
     ).toBeDefined();
     expect(screen.getByText("Java Developer")).toBeDefined();
     expect(
-      screen.getByText(/Built and published @tuhama\/translation-manager/),
+      screen.getByText(/live and used by about 100 staff/),
     ).toBeDefined();
     expect(screen.getByText("Microsoft Graph")).toBeDefined();
     expect(screen.getByText("Jenkins")).toBeDefined();
